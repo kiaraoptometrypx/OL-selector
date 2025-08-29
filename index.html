@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
   :root{
-    --green:#0b3d2e;         /* dark green */
-    --pale:#ffffe0;          /* very pale yellow */
-    --off:#f8f8f5;           /* off-white */
+    --green:#0b3d2e;
+    --pale:#ffffe0;
+    --off:#f8f8f5;
     --line:#d7d7cf;
   }
   html,body{background:var(--off); color:var(--green); font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; font-size:12px; line-height:1.35; margin:0}
@@ -19,7 +19,7 @@
   .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
   label{font-weight:600}
   input[type="text"], input[type="number"], textarea{
-    font-size:12px; padding:6px 8px; border:1px solid #c9c9c1; border-radius:6px; background:#fff; color:var(--green)
+    font-size:10px; padding:6px 8px; border:1px solid #c9c9c1; border-radius:6px; background:#fff; color:var(--green)
   }
   textarea{min-height:48px; width:100%}
   .field{display:flex; flex-direction:column; gap:4px}
@@ -45,49 +45,19 @@
   .help{margin-top:6px}
   .tiny{font-size:11px; opacity:.9}
 
-/* Target only prescription table */
+/* Prescription table */
 table input {
-  width: 60px;   /* smaller width for numbers */
+  width: 60px;
   text-align: center;
-  font-size: 11px;
+  font-size: 10px;
 }
-
-/* Prevent prescription table from stretching full page */
 table {
-  width: auto;   /* shrink to content */
-  margin: auto;  /* center the table */
+  width: auto;
+  margin: auto;
 }
-
-
-
-
-
-
-
 </style>
 </head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <body>
-
-<div class="wrap">
-
 
 <div class="wrap">
   <h1>Lens Selector</h1>
@@ -95,136 +65,49 @@ table {
   <!-- Customer info -->
   <div class="section">
     <h3>Customer</h3>
-   
-
- <div class="row">
-  <div class="field w150">
-    <label for="custName">Name</label>
-    <input id="custName" type="text" placeholder="e.g. Aisyah Tan" />
-  </div>
-  <div class="field w150">
-    <label for="custWhatsApp">WhatsApp</label>
-    <input id="custWhatsApp" type="text" placeholder="+60…" />
-  </div>
-  <div class="field w70">
-    <label for="custPD">Total PD</label>
-    <input id="custPD" type="text" placeholder="62" />
-  </div>
-  <div class="field w70">
-    <label for="lensSize">Lens Size</label>
-    <input id="lensSize" type="text" placeholder="50" />
-  </div>
-  <div class="field w70">
-    <label for="bridge">Bridge</label>
-    <input id="bridge" type="text" placeholder="18" />
-  </div>
-</div>
-
-
-
+    <div class="row">
+      <div class="field w150"><label for="custName">Name</label><input id="custName" type="text" placeholder="e.g. Aisyah Tan" /></div>
+      <div class="field w150"><label for="custWhatsApp">WhatsApp</label><input id="custWhatsApp" type="text" placeholder="+60…" /></div>
+      <div class="field w70"><label for="custPD">Total PD</label><input id="custPD" type="text" placeholder="62" /></div>
+      <div class="field w70"><label for="lensSize">Lens Size</label><input id="lensSize" type="text" placeholder="50" /></div>
+      <div class="field w70"><label for="bridge">Bridge</label><input id="bridge" type="text" placeholder="18" /></div>
     </div>
   </div>
-
-
-
 
   <!-- Prescription -->
   <div class="section rx">
     <h3>Prescription</h3>
     <table>
       <thead>
-        <tr>
-          <th>Eye</th>
-          <th>Sph</th>
-          <th>Cyl</th>
-          <th>Axis</th>
-          <th>ADD</th>
-          <th>Max RX</th>
-        </tr>
+        <tr><th>Side</th><th>Sph</th><th>Cyl</th><th>Axis</th><th>ADD</th><th>Max RX</th></tr>
       </thead>
       <tbody>
-         <tr>
-        <td>Right (OD)</td>
-        <td><input id="sph-od" type="text" class="rx-sph" placeholder="0.00" /></td>
-        <td><input id="cyl-od" type="text" class="rx-cyl" placeholder="0.00" /></td>
-        <td><input id="axis-od" type="text" class="rx-axis" placeholder="0" /></td>
-        <td><input id="add-od" type="text" placeholder="0.00" /></td>
-        <td><input id="max-od" type="text" readonly /></td>
-      </tr>
-      <tr>
-        <td>Left (OS)</td>
-        <td><input id="sph-os" type="text" class="rx-sph" placeholder="0.00" /></td>
-        <td><input id="cyl-os" type="text" class="rx-cyl" placeholder="0.00" /></td>
-        <td><input id="axis-os" type="text" class="rx-axis" placeholder="0" /></td>
-        <td><input id="add-os" type="text" placeholder="0.00" /></td>
-        <td><input id="max-os" type="text" readonly /></td>
-      </tr>
+        <tr>
+          <td>Right</td>
+          <td><input id="sph-od" type="text" class="rx-sph" placeholder="0.00" /></td>
+          <td><input id="cyl-od" type="text" class="rx-cyl" placeholder="0.00" /></td>
+          <td><input id="axis-od" type="text" class="rx-axis" placeholder="0" /></td>
+          <td><input id="add-od" type="text" placeholder="0.00" /></td>
+          <td><input id="max-od" type="text" readonly /></td>
+        </tr>
+        <tr>
+          <td>Left</td>
+          <td><input id="sph-os" type="text" class="rx-sph" placeholder="0.00" /></td>
+          <td><input id="cyl-os" type="text" class="rx-cyl" placeholder="0.00" /></td>
+          <td><input id="axis-os" type="text" class="rx-axis" placeholder="0" /></td>
+          <td><input id="add-os" type="text" placeholder="0.00" /></td>
+          <td><input id="max-os" type="text" readonly /></td>
+        </tr>
       </tbody>
     </table>
+  </div>
 
-<script>
-function snapQuarter(value){
-  if(value === "" || isNaN(parseFloat(value))) return 0;
-  let num = parseFloat(value);
-  return Math.round(num * 4) / 4; // keep as number for calculations
-}
-
-// Returns a string with + for positive numbers
-function formatSigned(num){
-  return (num >= 0 ? "+" : "") + num.toFixed(2);
-}
-
-function updateMaxPower(eye){
-  let sphEl = document.getElementById(`sph-${eye}`);
-  let cylEl = document.getElementById(`cyl-${eye}`);
-  let axisEl = document.getElementById(`axis-${eye}`);
-  let maxEl = document.getElementById(`max-${eye}`);
-
-  let sph = snapQuarter(sphEl.value);
-  let cyl = snapQuarter(cylEl.value);
-  let axis = parseInt(axisEl.value) || 0;
-
-  // Update inputs with formatted value
-  sphEl.value = formatSigned(sph);
-  cylEl.value = formatSigned(cyl);
-
-  // Axis validation
-  if(axis <= 0) axis = 180;
-  if(axis > 180) axis = 180;
-  axisEl.value = axis;
-
-  // Max lens power logic
-  let meridian1 = sph;
-  let meridian2 = sph + cyl;
-  let maxVal = Math.abs(meridian1) > Math.abs(meridian2) ? meridian1 : meridian2;
-
-  maxEl.value = formatSigned(maxVal);
-}
-
-// Attach blur listeners
-["od","os"].forEach(eye => {
-  ["sph-"+eye,"cyl-"+eye,"axis-"+eye].forEach(id => {
-    document.getElementById(id).addEventListener("blur", ()=>updateMaxPower(eye));
-  });
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Lead time (top-most question) -->
+  <!-- Lead time -->
   <div class="section">
     <h3>Lead Time</h3>
     <div class="options" id="q-lead">
-      <label><input type="checkbox" name="lead" value="Ready-made"> Ready-made lenses (cut into frame, 1–3 days)</label>
-      <label><input type="checkbox" name="lead" value="Custom-made"> Custom-made (made to order, coat, then cut, 7–10 days)</label>
+      <label><input type="checkbox" name="lead" value="Ready-made"> Ready-made lenses (1–3 days)</label>
+      <label><input type="checkbox" name="lead" value="Custom-made"> Custom-made (7–10 days)</label>
     </div>
   </div>
 
@@ -237,89 +120,19 @@ function updateMaxPower(eye){
       <label><input type="checkbox" name="type" value="Office Multi-focal Lens"> Office Multi-focal Lens</label>
       <label><input type="checkbox" name="type" value="Near Relaxed Lens"> Near Relaxed Lens</label>
     </div>
-    <div id="mf-extra" class="note hidden tiny">Additional multifocal details will appear here (only when a multifocal type is selected).</div>
   </div>
 
-<!-- Index -->
-<div class="section">
-  <h3>Index</h3>
-  <div class="options" id="q-index">
-    <label>
-      <input type="checkbox" name="index" value="1.50">
-      1.50 <span class="tiny">(Range: +2.00 to -3.00)</span>
-      <span id="badge-1.50" class="badge muted tiny"></span>
-    </label>
-    <label>
-      <input type="checkbox" name="index" value="1.61">
-      1.61 <span class="tiny">(Range: +4.00 to -6.00)</span>
-      <span id="badge-1.61" class="badge muted tiny"></span>
-    </label>
-    <label>
-      <input type="checkbox" name="index" value="1.67">
-      1.67 <span class="tiny">(Range: +5.00 to -8.00)</span>
-      <span id="badge-1.67" class="badge muted tiny"></span>
-    </label>
-    <label>
-      <input type="checkbox" name="index" value="1.74">
-      1.74 <span class="tiny">(Range: +7.00 to -12.00)</span>
-      <span id="badge-1.74" class="badge muted tiny"></span>
-    </label>
+  <!-- Index -->
+  <div class="section">
+    <h3>Index</h3>
+    <div class="options" id="q-index">
+      <label><input type="checkbox" name="index" value="1.50"> 1.50 <span class="tiny">(Range: +2.00 to -3.00)</span><span id="badge-1.50" class="badge muted tiny"></span></label>
+      <label><input type="checkbox" name="index" value="1.61"> 1.61 <span class="tiny">(Range: +4.00 to -6.00)</span><span id="badge-1.61" class="badge muted tiny"></span></label>
+      <label><input type="checkbox" name="index" value="1.67"> 1.67 <span class="tiny">(Range: +5.00 to -8.00)</span><span id="badge-1.67" class="badge muted tiny"></span></label>
+      <label><input type="checkbox" name="index" value="1.74"> 1.74 <span class="tiny">(Range: +7.00 to -12.00)</span><span id="badge-1.74" class="badge muted tiny"></span></label>
+    </div>
+    <div class="help tiny">Higher percent = thicker lens.</div>
   </div>
-  <div class="help tiny">Higher percent means lens is thick. 100% means thickness is estimated 4mm.</div>
-</div>
-
-<script>
-const indexRanges = {
-  "1.50": { min: -3, max: 2 },
-  "1.61": { min: -6, max: 4 },
-  "1.67": { min: -8, max: 5 },
-  "1.74": { min: -12, max: 7 }
-};
-
-// Calculate the maximum effective power from both eyes
-function getMaxPower() {
-  const sphOD = parseFloat(document.getElementById("sph-od").value) || 0;
-  const cylOD = parseFloat(document.getElementById("cyl-od").value) || 0;
-  const sphOS = parseFloat(document.getElementById("sph-os").value) || 0;
-  const cylOS = parseFloat(document.getElementById("cyl-os").value) || 0;
-
-  const maxOD = Math.max(Math.abs(sphOD), Math.abs(sphOD + cylOD));
-  const maxOS = Math.max(Math.abs(sphOS), Math.abs(sphOS + cylOS));
-
-  return Math.max(maxOD, maxOS);
-}
-
-// Update all badges without checking the checkboxes
-function updateIndexBadges() {
-  const maxPower = getMaxPower();
-
-  Object.keys(indexRanges).forEach(idx => {
-    const range = indexRanges[idx];
-    const maxRange = Math.max(Math.abs(range.min), Math.abs(range.max));
-
-    let percentage = Math.round((maxPower / maxRange) * 100);
-    if (percentage < 50) percentage = 50; // minimum 50%
-    
-    const badge = document.getElementById(`badge-${idx}`);
-    badge.innerText = `${percentage}%`;
-
-    // Ensure checkbox stays unchecked
-    const cb = document.querySelector(`#q-index input[value="${idx}"]`);
-    if (cb) cb.checked = false;
-  });
-}
-
-// Attach events to all sph/cyl inputs
-["sph-od","cyl-od","sph-os","cyl-os"].forEach(id => {
-  const el = document.getElementById(id);
-  el.addEventListener("blur", updateIndexBadges);
-  el.addEventListener("input", updateIndexBadges);
-});
-</script>
-
-
-
-
 
   <!-- Coating -->
   <div class="section">
@@ -331,8 +144,7 @@ function updateIndexBadges() {
       <label><input type="checkbox" name="coat" value="Low reflection coating"> Low reflection coating</label>
       <label><input type="checkbox" name="coat" value="Durability coating"> Durability coating</label>
     </div>
-        </div>
-
+  </div>
 
   <!-- Photochromic -->
   <div class="section">
@@ -340,8 +152,8 @@ function updateIndexBadges() {
     <div class="options" id="q-photo">
       <label><input type="checkbox" name="photo" value="No"> No</label>
       <label><input type="checkbox" name="photo" value="Normal"> Normal</label>
-      <label><input type="checkbox" name="photo" value="Extra Dark"> Extra Dark (slight tint indoor)</label>
-      <label><input type="checkbox" name="photo" value="Extra Fast"> Extra Fast (Changes fast but not as dark as normal)</label>
+      <label><input type="checkbox" name="photo" value="Extra Dark"> Extra Dark</label>
+      <label><input type="checkbox" name="photo" value="Extra Fast"> Extra Fast</label>
     </div>
   </div>
 
@@ -353,88 +165,131 @@ function updateIndexBadges() {
       <label><input type="checkbox" name="design" value="Custom Common Optics"> Custom Common Optics</label>
       <label><input type="checkbox" name="design" value="Custom Enhanced Optical calculation"> Custom Enhanced Optical calculation</label>
     </div>
-    <div class="help tiny">Enhanced calc considers frame shape/size & Rx to widen clarity, esp. at the periphery.</div>
   </div>
 
-  <!-- Button -->
-  <div class="section" style="display:flex; justify-content:center;">
-    <button id="btnShow">Show Results</button>
-  </div>
-
-  <!-- Results -->
-  <div class="section results">
-    <h3>Results</h3>
-    <table id="resultsTable">
-      <thead>
-        <tr>
-          <th class="logoCell">Logo</th>
-          <th>Brand</th>
-          <th>Model</th>
-          <th>Index</th>
-          <th>Coating</th>
-          <th>Photochromic</th>
-          <th>Optical Design</th>
-          <th>Price</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody id="resultsBody">
-        <tr><td colspan="9" class="muted">No results yet — click “Show Results”.</td></tr>
-      
-
-</tbody>
-    </table>
-  </div>
-
-
-  </div>
-
-
-
-
-
-
-
-
+  <!-- Results Table (without Logo) -->
+<div class="section results">
+  <h3>Results</h3>
+  <table id="resultsTable">
+    <thead>
+      <tr>
+        <th>Brand</th><th>Model</th><th>Index</th>
+        <th>Coating</th><th>Photochromic</th><th>Optical Design</th>
+        <th>Price</th><th>Description</th>
+      </tr>
+    </thead>
+    <tbody id="resultsBody">
+      <tr><td colspan="8" class="muted">No results yet — click “Show Results”.</td></tr>
+    </tbody>
+  </table>
+</div>
 
 
 </div>
 
-
-
 <script>
-/* ===== Helpers: rounding & format ===== */
-function roundToQuarter(num){
-  return (Math.round(num*4)/4).toFixed(2);
+// === Prescription helpers ===
+function snapQuarter(value){
+  if(value === "" || isNaN(parseFloat(value))) return 0;
+  let num = parseFloat(value);
+  return Math.round(num * 4) / 4;
 }
-function format2(v){
-  if (v === "" || v === null || isNaN(v)) return "";
-  return parseFloat(v).toFixed(2);
+function formatSigned(num){return (num>=0?"+":"")+num.toFixed(2);}
+function updateMaxPower(eye){
+  let sph=document.getElementById(`sph-${eye}`),
+      cyl=document.getElementById(`cyl-${eye}`),
+      axis=document.getElementById(`axis-${eye}`),
+      max=document.getElementById(`max-${eye}`);
+  let s=snapQuarter(sph.value), c=snapQuarter(cyl.value), a=parseInt(axis.value)||0;
+  sph.value=formatSigned(s); cyl.value=formatSigned(c);
+  if(a<=0) a=180; if(a>180) a=180; axis.value=a;
+  let maxVal=Math.abs(s)>Math.abs(s+c)?s:s+c; max.value=formatSigned(maxVal);
 }
+["od","os"].forEach(e=>["sph-"+e,"cyl-"+e,"axis-"+e].forEach(id=>{
+  document.getElementById(id).addEventListener("blur",()=>updateMaxPower(e));
+}));
 
-/* ===== SE calculation, Sph/Cyl snapping ===== */
-function calcSE(eye){
-  const sphEl = document.getElementById(`sph-${eye}`);
-  const cylEl = document.getElementById(`cyl-${eye}`);
-  const seEl  = document.getElementById(`se-${eye}`);
-
-  // Only snap/format if user typed something
-  if (sphEl.value !== "") sphEl.value = roundToQuarter(parseFloat(sphEl.value));
-  if (cylEl.value !== "") cylEl.value = roundToQuarter(parseFloat(cylEl.value));
-
-  const sph = parseFloat(sphEl.value)||0;
-  const cyl = parseFloat(cylEl.value)||0;
-  const se  = sph + (cyl/2);
-  seEl.value = isNaN(se) ? "" : se.toFixed(2);
-
-  updateIndexHint(); // refresh hint whenever SE changes
+// === Index badges ===
+const indexRanges={"1.50":{min:-3,max:2},"1.61":{min:-6,max:4},"1.67":{min:-8,max:5},"1.74":{min:-12,max:7}};
+function getMaxPower(){
+  const sOD=parseFloat(document.getElementById("sph-od").value)||0,
+        cOD=parseFloat(document.getElementById("cyl-od").value)||0,
+        sOS=parseFloat(document.getElementById("sph-os").value)||0,
+        cOS=parseFloat(document.getElementById("cyl-os").value)||0;
+  return Math.max(Math.max(Math.abs(sOD),Math.abs(sOD+cOD)),Math.max(Math.abs(sOS),Math.abs(sOS+cOS)));
 }
-["od","os"].forEach(eye=>{
-  document.getElementById(`sph-${eye}`).addEventListener("blur", ()=>calcSE(eye));
-  document.getElementById(`cyl-${eye}`).addEventListener("blur", ()=>calcSE(eye));
+function updateIndexBadges(){
+  let maxPower=getMaxPower();
+  Object.keys(indexRanges).forEach(idx=>{
+    let r=indexRanges[idx];
+    let maxR=Math.max(Math.abs(r.min),Math.abs(r.max));
+    let p=Math.round(maxPower/maxR*100); if(p<50) p=50;
+    document.getElementById(`badge-${idx}`).innerText = p+"%";
+  });
+}
+["sph-od","cyl-od","sph-os","cyl-os"].forEach(id=>{
+  const el=document.getElementById(id);
+  el.addEventListener("blur",updateIndexBadges);
+  el.addEventListener("input",updateIndexBadges);
 });
 
-/* ===== Multifocal extra: show/hide ===== */
-const typeBox = document.getElementById("q-type");
-const mfExtra  = document.getElementById("mf-extra");
-typeBox.addEventListener("cha
+// === CSV Database (single coating per lens) ===
+const csvData=`Brand,Model,Index,Coating,Photochromic,Optical Design,Price,Description
+BrandA,ModelX,1.61,Normal UV blocker,Normal,Everyday quality,150,Daily use
+BrandB,ModelY,1.67,Normal Blue Light Filter,Extra Dark,Custom Enhanced Optical calculation,220,Office use
+BrandC,ModelZ,1.74,Low reflection coating,Normal,Custom Common Optics,200,Low reflection lens
+BrandD,ModelW,1.50,Enhance vision in low light,Extra Fast,Everyday quality,180,Enhanced vision lens
+`;
+
+// === CSV Parsing ===
+function parseCSV(csv){
+  const [header, ...lines] = csv.trim().split("\n");
+  const keys = header.split(",");
+  return lines.map(line=>{
+    const values = line.split(",");
+    let obj={};
+    keys.forEach((key,i)=>obj[key.trim()]=values[i].trim());
+    return obj;
+  });
+}
+
+// === Get multiple selected values for filtering ===
+function getSelectedValues(name){
+  return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(e=>e.value);
+}
+
+// === Populate results table ===
+function populateTable(){
+  const data = parseCSV(csvData);
+  const tbody = document.getElementById("resultsBody");
+  tbody.innerHTML = "";
+  
+  const selectedCoating = getSelectedValues('coat');
+  const selectedPhoto = getSelectedValues('photo');
+  const selectedDesign = getSelectedValues('design');
+  
+  data.forEach(item=>{
+    // Filter: only include if the item's property matches any of the selected values or no selection
+    const coatingMatch = selectedCoating.length===0 || selectedCoating.includes(item.Coating);
+    const photoMatch   = selectedPhoto.length===0 || selectedPhoto.includes(item.Photochromic);
+    const designMatch  = selectedDesign.length===0 || selectedDesign.includes(item["Optical Design"]);
+    
+    if(coatingMatch && photoMatch && designMatch){
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${item.Brand}</td>
+        <td>${item.Model}</td>
+        <td>${item.Index}</td>
+        <td>${item.Coating}</td>
+        <td>${item.Photochromic}</td>
+        <td>${item["Optical Design"]}</td>
+        <td>${item.Price}</td>
+        <td>${item.Description}</td>
+      `;
+      tbody.appendChild(tr);
+    }
+  });
+}
+
+document.getElementById("btnShow").addEventListener("click", populateTable);
+</script>
