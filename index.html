@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Lens Selector</title>
+<title>Lens Selector (Geometry & Fitting V12)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
   :root{
@@ -10,286 +10,597 @@
     --pale:#ffffe0;
     --off:#f8f8f5;
     --line:#d7d7cf;
+    --warn:#B42318;
+    --barOD:#b0a2d9;
+    --barOS:#d0c9eb;
+    --frame:#a9a9a9;
+    --btn-bg:#0b3d2e;
+    --btn-text:#ffffe0;
+    --btn-border:#ffffff;
   }
-  html,body{background:var(--off); color:var(--green); font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; font-size:12px; line-height:1.35; margin:0}
-  h1{font-size:12px; text-align:center; margin:12px 0 8px}
-  h3{font-size:12px; margin:0 0 8px}
-  .wrap{max-width:600px; margin:0 auto; padding:12px}
-  .section{background:var(--pale); border:1px solid var(--line); border-radius:10px; padding:12px; margin:10px 0}
-  .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
-  label{font-weight:600}
-  input[type="text"], input[type="number"], textarea{
-    font-size:10px; padding:6px 8px; border:1px solid #c9c9c1; border-radius:6px; background:#fff; color:var(--green)
-  }
-  textarea{min-height:48px; width:100%}
-  .field{display:flex; flex-direction:column; gap:4px}
-  .field.inline{flex-direction:row; align-items:center; gap:6px}
-  .field.w150{width:150px}
-  .field.w70{width:70px}
-  .rx table{width:100%; border-collapse:collapse}
-  .rx th,.rx td{border:1px solid var(--line); padding:6px; text-align:center}
-  .rx th{background:#e8e8dd; font-weight:700}
-  .options{display:flex; flex-wrap:wrap; gap:14px}
-  .options label{font-weight:400; display:inline-flex; align-items:center; gap:6px; cursor:pointer}
-  .muted{opacity:.8}
-  .note{font-style:italic; opacity:.8}
-  button{
-    background:var(--green); color:var(--pale); border:0; padding:8px 12px; border-radius:8px; cursor:pointer; font-size:12px; font-weight:700
-  }
-  .results table{width:100%; border-collapse:collapse}
-  .results th,.results td{border:1px solid var(--line); padding:6px; text-align:left}
-  .results th{background:#e8e8dd}
-  .logoCell{width:52px}
-  .badge{display:inline-block; padding:2px 6px; border-radius:6px; border:1px solid var(--green); margin-left:6px}
-  .hidden{display:none}
-  .help{margin-top:6px}
-  .tiny{font-size:11px; opacity:.9}
 
-/* Prescription table */
-table input {
-  width: 60px;
-  text-align: center;
-  font-size: 10px;
-}
-table {
-  width: auto;
-  margin: auto;
-}
+  html,body{
+    background:var(--off);
+    color:var(--green);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    font-size:12px;
+    line-height:1.35;
+    margin:0;
+  }
+  h1{font-size:13px;text-align:center;margin:12px 0 10px;}
+  h3{font-size:12px;margin:0 0 8px;}
+  .wrap{width:90%;max-width:900px;margin:0 auto;padding:12px;}
+  .section{background:var(--pale);border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;}
+  table{width:100%;border-collapse:collapse;}
+  th,td{border:1px solid var(--line);padding:6px;text-align:center;}
+  th{background:#e8e8dd;}
+
+  /* Inputs */
+  input[type="text"], input[type="number"]{
+    width:90px;font-size:12px;padding:4px 6px;border:1px solid #c9c9c1;border-radius:6px;
+    text-align:center;background:#fff;color:var(--green);
+  }
+  label{font-weight:600}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .field{display:flex;flex-direction:column;gap:4px}
+  .field.w90{width:90px}
+  .tiny{font-size:12px;opacity:1}
+  .muted{opacity:1}
+
+  /* Buttons with white inner border */
+  button{
+    background:var(--btn-bg);
+    color:var(--btn-text);
+    border:2px solid var(--btn-border);
+    padding:8px 12px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:12px;
+    font-weight:700;
+  }
+  button:focus{outline:2px solid #fff4; outline-offset:2px;}
+  button:hover{filter:brightness(1.05);}
+  button:active{transform:translateY(1px);}
+
+  /* Pane boxes (white interior) */
+  .pane{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:10px;
+  }
+  .pane h4{margin:0 0 8px;font-size:12px}
+
+  /* Bars */
+  .bar-row{display:flex;align-items:flex-start;gap:10px;margin:6px 0;flex-wrap:wrap}
+  .bar-label{width:40px;text-align:right;font-weight:bold}
+  .bar-pair{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap} /* visual gap between OD & OS */
+  .bar-block{display:flex;flex-direction:column;gap:3px;min-width:220px}
+  .bar{height:12px;border-radius:2px}
+  .bar-frame{height:6px;border-radius:2px;background:var(--frame)}
+  .bar-text{font-size:12px;opacity:1}
+
+  /* Filters inside panes */
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 2px}
+  .chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border:1px solid var(--line);border-radius:12px;background:#fff}
+
+  @media(max-width:640px){
+    input[type="text"],input[type="number"]{width:70px}
+    .row{flex-direction:column;align-items:flex-start}
+    .bar-block{min-width:180px}
+  }
 </style>
 </head>
 <body>
 
 <div class="wrap">
-  <h1>Lens Selector</h1>
+  <h1>Lens Selector (Geometry & Fitting)</h1>
 
-  <!-- Customer info -->
+  <!-- Prescription + Frame -->
   <div class="section">
-    <h3>Customer</h3>
-    <div class="row">
-      <div class="field w150"><label for="custName">Name</label><input id="custName" type="text" placeholder="e.g. Aisyah Tan" /></div>
-      <div class="field w150"><label for="custWhatsApp">WhatsApp</label><input id="custWhatsApp" type="text" placeholder="+60…" /></div>
-      <div class="field w70"><label for="custPD">Total PD</label><input id="custPD" type="text" placeholder="62" /></div>
-      <div class="field w70"><label for="lensSize">Lens Size</label><input id="lensSize" type="text" placeholder="50" /></div>
-      <div class="field w70"><label for="bridge">Bridge</label><input id="bridge" type="text" placeholder="18" /></div>
-    </div>
-  </div>
-
-  <!-- Prescription -->
-  <div class="section rx">
-    <h3>Prescription</h3>
+    <h3>Prescription & Frame Details</h3>
     <table>
-      <thead>
-        <tr><th>Side</th><th>Sph</th><th>Cyl</th><th>Axis</th><th>ADD</th><th>Max RX</th></tr>
-      </thead>
+      <thead><tr><th>Eye</th><th>Sph</th><th>Cyl</th><th>Axis</th></tr></thead>
       <tbody>
         <tr>
-          <td>Right</td>
-          <td><input id="sph-od" type="text" class="rx-sph" placeholder="0.00" /></td>
-          <td><input id="cyl-od" type="text" class="rx-cyl" placeholder="0.00" /></td>
-          <td><input id="axis-od" type="text" class="rx-axis" placeholder="0" /></td>
-          <td><input id="add-od" type="text" placeholder="0.00" /></td>
-          <td><input id="max-od" type="text" readonly /></td>
+          <td><b>OD</b></td>
+          <!-- text inputs so + sign is preserved -->
+          <td><input type="text" id="sphOD" placeholder="e.g. -3.25"></td>
+          <td><input type="text" id="cylOD" placeholder="e.g. -1.25"></td>
+          <td><input type="number" id="axisOD" step="1" placeholder="e.g. 180"></td>
         </tr>
         <tr>
-          <td>Left</td>
-          <td><input id="sph-os" type="text" class="rx-sph" placeholder="0.00" /></td>
-          <td><input id="cyl-os" type="text" class="rx-cyl" placeholder="0.00" /></td>
-          <td><input id="axis-os" type="text" class="rx-axis" placeholder="0" /></td>
-          <td><input id="add-os" type="text" placeholder="0.00" /></td>
-          <td><input id="max-os" type="text" readonly /></td>
+          <td><b>OS</b></td>
+          <td><input type="text" id="sphOS" placeholder="e.g. +2.00"></td>
+          <td><input type="text" id="cylOS" placeholder="e.g. -0.75"></td>
+          <td><input type="number" id="axisOS" step="1" placeholder="e.g. 90"></td>
         </tr>
       </tbody>
     </table>
-  </div>
 
-  <!-- Lead time -->
-  <div class="section">
-    <h3>Lead Time</h3>
-    <div class="options" id="q-lead">
-      <label><input type="checkbox" name="lead" value="Ready-made"> Ready-made lenses (1–3 days)</label>
-      <label><input type="checkbox" name="lead" value="Custom-made"> Custom-made (7–10 days)</label>
+    <div class="row" style="margin-top:12px; gap:20px;">
+      <div class="field w90"><label for="frameA">Frame Size (A)</label><input id="frameA" type="number" placeholder="e.g. 52"></div>
+      <div class="field w90"><label for="frameDBL">Bridge (DBL)</label><input id="frameDBL" type="number" placeholder="e.g. 17"></div>
+      <div class="field w90"><label for="monoPD_OD">Right PD</label><input id="monoPD_OD" type="number" placeholder="e.g. 31"></div>
+      <div class="field w90"><label for="monoPD_OS">Left PD</label><input id="monoPD_OS" type="number" placeholder="e.g. 32"></div>
+      <div class="field w90" style="display:none;"><label for="safety">Safety</label><input id="safety" type="number" placeholder="2" value="2"></div>
     </div>
   </div>
 
-  <!-- Lens Type -->
+  <!-- Stacked panes: 1) Thickness calc, 2) Price cap, 3) Fetch -->
   <div class="section">
-    <h3>Lens Type</h3>
-    <div class="options" id="q-type">
-      <label><input type="checkbox" name="type" value="Single Focal Lens"> Single Focal Lens</label>
-      <label><input type="checkbox" name="type" value="Multi-focal Lens"> Multi-focal Lens</label>
-      <label><input type="checkbox" name="type" value="Office Multi-focal Lens"> Office Multi-focal Lens</label>
-      <label><input type="checkbox" name="type" value="Near Relaxed Lens"> Near Relaxed Lens</label>
+    <!-- 1: Thickness Calculation -->
+    <div class="pane" style="margin-bottom:10px;">
+      <h4>Thickness Calculation</h4>
+      <div class="row" style="gap:10px;">
+Choose either
+        <button id="btnCalc">Calculate by Frame Details</button> or 
+        <button id="btnLength">Calculate by Length (mm)</button>
+   
+          <label for="lengthInput" style="Display:none;">Length (mm)</label>
+          <input id="lengthInput" type="number" value="30" step="1" style="width:40px;">
+      </div>
     </div>
+
+   
+
+
+
+  <!-- Thickness -->
+    <div class="pane" style="margin-bottom:10px;">
+    <h3>Minimum Blank Size & Thickness Preview</h3>
+    <div id="thicknessBars" style="margin-top:10px;"></div>
+    <div id="thickNote" class="tiny muted" style="margin-top:4px;"></div>
+    <div id="mbsLine" class="tiny"></div>
   </div>
 
-  <!-- Index -->
-  <div class="section">
-    <h3>Index</h3>
-    <div class="options" id="q-index">
-      <label><input type="checkbox" name="index" value="1.50"> 1.50 <span class="tiny">(Range: +2.00 to -3.00)</span><span id="badge-1.50" class="badge muted tiny"></span></label>
-      <label><input type="checkbox" name="index" value="1.61"> 1.61 <span class="tiny">(Range: +4.00 to -6.00)</span><span id="badge-1.61" class="badge muted tiny"></span></label>
-      <label><input type="checkbox" name="index" value="1.67"> 1.67 <span class="tiny">(Range: +5.00 to -8.00)</span><span id="badge-1.67" class="badge muted tiny"></span></label>
-      <label><input type="checkbox" name="index" value="1.74"> 1.74 <span class="tiny">(Range: +7.00 to -12.00)</span><span id="badge-1.74" class="badge muted tiny"></span></label>
-    </div>
-    <div class="help tiny">Higher percent = thicker lens.</div>
-  </div>
+  <!-- Lens Options with Filters in white panes -->
+    <div class="pane" style="margin-bottom:10px;">
+    <h3>Lens Options</h3>
+ Fetch Lenses Needs Thickness Calculation First <button id="btnFetch">Fetch Lenses</button>
+    <span id="status" class="tiny muted"></span>
+    <button id="btnClearFilters">Clear All Filters</button>
 
-  <!-- Coating -->
-  <div class="section">
-    <h3>Coating</h3>
-    <div class="options" id="q-coating">
-      <label><input type="checkbox" name="coat" value="Normal UV blocker"> Normal UV blocker</label>
-      <label><input type="checkbox" name="coat" value="Normal Blue Light Filter"> Normal Blue Light Filter</label>
-      <label><input type="checkbox" name="coat" value="Enhance vision in low light"> Enhance vision in low light</label>
-      <label><input type="checkbox" name="coat" value="Low reflection coating"> Low reflection coating</label>
-      <label><input type="checkbox" name="coat" value="Durability coating"> Durability coating</label>
-    </div>
-  </div>
-
-  <!-- Photochromic -->
-  <div class="section">
-    <h3>Photochromic Ability</h3>
-    <div class="options" id="q-photo">
-      <label><input type="checkbox" name="photo" value="No"> No</label>
-      <label><input type="checkbox" name="photo" value="Normal"> Normal</label>
-      <label><input type="checkbox" name="photo" value="Extra Dark"> Extra Dark</label>
-      <label><input type="checkbox" name="photo" value="Extra Fast"> Extra Fast</label>
-    </div>
-  </div>
-
-  <!-- Optical Design -->
-  <div class="section">
-    <h3>Optical Design</h3>
-    <div class="options" id="q-design">
-      <label><input type="checkbox" name="design" value="Everyday quality"> Everyday quality</label>
-      <label><input type="checkbox" name="design" value="Custom Common Optics"> Custom Common Optics</label>
-      <label><input type="checkbox" name="design" value="Custom Enhanced Optical calculation"> Custom Enhanced Optical calculation</label>
-    </div>
-  </div>
-
-  <!-- Results Table (without Logo) -->
-<div class="section results">
-  <h3>Results</h3>
-  <table id="resultsTable">
-    <thead>
-      <tr>
-        <th>Brand</th><th>Model</th><th>Index</th>
-        <th>Coating</th><th>Photochromic</th><th>Optical Design</th>
-        <th>Price</th><th>Description</th>
-      </tr>
-    </thead>
-    <tbody id="resultsBody">
-      <tr><td colspan="8" class="muted">No results yet — click “Show Results”.</td></tr>
-    </tbody>
-  </table>
+<div class="pane" style="margin:10px 0px 10px 0px;">
+      <h4>Price (RM)</h4>
+      <div class="row" style="gap:8px;align-items:center;">
+        Max Price <input id="priceCap" type="number" placeholder="e.g. 1000" style="width:110px;">
+        <button id="capMinus">– RM100</button>
+        <button id="capPlus">+ RM100</button>
+</div>
 </div>
 
+    <div class="pane" style="margin-bottom:10px;">
+      <h4>Appearance</h4>
+      <div class="filters">
+        <label class="chip"><input type="checkbox" class="fl-appear" value="Clear" checked> Clear</label>
+        <label class="chip"><input type="checkbox" class="fl-appear" value="Photochromic" checked> Photochromic</label>
+        <label class="chip"><input type="checkbox" class="fl-appear" value="Tinted" checked> Tinted</label>
+        <label class="chip"><input type="checkbox" class="fl-appear" value="Polarized" checked> Polarized</label>
+      </div>
+    </div>
 
+    <div class="pane" style="margin-bottom:10px;">
+      <h4>Index Group</h4>
+      <div class="filters">
+        <label class="chip"><input type="checkbox" class="fl-index" value="1.5" checked> 1.5 group</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="Safety" checked> Safety (1.53/1.59)</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="1.6" checked> 1.6 group</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="1.67" checked> 1.67 group</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="1.74" checked> 1.74 group</label>
+      </div>
+    </div>
+
+    <div class="pane" style="margin-bottom:10px;">
+      <h4>Function</h4>
+      <div class="filters">
+        <label class="chip"><input type="checkbox" class="fl-func" value="SV" checked> SV</label>
+        <label class="chip"><input type="checkbox" class="fl-func" value="Multifocal" checked> Multifocal</label>
+        <label class="chip"><input type="checkbox" class="fl-func" value="Office" checked> Office</label>
+        <label class="chip"><input type="checkbox" class="fl-func" value="Anti-fatigue" checked> Anti-Fatigue</label>
+      </div>
+    </div>
+
+    <table id="resultsTable" style="margin-top:8px;">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Index</th>
+          <th>Type</th>
+          <th>Price (UV420)</th>
+          <th>High-Clarity +RM</th>
+          <th>Stock/RX</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody">
+        <tr><td colspan="6" class="muted">Calculate thickness first, then click “Fetch Lenses”.</td></tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <script>
-// === Prescription helpers ===
-function snapQuarter(value){
-  if(value === "" || isNaN(parseFloat(value))) return 0;
-  let num = parseFloat(value);
-  return Math.round(num * 4) / 4;
-}
-function formatSigned(num){return (num>=0?"+":"")+num.toFixed(2);}
-function updateMaxPower(eye){
-  let sph=document.getElementById(`sph-${eye}`),
-      cyl=document.getElementById(`cyl-${eye}`),
-      axis=document.getElementById(`axis-${eye}`),
-      max=document.getElementById(`max-${eye}`);
-  let s=snapQuarter(sph.value), c=snapQuarter(cyl.value), a=parseInt(axis.value)||0;
-  sph.value=formatSigned(s); cyl.value=formatSigned(c);
-  if(a<=0) a=180; if(a>180) a=180; axis.value=a;
-  let maxVal=Math.abs(s)>Math.abs(s+c)?s:s+c; max.value=formatSigned(maxVal);
-}
-["od","os"].forEach(e=>["sph-"+e,"cyl-"+e,"axis-"+e].forEach(id=>{
-  document.getElementById(id).addEventListener("blur",()=>updateMaxPower(e));
-}));
+/* =========================
+   CONFIG
+========================= */
+const CSV_URL = "https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/lens%20selector.csv";
+const INDICES = [1.56, 1.60, 1.67, 1.74];
+const CENTER_MINUS = 1.3;   // minus lens min center thickness
+const EDGE_PLUS    = 1.3;   // plus lens min center thickness
+const BASE_PX      = 50 * 0.6; // px per mm before scale radios
 
-// === Index badges ===
-const indexRanges={"1.50":{min:-3,max:2},"1.61":{min:-6,max:4},"1.67":{min:-8,max:5},"1.74":{min:-12,max:7}};
-function getMaxPower(){
-  const sOD=parseFloat(document.getElementById("sph-od").value)||0,
-        cOD=parseFloat(document.getElementById("cyl-od").value)||0,
-        sOS=parseFloat(document.getElementById("sph-os").value)||0,
-        cOS=parseFloat(document.getElementById("cyl-os").value)||0;
-  return Math.max(Math.max(Math.abs(sOD),Math.abs(sOD+cOD)),Math.max(Math.abs(sOS),Math.abs(sOS+cOS)));
+function minusCorr(n){ if(n===1.56) return 1.075; if(n===1.60) return 1.025; return 1; }
+function plusCorr(n){  if(n===1.56) return 1.10;  if(n===1.60) return 1.05;  if(n===1.67) return 1.025; if(n===1.74) return 1.0125; return 1; }
+
+/* =========================
+   STATE
+========================= */
+let PRODUCTS = [];
+let LAST_GEOM = null;   // {semiOD, semiOS, MBS}
+let LAST_MODE = null;   // "frame" | "length"
+
+/* =========================
+   INPUT ROUNDING (text inputs keep + sign)
+========================= */
+function parseToNumber(str){
+  if(!str) return 0;
+  const v = parseFloat(String(str).replace(/\s+/g,'').replace('+',''));
+  return isNaN(v) ? 0 : v;
 }
-function updateIndexBadges(){
-  let maxPower=getMaxPower();
-  Object.keys(indexRanges).forEach(idx=>{
-    let r=indexRanges[idx];
-    let maxR=Math.max(Math.abs(r.min),Math.abs(r.max));
-    let p=Math.round(maxPower/maxR*100); if(p<50) p=50;
-    document.getElementById(`badge-${idx}`).innerText = p+"%";
+function round025number(x){
+  const s = x >= 0 ? 1 : -1;
+  const a = Math.abs(x);
+  const r = Math.round(a / 0.25) * 0.25;
+  return s * r;
+}
+function formatSigned025(x){
+  const v = round025number(x);
+  return (v > 0 ? "+" : "") + v.toFixed(2);
+}
+function onSignedBlur(el){
+  const v = parseToNumber(el.value);
+  el.value = formatSigned025(v);
+}
+function roundAxis(el){
+  let v = parseFloat(el.value);
+  if(isNaN(v)) return;
+  v = Math.round(v);
+  if(v < 0) v += 180;
+  if(v > 180) v = v % 180;
+  el.value = v;
+}
+document.addEventListener("DOMContentLoaded", ()=>{
+  ['sphOD','cylOD','sphOS','cylOS'].forEach(id=>{
+    const el = document.getElementById(id);
+    el.addEventListener('blur', ()=> onSignedBlur(el));
   });
-}
-["sph-od","cyl-od","sph-os","cyl-os"].forEach(id=>{
-  const el=document.getElementById(id);
-  el.addEventListener("blur",updateIndexBadges);
-  el.addEventListener("input",updateIndexBadges);
+  ['axisOD','axisOS'].forEach(id=>{
+    const el = document.getElementById(id);
+    el.addEventListener('blur', ()=> roundAxis(el));
+  });
 });
 
-// === CSV Database (single coating per lens) ===
-const csvData=`Brand,Model,Index,Coating,Photochromic,Optical Design,Price,Description
-BrandA,ModelX,1.61,Normal UV blocker,Normal,Everyday quality,150,Daily use
-BrandB,ModelY,1.67,Normal Blue Light Filter,Extra Dark,Custom Enhanced Optical calculation,220,Office use
-BrandC,ModelZ,1.74,Low reflection coating,Normal,Custom Common Optics,200,Low reflection lens
-BrandD,ModelW,1.50,Enhance vision in low light,Extra Fast,Everyday quality,180,Enhanced vision lens
-`;
+/* =========================
+   OPTICS
+========================= */
+function effectivePower(S,C,axisDeg){
+  const a = ((axisDeg % 180) + 180) % 180;
+  const s = Math.sin(a * Math.PI / 180);
+  return S + C * s * s; // horizontal meridian power
+}
+function minusThickness(S,C,A,n,y){
+  const Fh = Math.abs(effectivePower(S,C,A));
+  let t = CENTER_MINUS + (y*y*Fh)/(2000*(n-1));
+  t *= minusCorr(n);
+  return t;
+}
+function plusThickness(S,C,A,n,y){
+  const Fh = effectivePower(S,C,A);
+  let t = EDGE_PLUS + (y*y*Fh)/(2000*(n-1)); // center thickness from rim sag
+  t = Math.max(t, 1.3);
+  t *= plusCorr(n);
+  return t;
+}
 
-// === CSV Parsing ===
-function parseCSV(csv){
-  const [header, ...lines] = csv.trim().split("\n");
-  const keys = header.split(",");
-  return lines.map(line=>{
-    const values = line.split(",");
-    let obj={};
-    keys.forEach((key,i)=>obj[key.trim()]=values[i].trim());
+/* =========================
+   GEOMETRY
+========================= */
+function computeSemi(A, DBL, monoPD, safety=2){
+  const framePDhalf = (A + DBL) / 2;
+  const dec = Math.abs(framePDhalf - monoPD);
+  return (A/2) + dec + safety;
+}
+function computeMBS(A, DBL, pdOD, pdOS, safety=2){
+  const semiOD = computeSemi(A, DBL, pdOD, safety);
+  const semiOS = computeSemi(A, DBL, pdOS, safety);
+  return { semiOD, semiOS, MBS: 2 * Math.max(semiOD, semiOS) };
+}
+
+/* =========================
+   HELPERS
+========================= */
+function getVal(id){ return parseFloat(document.getElementById(id)?.value) || 0; }
+function parseRx(){
+  const SOD = parseToNumber(document.getElementById("sphOD")?.value);
+  const COD = parseToNumber(document.getElementById("cylOD")?.value);
+  const SOS = parseToNumber(document.getElementById("sphOS")?.value);
+  const COS = parseToNumber(document.getElementById("cylOS")?.value);
+  return {
+    OD:{ S:SOD, C:COD, Ax:getVal("axisOD") },
+    OS:{ S:SOS, C:COS, Ax:getVal("axisOS") }
+  };
+}
+
+/* =========================
+   CSV LOADING (DOM-safe)
+========================= */
+async function loadCSV(url){
+  const res = await fetch(url, { cache:"no-store" });
+  if(!res.ok) throw new Error("HTTP "+res.status);
+  const text = await res.text();
+  const rows = text.trim().split(/\r?\n/).map(r => r.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/));
+  const headers = rows[0].map(h => h.replace(/^"|"$/g,'').trim());
+  return rows.slice(1).map(r=>{
+    const obj={};
+    r.forEach((val,i)=> obj[headers[i]] = (val||"").replace(/^"|"$/g,'').trim() );
     return obj;
   });
 }
+async function init(){
+  const statusEl = document.getElementById("status");
+  if(statusEl) statusEl.textContent = "Loading CSV…";
+  try{
+    PRODUCTS = await loadCSV(CSV_URL);
+    if(statusEl) statusEl.textContent = ""; // blank on success
+  }catch(e){
+    if(statusEl) statusEl.textContent = "CSV load failed.";
+    console.error("CSV load error:", e);
+  }
+}
+document.addEventListener("DOMContentLoaded", init);
 
-// === Get multiple selected values for filtering ===
-function getSelectedValues(name){
-  return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(e=>e.value);
+/* =========================
+   FILTER GROUPING HELPERS
+========================= */
+function getAppearance(val=""){
+  const s = val.toLowerCase();
+  if(s.includes("polar")) return "Polarized";
+  if(s.includes("tint"))  return "Tinted";
+  if(s.includes("chang") || s.includes("photo")) return "Photochromic";
+  return "Clear";
+}
+function getIndexGroup(val=""){
+  const n = parseFloat(val)||0;
+  if(n===1.53 || n===1.59) return "Safety";
+  if(n>=1.49 && n<1.59)    return "1.5";
+  if(n>=1.59 && n<1.65)    return "1.6";
+  if(n>=1.65 && n<1.71)    return "1.67";
+  if(n>=1.73 && n<1.76)    return "1.74";
+  if(Math.abs(n-1.67)<0.02) return "1.67";
+  if(Math.abs(n-1.60)<0.02) return "1.6";
+  if(Math.abs(n-1.74)<0.02) return "1.74";
+  return "1.5";
+}
+function getFunctionCat(val=""){
+  const s = val.toLowerCase();
+  if(s.includes("anti")) return "Anti-fatigue";
+  if(s.includes("office") || s.includes("room")) return "Office";
+  if(s.includes("pal") || s.includes("progress") || s.includes("multi")) return "Multifocal";
+  return "SV";
+}
+function checkedValues(selector){
+  return Array.from(document.querySelectorAll(selector)).filter(i=>i.checked).map(i=>i.value);
 }
 
-// === Populate results table ===
-function populateTable(){
-  const data = parseCSV(csvData);
-  const tbody = document.getElementById("resultsBody");
-  tbody.innerHTML = "";
-  
-  const selectedCoating = getSelectedValues('coat');
-  const selectedPhoto = getSelectedValues('photo');
-  const selectedDesign = getSelectedValues('design');
-  
-  data.forEach(item=>{
-    // Filter: only include if the item's property matches any of the selected values or no selection
-    const coatingMatch = selectedCoating.length===0 || selectedCoating.includes(item.Coating);
-    const photoMatch   = selectedPhoto.length===0 || selectedPhoto.includes(item.Photochromic);
-    const designMatch  = selectedDesign.length===0 || selectedDesign.includes(item["Optical Design"]);
-    
-    if(coatingMatch && photoMatch && designMatch){
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td>${item.Brand}</td>
-        <td>${item.Model}</td>
-        <td>${item.Index}</td>
-        <td>${item.Coating}</td>
-        <td>${item.Photochromic}</td>
-        <td>${item["Optical Design"]}</td>
-        <td>${item.Price}</td>
-        <td>${item.Description}</td>
-      `;
-      tbody.appendChild(tr);
+/* =========================
+   RESULTS TABLE
+========================= */
+function withinCap(price, cap){ if(!cap) return true; return Number(price) <= cap * 1.10; } // buffer kept silently
+function buildResults(geom, rx){
+  const body = document.getElementById("resultsBody");
+  body.innerHTML = "";
+
+  if(!geom){
+    body.innerHTML = `<tr><td colspan="6" class="muted">Calculate thickness first, then click “Fetch Lenses”.</td></tr>`;
+    return;
+  }
+
+  const appearSet = checkedValues(".fl-appear");
+  const indexSet  = checkedValues(".fl-index");
+  const funcSet   = checkedValues(".fl-func");
+
+  const cap = parseFloat(document.getElementById("priceCap").value)||0;
+  const FhOD = effectivePower(rx.OD.S, rx.OD.C, rx.OD.Ax);
+
+  let count = 0;
+  PRODUCTS.forEach(row=>{
+    const price = parseFloat(row["UV_420_BL_PRICE_RM"]||"0");
+    if(!withinCap(price, cap)) return;
+
+    const app = getAppearance(row["CLEAR_CHANGING_TINT"]||"");
+    const idxGroup = getIndexGroup(row["INDEX"]||"");
+    const func = getFunctionCat(row["FUNCTION"]||"");
+
+    if(appearSet.length && !appearSet.includes(app)) return;
+    if(indexSet.length  && !indexSet.includes(idxGroup)) return;
+    if(funcSet.length   && !funcSet.includes(func)) return;
+
+    const dia = parseFloat(row["DIA"]||"0");
+    let stockMsg = "Stock OK";
+    if(dia < geom.MBS){
+      const shortfall = +(geom.MBS - dia).toFixed(1);
+      const prism = Math.abs(((shortfall/2)/10) * FhOD).toFixed(1); // Prentice
+      const isStock = /stock/i.test(row["LENS_DESIGN"]||"") || /stock/i.test(row["PRODUCT_NAME"]||"");
+      stockMsg = isStock
+        ? `<span style="color:var(--warn);font-weight:700;">⚠ Lens too small – ${prism}Δ prism risk.</span>`
+        : `Custom diameter +RM100 (larger lens).`;
     }
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${row["PRODUCT_NAME"]||""}</td>
+      <td>${row["INDEX"]||""}</td>
+      <td>${app} / ${func}</td>
+      <td>${price ? "RM"+price : "—"}</td>
+      <td>${row["HIGH_CLARITY_COATING_PRICE_RM"] ? "+RM"+row["HIGH_CLARITY_COATING_PRICE_RM"] : "—"}</td>
+      <td>${stockMsg}</td>
+    `;
+    body.appendChild(tr);
+    count++;
   });
+
+  if(!count){
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td colspan="6" class="muted">No items match filters or price cap.</td>`;
+    body.appendChild(tr);
+  }
 }
 
-document.getElementById("btnShow").addEventListener("click", populateTable);
+/* =========================
+   BARS / THICKNESS
+========================= */
+function renderBars(rx, geom, mode, lenOverride){
+  const container = document.getElementById("thicknessBars");
+  container.innerHTML = `
+    <div style="margin-bottom:8px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+      <label>Frame Thickness (mm):
+        <input type="number" id="frameThickness" value="3.5" step="0.5" style="width:45px;">
+      </label>
+      <span style="font-weight:600;">------- &nbsp;&nbsp;&nbspChange Bar Scale:</span>
+      <label><input type="radio" name="barScale" value="1"> 100%</label>
+      <label><input type="radio" name="barScale" value="0.66" checked> 66%</label>
+      <label><input type="radio" name="barScale" value="0.33"> 33%</label>
+    </div>
+  `;
+
+  const frameInput = container.querySelector("#frameThickness");
+  let scale = 0.66;
+
+  container.querySelectorAll('input[name="barScale"]').forEach(r=>{
+    r.addEventListener("change", ()=>{ scale=parseFloat(r.value); draw(); });
+  });
+  frameInput.addEventListener("input", ()=>draw());
+
+  function eyeLabel(isPlus){ return isPlus ? "(center)" : "(edge)"; }
+
+  function draw(){
+    container.querySelectorAll(".bar-row").forEach(e=>e.remove());
+    const frameT = parseFloat(frameInput.value)||0;
+
+    INDICES.forEach(n=>{
+      const yOD = (mode==="length") ? lenOverride : geom.semiOD;
+      const yOS = (mode==="length") ? lenOverride : geom.semiOS;
+
+      const FhOD = effectivePower(rx.OD.S,rx.OD.C,rx.OD.Ax);
+      const FhOS = effectivePower(rx.OS.S,rx.OS.C,rx.OS.Ax);
+      const isPlusOD = FhOD >= 0;
+      const isPlusOS = FhOS >= 0;
+
+      const tOD = isPlusOD ? plusThickness(rx.OD.S,rx.OD.C,rx.OD.Ax,n,yOD)
+                           : minusThickness(rx.OD.S,rx.OD.C,rx.OD.Ax,n,yOD);
+      const tOS = isPlusOS ? plusThickness(rx.OS.S,rx.OS.C,rx.OS.Ax,n,yOS)
+                           : minusThickness(rx.OS.S,rx.OS.C,rx.OS.Ax,n,yOS);
+
+      const px = BASE_PX * scale;
+      const odLen = tOD * px, osLen = tOS * px, frameLen = frameT * px;
+
+      const row = document.createElement("div");
+      row.className = "bar-row";
+      row.innerHTML = `
+        <div class="bar-label">${n.toFixed(2)}</div>
+        <div class="bar-pair">
+          <div class="bar-block">
+            <div class="bar" style="background:var(--barOD);width:${odLen}px;"></div>
+            <div class="bar-frame" style="width:${frameLen}px;"></div>
+            <div class="bar-text">Right Lens ${tOD.toFixed(1)} mm ${eyeLabel(isPlusOD)}</div>
+          </div>
+          <div class="bar-block">
+            <div class="bar" style="background:var(--barOS);width:${osLen}px;"></div>
+            <div class="bar-frame" style="width:${frameLen}px;"></div>
+            <div class="bar-text">Left Lens ${tOS.toFixed(1)} mm ${eyeLabel(isPlusOS)}</div>
+          </div>
+        </div>
+      `;
+      container.appendChild(row);
+    });
+
+    // concise note
+const note = [];
+const odStatus = effectivePower(rx.OD.S, rx.OD.C, rx.OD.Ax) >= 0
+  ? "center thickness (plus)"
+  : "edge thickness (minus)";
+const osStatus = effectivePower(rx.OS.S, rx.OS.C, rx.OS.Ax) >= 0
+  ? "center thickness (plus)"
+  : "edge thickness (minus)";
+
+note.push(`Right Lens shows <strong>${odStatus}</strong>`);
+note.push(`Left Lens shows <strong>${osStatus}</strong>`);
+
+document.getElementById("thickNote").innerHTML = note.join(" &nbsp;•&nbsp; ");
+
+  }
+  draw();
+}
+
+/* =========================
+   BUTTONS & FLOW
+========================= */
+document.addEventListener("DOMContentLoaded", ()=>{
+  // Price cap adjusters
+  document.getElementById("capPlus").onclick=()=>{const e=document.getElementById("priceCap");e.value=(parseFloat(e.value)||0)+100;};
+  document.getElementById("capMinus").onclick=()=>{const e=document.getElementById("priceCap");e.value=Math.max(0,(parseFloat(e.value)||0)-100);};
+
+  // Calculate by Frame — thickness only
+  document.getElementById("btnCalc").onclick=()=>{
+    const rx = parseRx();
+    const A = getVal("frameA"), DBL = getVal("frameDBL");
+    const pdOD = getVal("monoPD_OD"), pdOS = getVal("monoPD_OS");
+    const safety = getVal("safety") || 2;
+
+    if(!A || !DBL || !pdOD || !pdOS){
+      document.getElementById("mbsLine").innerHTML = "<span style='color:var(--warn);'>Please key in frame details and PD.</span>";
+      LAST_GEOM = null; LAST_MODE = null;
+      document.getElementById("thicknessBars").innerHTML = "";
+      document.getElementById("thickNote").textContent = "";
+      return;
+    }
+
+    LAST_GEOM = computeMBS(A,DBL,pdOD,pdOS,safety); // {semiOD, semiOS, MBS}
+    LAST_MODE = "frame";
+    document.getElementById("mbsLine").innerHTML = `<strong> - Minimum Blank Size:</strong> <strong> ${LAST_GEOM.MBS.toFixed(1)} mm</strong>`;
+    renderBars(rx, LAST_GEOM, "frame");
+  };
+
+  // Calculate by Length — thickness only
+  document.getElementById("btnLength").onclick=()=>{
+    const rx = parseRx();
+    const len = getVal("lengthInput") || 30;
+    LAST_GEOM = { semiOD: len, semiOS: len, MBS: 2*len };
+    LAST_MODE = "length";
+    document.getElementById("mbsLine").textContent = `Thickness at ${len} mm`;
+    renderBars(rx, LAST_GEOM, "length", len);
+  };
+
+  // Fetch Lenses — uses LAST_GEOM + filters
+  document.getElementById("btnFetch").onclick=()=>{
+    const rx = parseRx();
+    buildResults(LAST_GEOM, rx);
+  };
+});
+
+// Clear all filter checkboxes (does not auto-fetch)
+document.getElementById("btnClearFilters").onclick = () => {
+  document.querySelectorAll('.fl-appear, .fl-index, .fl-func')
+    .forEach(cb => cb.checked = false);
+
+  // Optional: also clear the table message so it's obvious filters are cleared
+  // const body = document.getElementById("resultsBody");
+  // body.innerHTML = `<tr><td colspan="6" class="muted">Filters cleared. Click “Fetch Lenses”.</td></tr>`;
+};
+
+
+
 </script>
+
+</body>
+</html>
