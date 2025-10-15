@@ -1,4 +1,354 @@
 BRAND,PRODUCT_NAME,LENS_DESIGN,CLEAR_CHANGING_TINT,INDEX,EXTRA_NOTE,UV_400_PRICE_RM,UV_420_BL_PRICE_RM,HIGH_CLARITY_COATING_PRICE_RM,DIA,SPH_MIN,SPH_MAX,CYL_MIN,CYL_MAX,DURABILITY_LEVEL,TINT_OPTION,TINT_SURCHARGE,VIEWING_STYLE,MF_VIEWING,MF_ZONE,MF_TIER,MF_PERSONALIZATION
+Pentax , Allfocus Expert,Progressive,POLARIZED,1.5, Polarised,3250,3445, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,CLEAR,1.5,-,1950,2145, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,CLEAR,1.55,-,2080,2275,2375,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,CLEAR,1.59,-,2275,2470, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,CLEAR,1.6,-,2470,2665,2765,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,POLARIZED,1.59, Polarised,3900,4095, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,POLARIZED,1.6, Polarised,4420,4615, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.5, Sensity 2,3055,3250, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.55, Sensity 2,3185,3380, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.59, Sensity 2,3380,3575, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6, Sensity 2,3575,3770, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,3155,3350, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,3285,3480, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,3480,3675, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,3675,3870, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,CLEAR,1.67,-,2860,3055,3155,70,+7.50,-13.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67, Sensity 2,3695,4160, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,3795,4260, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Expert,Progressive,CLEAR,1.74,-,3640,3835, -,70,+9.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Double,Full
+Pentax , Allfocus Flex,Progressive,POLARIZED,1.5, Polarised,2600,2795, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,POLARIZED,1.59, Polarised,3250,3445, -,70,+4.50,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,POLARIZED,1.6, Polarised,3770,3965, -,70,+4.50,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,CLEAR,1.5,-,1300,1495, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,CLEAR,1.55,-,1431,1628,1728,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,CLEAR,1.59,-,1625,1820, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,CLEAR,1.6,-,1820,2015,2115,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.5, Sensity 2,2405,2600, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.55, Sensity 2,2535,2730, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.59, Sensity 2,2730,2925, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.6, Sensity 2,2925,3120, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,2505,2700, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,2635,2830, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,2830,3025, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,3025,3220, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,CLEAR,1.67,-,2210,2405,2505,70,+7.50,-13.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.67, Sensity 2,3315,3510, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,3415,3610, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Flex,Progressive,CLEAR,1.74,-,2990,3185, -,70,+12.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Pentax , Allfocus Pro,Progressive,POLARIZED,1.5, Polarised,2795,2990, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,POLARIZED,1.6, Polarised,3965,4160, -,70,+4.50,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,CLEAR,1.5,-,1495,1690, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,CLEAR,1.55,-,1625,1820,1920,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,CLEAR,1.59,-,1820,2015, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,CLEAR,1.6,-,2015,2210,2310,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,POLARIZED,1.59, Polarised,3445,3640, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.5, Sensity 2,2600,2795, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.55, Sensity 2,2730,2925, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.59, Sensity 2,2925,3120, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.6, Sensity 2,3120,3315, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,2700,2895, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,2830,3025, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,3025,3220, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,3220,3415, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,CLEAR,1.67,-,2405,2600,2700,70,+7.50,-13.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67, Sensity 2,3510,3705, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,3610,3805, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near|Equal,Single,Partial
+Pentax , Allfocus Pro,Progressive,CLEAR,1.74,-,3185,3380, -,70,+9.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Seiko , Emblem,Progressive,CLEAR,1.5,-,2200,2300,2400,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Seiko , Emblem,Progressive,CLEAR,1.6,-,2700,2800,2900,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Seiko , Emblem,Progressive,CLEAR,1.67,-,3300,3500,3800,70,+6.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Seiko , Emblem,Progressive,CLEAR,1.74,-,5000,5200,5300,70,+6.00,-7.50,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Seiko , Emblem,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,2800,3000,3100,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko , Emblem,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,3200,3400,3500,70,+6.00,-7.50,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko , Emblem,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,3900,4200,4500,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Rodenstock , Life Free 2,Progressive,CLEAR,1.54,-,1450,2050, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Rodenstock , Life Free 2,Progressive,CLEAR,1.6,-,1850,2450, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Rodenstock , Life Free 2,Progressive,CLEAR,1.67,-,2250,2850, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,2250, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,2650, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,3050, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko ,Prime X ASP Near,Progressive,CLEAR,1.5,-,3300,3500,3600,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko ,Prime X ASP Near,Progressive,CLEAR,1.6,-,3700,3900,4000,70,+6.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko ,Prime X ASP Near,Progressive,CLEAR,1.67,-,4700,4900,5000,70,+6.00,-7.50,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,4000,4200,4300,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,5400,5600,5700,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,3900,4100,4200,70,+6.00,-7.50,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,4100,4300,4400,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,5300,5500,5600,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko ,Prime X ASP Near,Progressive,CLEAR,1.74,-,6200,6400,6500,70,+6.50,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Seiko , Prime Xceed Asp Near,Progressive,CLEAR,1.5,-,3500,3700,3800,70,+6.00,-7.50,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,CLEAR,1.6,-,3900,4100,4200,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,CLEAR,1.67,-,4900,5100,5200,70,+6.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,CLEAR,1.74,-,6100,6600,6700,70,+6.00,-7.50,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,4100,4300,4400,70,+8.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,4600,4800,4900,70,+10.00,-16.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,5600,5800,5900,70,+10.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,5500,5700,5800,70,+10.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,4200,4400,4500,70,+12.00,-20.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,4500,4700,4800,70,+12.00,-16.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,2700,2900,3000,70,-3.00,-7.00,0.00,-2.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,3700,3900,4000,70,0.00,-5.00,0.00,-2.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,CLEAR,1.5,-,1700,1900,2000,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,CLEAR,1.74,-,4600,4800,4900,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,2300,2500,2600,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,2800,3000,3100,70,+6.00,-8.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,3800,4000,4100,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,2300,2500,2600,70,+6.00,-8.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,CLEAR,1.67,-,3100,3300,3400,70,+10.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Seiko , Synergy Xtra,Progressive,CLEAR,1.6,-,2200,2300,2400,70,+12.00,-14.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.5,-,1150,-,1250,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.56,-,1250,1350,1450,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.6,-,1350,1450,1550,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.67,-,1450,1550,1650,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.74,-,2100,2200,2200,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.5,NuPolar Grey   ,1550,-,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.6,NuPolar Grey   ,1950,-,2050,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.67,NuPolar Grey   ,2450,-,2550,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.5,Polarized    ,1350,-,1450,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1600,1700,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1950,2050,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2650,2750,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1450,1550,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,3050,3150,3150,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2650,2750,2750,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,1750,1850,1850,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2090,2190,2190,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2450,2550,2550,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,2300,2400,2400,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,1650,1750,1850,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,1450,1550,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Mineral Glass,Progressive,CLEAR,1.9,White ,3100,-,3200,70,-6.00,-20.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Opto-tech ,Mineral Glass,Progressive,CLEAR,1.8,White ,2750,-,2850,70,-5.00,-18.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Opto-tech ,Mineral Glass,Progressive,CLEAR,1.7,White / Pink Hi-index   ,1950,-,2050,70,-3.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Opto-tech ,Mineral Glass,Progressive,PHOTOCHROMIC,1.52,Photogray Xtra   ,1950,-,2050,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,None
+Opto-tech ,Mineral Glass,Progressive,CLEAR,1.52,White / Pink    ,1650,-,1750,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Rodenstock ,Progressiv Life Mineral,Progressive,CLEAR,1.6,-,2980,-,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Rodenstock ,Progressiv Life Mineral,Progressive,CLEAR,1.8,-,4880,-,-,70,+6.00,-14.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,None
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.5,-,880,-,980,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.56,-,930,1030,1130,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.6,-,1080,1180,1280,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.67,-,1230,1330,1430,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.74,-,1780,1880,1880,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.5,NuPolar Grey   ,1630,-,1730,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.6,NuPolar Grey   ,1830,-,1930,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.67,NuPolar Grey   ,2130,-,2230,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.5,Polarized    ,1570,-,1670,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1430,1530,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1730,1830,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2380,2480,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1080,1180,1280,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,3180,3280,3280,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2280,2380,2380,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,1470,1570,1570,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,1820,1920,1920,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2140,2240,2240,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,1970,2070,2070,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,1330,1430,1530,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,1180,1330,1430,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.5,-,1270,-,1370,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.56,-,1420,1520,1620,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.6,-,1570,1670,1770,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.67,-,1720,1820,1920,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.74,-,2370,2470,2470,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.5,Gloss Mirror Polarized  ,1620,-,1720,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.6,NuPolar Grey   ,1860,-,1960,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.6,NuPolar Grey   ,2120,-,2220,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.67,NuPolar Grey   ,2620,-,2720,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.5,Polarized    ,1570,-,1670,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1920,2020,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,2290,2390,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2870,2970,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1470,1570,1670,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,3670,3770,3770,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2770,2870,2870,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,1860,1960,1960,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2310,2410,2410,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2630,2730,2730,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,2460,2560,2560,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,1820,1920,2020,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,1670,1820,1920,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
+Pentax , Allfocus,Progressive,POLARIZED,1.5, Polarised,2405,2600, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,POLARIZED,1.6, Polarised,3575,3770, -,70,+4.50,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,CLEAR,1.5,-,1105,1300, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,CLEAR,1.55,-,1235,1430,1530,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,CLEAR,1.59,-,1495,1690, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,CLEAR,1.6,-,1625,1820,1920,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,POLARIZED,1.59, Polarised,3120,3315, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.5, Sensity 2,2210,2405, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.55, Sensity 2,2340,2535, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.59, Sensity 2,2600,2795, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.6, Sensity 2,2730,2925, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,2310,2505, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,2440,2635, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,2700,2895, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,2830,3025, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,CLEAR,1.67,-,2015,2210,2310,70,+7.50,-13.00,0.00,-4.00,HIGH,Yes,150,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.67, Sensity 2,3120,3315, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,3220,3415, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Entry,Near|Equal,Single,None
+Pentax , Allfocus,Progressive,CLEAR,1.74,-,2795,2990, -,70,+12.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,Entry,Near|Equal,Single,None
+Rodenstock , Impression 2,Progressive,CLEAR,1.54,-,3150,3750, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Full
+Rodenstock , Impression 2,Progressive,CLEAR,1.6,-,3550,4150, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Full
+Rodenstock , Impression 2,Progressive,CLEAR,1.67,-,3950,4550, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Full
+Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,3950, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert,Near|Equal,Single,Full
+Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,4350, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near|Equal,Single,Full
+Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,4750, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near|Equal,Single,Full
+Rodenstock , Multigressiv MyView 2,Progressive,CLEAR,1.54,-,2550,3150, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Partial
+Rodenstock , Multigressiv MyView 2,Progressive,CLEAR,1.6,-,2950,3550, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Partial
+Rodenstock , Multigressiv MyView 2,Progressive,CLEAR,1.67,-,3350,3950, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Partial
+Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,3350, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial
+Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,3750, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial
+Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,4150, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial
+Rodenstock , PureLife Free 2,Progressive,CLEAR,1.54,-,1850,2450, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,None
+Rodenstock , PureLife Free 2,Progressive,CLEAR,1.6,-,2250,2850, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,None
+Rodenstock , PureLife Free 2,Progressive,CLEAR,1.67,-,2650,3250, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,None
+Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,2650, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert,Near|Equal,Single,None
+Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,3050, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near|Equal,Single,None
+Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,3450, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near|Equal,Single,None
+Rodenstock ,Impression Mineral,Progressive,CLEAR,1.6,-,4490,-,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Full
+Rodenstock ,Impression Mineral,Progressive,CLEAR,1.8,-,4490,-,-,70,+6.00,-14.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Full
+Rodenstock ,Multigressiv Mineral,Progressive,CLEAR,1.6,-,3960,-,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,None
+Rodenstock ,Multigressiv Mineral,Progressive,CLEAR,1.8,-,3960,-,-,70,+6.00,-14.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near|Equal,Single,None
+Seiko , Brilliance Asp Near,Progressive,CLEAR,1.5,-,5100,5300,5400,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,CLEAR,1.6,-,5700,5900,6000,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,CLEAR,1.67,-,6700,6900,7000,70,+6.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,CLEAR,1.74,-,8500,8700,8800,70,+6.00,-7.50,0.00,-5.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,5900,6100,6200,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,6500,6700,6800,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,7500,7700,7800,70,+6.00,-7.50,0.00,-5.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,5800,6000,6100,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,6400,6600,6700,70,+6.00,-7.50,0.00,-5.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,7400,7600,7700,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,CLEAR,1.54,-,3450,4000, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,CLEAR,1.6,-,3800,4400, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,CLEAR,1.67,-,4200,4800, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,CLEAR,1.74,-,5700,6300, -,70,+6.00,-14.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.54, ColorMatic,4250, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.6, ColorMatic,4700, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.67, ColorMatic,5000, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,POLARIZED,1.54, Polarised,3850, -, -,70,+6.00,-6.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,POLARIZED,1.6, Polarised,4600, -, -,70,+6.00,-6.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,CLEAR,1.54,-,2850,3450, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,CLEAR,1.6,-,3250,3850, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,CLEAR,1.67,-,3650,4250, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,3650, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,4050, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,4450, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial
+Seiko , Pursuit AC-X Asp Near,Progressive,CLEAR,1.6,-,4600,4800,4900,70,+8.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Equal,Double,Partial
+Seiko , Pursuit AC-X Asp Near,Progressive,CLEAR,1.74,-,6600,6800,6900,70,+8.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Equal,Double,Partial
+Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,5800,6000,6100,70,+8.00,-9.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial
+Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,4700,4900,5000,70,+8.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial
+Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,4800,5000,5100,70,+9.00,-11.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial
+Seiko , Pursuit AC-X Asp Near,Progressive,CLEAR,1.67,-,5100,5300,5400,70,+10.00,-16.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Equal,Double,Partial
+Seiko , Superior Xcel,Progressive,CLEAR,1.74,-,6000,6200,6300,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,CLEAR,1.5,-,3100,3300,3400,70,+10.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,CLEAR,1.67,-,4500,4700,4800,70,+10.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,5200,5400,5500,70,+10.00,-12.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,3700,3900,4000,70,+10.00,-12.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,5100,5300,5400,70,+10.00,-12.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,CLEAR,1.6,-,3500,3700,3800,70,+12.00,-14.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,3800,4000,4100,70,+12.00,-16.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,4200,4400,4500,70,+12.00,-14.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,4100,4300,4400,70,+12.00,-14.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.5,-,1550,-,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.5,-,1550,-,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.5,-,1550,-,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.56,-,1650,1750,1850,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.56,-,1650,1750,1850,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.56,-,1650,1750,1850,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.6,-,1850,1950,2050,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.6,-,1850,1950,2050,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.6,-,1850,1950,2050,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.67,-,2050,2150,2250,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.67,-,2050,2150,2250,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.67,-,2050,2150,2250,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.74,-,2850,2950,3050,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.74,-,2850,2950,3050,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.74,-,2850,2950,3050,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,NuPolar Grey   ,1900,-,2000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,NuPolar Grey   ,1900,-,2000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,NuPolar Grey   ,1900,-,2000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,NuPolar Grey   ,2250,-,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,NuPolar Grey   ,2250,-,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,NuPolar Grey   ,2250,-,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,NuPolar Grey   ,2750,-,2850,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,NuPolar Grey   ,2750,-,2850,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,NuPolar Grey   ,2750,-,2850,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,Polarised Grey   ,1900,-,2000,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,Polarised Grey   ,1900,-,2000,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,Polarised Grey   ,1900,-,2000,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,Polarised Grey   ,2300,-,2400,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,Polarised Grey   ,2300,-,2400,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,Polarised Grey   ,2300,-,2400,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,Polarised Grey / Brown / G15 / Gradient Grey / Gradient Brown ,1700,-,1800,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,Polarised Grey / Brown / G15 / Gradient Grey / Gradient Brown ,1700,-,1800,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,Polarised Grey / Brown / G15 / Gradient Grey / Gradient Brown ,1700,-,1800,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,2250,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,2250,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,2250,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,2550,2550,2650,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,2550,2550,2650,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,2550,2550,2650,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,3200,3300,3300,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,3200,3300,3300,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,3200,3300,3300,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1750,1850,1950,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1750,1850,1950,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1750,1850,1950,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,4100,4200,4200,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,4100,4200,4200,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,4100,4200,4200,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.53,Transitions (Impact Resistant),2750,2850,2850,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.53,Transitions (Impact Resistant),2750,2850,2850,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.53,Transitions (Impact Resistant),2750,2850,2850,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2900,3000,3000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2900,3000,3000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2900,3000,3000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2550,2650,2650,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2550,2650,2650,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2550,2650,2650,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2950,3050,3050,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2950,3050,3050,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2950,3050,3050,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,2150,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,2150,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,2150,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,2050,2150,2250,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,2050,2150,2250,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,2050,2150,2250,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Fast Grey  ,2200,2300,2300,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Fast Grey  ,2200,2300,2300,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Fast Grey  ,2200,2300,2300,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,CLEAR,1.5,-,4250,4800,-,70,+4.00,-5.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,CLEAR,1.6,-,4600,5200,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,CLEAR,1.67,-,5000,5800,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.5,-,5400,-,-,70,+4.00,-5.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.6,-,5500,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.67,-,5800,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.5,ColorMatic,5400,-,-,70,+4.00,-5.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.6,ColorMatic,5500,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.67,ColorMatic,5800,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,TINTED,1.5,ColorMatic Sun,5500,-,-,70,+4.00,-5.00,0.00,-4.00,STANDARD,Already,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,TINTED,1.6,ColorMatic Sun,5500,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,Already,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,TINTED,1.67,ColorMatic Sun,5800,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,Already,0,-,Expert|Balance|Entry,Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,CLEAR,1.54,-,4000,4550, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,CLEAR,1.6,-,4350,4950, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,CLEAR,1.67,-,4750,5350, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,CLEAR,1.74,-,6250,6850, -,70,+6.00,-14.00,0.00,-6.00,STANDARD,Yes,150,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.54, ColorMatic,4800, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.6, ColorMatic,5250, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.67, ColorMatic,5550, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,TINTED,1.54, ColorMatic Sun (tinted adaptive sunglasses),5200, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Already,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,TINTED,1.6, ColorMatic Sun (tinted adaptive sunglasses),5650, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Already,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,POLARIZED,1.54, Polarised,4800, -, -,70,+6.00,-6.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
+Rodenstock , Impression B.I.G. Norm,Progressive,POLARIZED,1.6, Polarised,5150, -, -,70,+6.00,-6.00,0.00,-6.00,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full
 Pentax , Single Vision ASP Aspheric ,Custom SV,CLEAR,1.6,-,900,1050,1200,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,ASP,,,,
 Pentax , Single Vision ASP Aspheric ,Custom SV,CLEAR,1.59,-,900,1050, -,70,+6.00,-9.00,0.00,-4.00,STANDARD,Yes,150,ASP,,,,
 Pentax , Single Vision ASP Aspheric ,Custom SV,CLEAR,1.5,-,600,750, -,70,+8.00,-8.50,0.00,-4.00,STANDARD,Yes,150,ASP,,,,
@@ -230,99 +580,6 @@ Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.59,Grey / Brown,340,-,-,70
 Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.59,Photochromic Grey & Polarized Grey/Brown,640,-,-,70,0.00,0.00,0.00,0.00,STANDARD,No,150,SPH,,,,
 Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.56,Polarized Gloss Mirror Grey / Brown,400,-,-,70,0.00,0.00,0.00,0.00,STANDARD,No,150,SPH,,,,
 Advance Lens,Stock Single Vision,Stock SV,TINTED,1.56,Tinted Gloss Mirror Grey / Brown,340,-,-,70,0.00,0.00,0.00,0.00,STANDARD,Already,150,SPH,,,,
-Pentax , Allfocus,Progressive,POLARIZED,1.5, Polarised,2405,2600, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,POLARIZED,1.6, Polarised,3575,3770, -,70,+4.50,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,CLEAR,1.5,-,1105,1300, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,CLEAR,1.55,-,1235,1430,1530,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,CLEAR,1.59,-,1495,1690, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,CLEAR,1.6,-,1625,1820,1920,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,POLARIZED,1.59, Polarised,3120,3315, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.5, Sensity 2,2210,2405, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.55, Sensity 2,2340,2535, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.59, Sensity 2,2600,2795, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.6, Sensity 2,2730,2925, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,2310,2505, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,2440,2635, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,2700,2895, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,2830,3025, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,CLEAR,1.67,-,2015,2210,2310,70,+7.50,-13.00,0.00,-4.00,HIGH,Yes,150,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.67, Sensity 2,3120,3315, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,3220,3415, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus,Progressive,CLEAR,1.74,-,2795,2990, -,70,+12.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,Entry,Near | Equal,Single,None
-Pentax , Allfocus Expert,Progressive,POLARIZED,1.5, Polarised,3250,3445, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,CLEAR,1.5,-,1950,2145, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,CLEAR,1.55,-,2080,2275,2375,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,CLEAR,1.59,-,2275,2470, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,CLEAR,1.6,-,2470,2665,2765,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,POLARIZED,1.59, Polarised,3900,4095, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,POLARIZED,1.6, Polarised,4420,4615, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.5, Sensity 2,3055,3250, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.55, Sensity 2,3185,3380, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.59, Sensity 2,3380,3575, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6, Sensity 2,3575,3770, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,3155,3350, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,3285,3480, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,3480,3675, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,3675,3870, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,CLEAR,1.67,-,2860,3055,3155,70,+7.50,-13.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67, Sensity 2,3695,4160, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,3795,4260, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Expert,Progressive,CLEAR,1.74,-,3640,3835, -,70,+9.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Intermediate | Equal,Double,Full
-Pentax , Allfocus Flex,Progressive,POLARIZED,1.5, Polarised,2600,2795, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,POLARIZED,1.59, Polarised,3250,3445, -,70,+4.50,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,POLARIZED,1.6, Polarised,3770,3965, -,70,+4.50,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,CLEAR,1.5,-,1300,1495, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,CLEAR,1.55,-,1431,1628,1728,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,CLEAR,1.59,-,1625,1820, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,CLEAR,1.6,-,1820,2015,2115,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.5, Sensity 2,2405,2600, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.55, Sensity 2,2535,2730, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.59, Sensity 2,2730,2925, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.6, Sensity 2,2925,3120, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,2505,2700, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,2635,2830, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,2830,3025, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,3025,3220, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,CLEAR,1.67,-,2210,2405,2505,70,+7.50,-13.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.67, Sensity 2,3315,3510, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,3415,3610, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Flex,Progressive,CLEAR,1.74,-,2990,3185, -,70,+12.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Pentax , Allfocus Pro,Progressive,POLARIZED,1.5, Polarised,2795,2990, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,POLARIZED,1.6, Polarised,3965,4160, -,70,+4.50,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,CLEAR,1.5,-,1495,1690, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,CLEAR,1.55,-,1625,1820,1920,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,CLEAR,1.59,-,1820,2015, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,CLEAR,1.6,-,2015,2210,2310,70,+6.00,-10.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,POLARIZED,1.59, Polarised,3445,3640, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.5, Sensity 2,2600,2795, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.55, Sensity 2,2730,2925, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.59, Sensity 2,2925,3120, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.6, Sensity 2,3120,3315, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,2700,2895, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,2830,3025, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,3025,3220, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,3220,3415, -,70,+6.00,-10.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,CLEAR,1.67,-,2405,2600,2700,70,+7.50,-13.00,0.00,-4.00,HIGH,Yes,150,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67, Sensity 2,3510,3705, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,3610,3805, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,Balance,Near | Equal,Single,Partial
-Pentax , Allfocus Pro,Progressive,CLEAR,1.74,-,3185,3380, -,70,+9.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Seiko , Brilliance Asp Near,Progressive,CLEAR,1.5,-,5100,5300,5400,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,CLEAR,1.6,-,5700,5900,6000,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,CLEAR,1.67,-,6700,6900,7000,70,+6.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,CLEAR,1.74,-,8500,8700,8800,70,+6.00,-7.50,0.00,-5.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near | Intermediate | Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,5900,6100,6200,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,6500,6700,6800,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,7500,7700,7800,70,+6.00,-7.50,0.00,-5.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,5800,6000,6100,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,6400,6600,6700,70,+6.00,-7.50,0.00,-5.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,7400,7600,7700,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Double,Full
-Seiko , Emblem,Progressive,CLEAR,1.5,-,2200,2300,2400,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Seiko , Emblem,Progressive,CLEAR,1.6,-,2700,2800,2900,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Seiko , Emblem,Progressive,CLEAR,1.67,-,3300,3500,3800,70,+6.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Seiko , Emblem,Progressive,CLEAR,1.74,-,5000,5200,5300,70,+6.00,-7.50,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Seiko , Emblem,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,2800,3000,3100,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Seiko , Emblem,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,3200,3400,3500,70,+6.00,-7.50,0.00,-5.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Seiko , Emblem,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,3900,4200,4500,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
 Pentax , Energy,Anti-Fatigue,POLARIZED,1.5, Polarised,1650,1800, -,70,+3.00,-8.00,0.00,-4.00,STANDARD,No,0,-,,,,
 Pentax , Energy,Anti-Fatigue,POLARIZED,1.6, Polarised,2450,2600, -,70,+4.50,-10.00,0.00,-4.00,HIGH,No,0,-,,,,
 Pentax , Energy,Anti-Fatigue,CLEAR,1.5,-,750,900, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
@@ -342,23 +599,6 @@ Pentax , Energy,Anti-Fatigue,CLEAR,1.67,-,1350,1500,1600,70,+7.50,-13.00,0.00,-4
 Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.67, Sensity 2,2100,2250, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,,,,
 Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.67, Sensity 2 Dark,2200,2350, -,70,+7.50,-13.00,0.00,-4.00,HIGH,No,0,-,,,,
 Pentax , Energy,Anti-Fatigue,CLEAR,1.74,-,1850,2000, -,70,+9.00,-13.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
-Rodenstock , Impression 2,Progressive,CLEAR,1.54,-,3150,3750, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,Full
-Rodenstock , Impression 2,Progressive,CLEAR,1.6,-,3550,4150, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,Full
-Rodenstock , Impression 2,Progressive,CLEAR,1.67,-,3950,4550, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,Full
-Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,3950, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert,Near | Equal,Single,Full
-Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,4350, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near | Equal,Single,Full
-Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,4750, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near | Equal,Single,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,CLEAR,1.54,-,4000,4550, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,CLEAR,1.6,-,4350,4950, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,CLEAR,1.67,-,4750,5350, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,CLEAR,1.74,-,6250,6850, -,70,+6.00,-14.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.54, ColorMatic,4800, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.6, ColorMatic,5250, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.67, ColorMatic,5550, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,TINTED,1.54, ColorMatic Sun (tinted adaptive sunglasses),5200, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Already,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,TINTED,1.6, ColorMatic Sun (tinted adaptive sunglasses),5650, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Already,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,POLARIZED,1.54, Polarised,4800, -, -,70,+6.00,-6.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
-Rodenstock , Impression B.I.G. Norm,Progressive,POLARIZED,1.6, Polarised,5150, -, -,70,+6.00,-6.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Full
 Rodenstock , Impression B.I.G. Norm Ergo,Office,CLEAR,1.54,-,3400,3950, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock , Impression B.I.G. Norm Ergo,Office,CLEAR,1.6,-,3750,4350, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,,,,
 Rodenstock , Impression B.I.G. Norm Ergo,Office,CLEAR,1.67,-,4150,4750, -,70,+6.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,,,,
@@ -367,21 +607,6 @@ Seiko , Indoor LD 200cm,Office,CLEAR,1.6,-,1700,1900,2000,70,+6.00,-12.00,0.00,-
 Seiko , Indoor LD 200cm,Office,CLEAR,1.67,-,2050,2250,2350,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,,,,
 Seiko , Indoor MD 100cm,Office,CLEAR,1.6,-,1700,1900,2000,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,,,,
 Seiko , Indoor MD 100cm,Office,CLEAR,1.67,-,2050,2250,2350,70,+6.00,-7.50,0.00,-5.00,STANDARD,Yes,150,-,,,,
-Rodenstock , Life Free 2,Progressive,CLEAR,1.54,-,1450,2050, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Rodenstock , Life Free 2,Progressive,CLEAR,1.6,-,1850,2450, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Rodenstock , Life Free 2,Progressive,CLEAR,1.67,-,2250,2850, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,2250, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,2650, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,3050, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,CLEAR,1.54,-,3450,4000, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,CLEAR,1.6,-,3800,4400, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,CLEAR,1.67,-,4200,4800, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,CLEAR,1.74,-,5700,6300, -,70,+6.00,-14.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.54, ColorMatic,4250, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.6, ColorMatic,4700, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.67, ColorMatic,5000, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,POLARIZED,1.54, Polarised,3850, -, -,70,+6.00,-6.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,POLARIZED,1.6, Polarised,4600, -, -,70,+6.00,-6.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Double,Partial
 Rodenstock , Multigressiv B.I.G. Norm Ergo,Office,CLEAR,1.54,-,2800,3350, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock , Multigressiv B.I.G. Norm Ergo,Office,CLEAR,1.6,-,3150,3750, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,,,,
 Rodenstock , Multigressiv B.I.G. Norm Ergo,Office,CLEAR,1.67,-,3550,4150, -,70,+6.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,,,,
@@ -389,18 +614,6 @@ Rodenstock , Multigressiv B.I.G. Norm Ergo,Office,CLEAR,1.74,-,5050,5650, -,70,+
 Rodenstock , Multigressiv Ergo 2,Office,CLEAR,1.5,-,2050,2650, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock , Multigressiv Ergo 2,Office,CLEAR,1.6,-,2450,3050, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock , Multigressiv Ergo 2,Office,CLEAR,1.67,-,2850,3450, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
-Rodenstock , Multigressiv Mylife 2,Progressive,CLEAR,1.54,-,2850,3450, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Single,Partial
-Rodenstock , Multigressiv Mylife 2,Progressive,CLEAR,1.6,-,3250,3850, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Single,Partial
-Rodenstock , Multigressiv Mylife 2,Progressive,CLEAR,1.67,-,3650,4250, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Equal | Intermediate,Single,Partial
-Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,3650, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Single,Partial
-Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,4050, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Single,Partial
-Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,4450, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Equal | Intermediate,Single,Partial
-Rodenstock , Multigressiv MyView 2,Progressive,CLEAR,1.54,-,2550,3150, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,Partial
-Rodenstock , Multigressiv MyView 2,Progressive,CLEAR,1.6,-,2950,3550, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,Partial
-Rodenstock , Multigressiv MyView 2,Progressive,CLEAR,1.67,-,3350,3950, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,Partial
-Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,3350, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert,Near | Equal,Single,Partial
-Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,3750, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near | Equal,Single,Partial
-Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,4150, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near | Equal,Single,Partial
 Rodenstock , MyCon,Myopia Control,CLEAR,1.54,-,1195,1580, -,70,0.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock , MyCon,Myopia Control,CLEAR,1.6,-,1380,1780, -,70,0.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,,,,
 Rodenstock , MyCon,Myopia Control,CLEAR,1.67,-,1680,2080, -,70,0.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,,,,
@@ -433,40 +646,9 @@ Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.54, Polarised,2610, -, -,70,0.00
 Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.6, Polarised,2810, -, -,70,0.00,-6.00,0.00,-4.00,STANDARD,No,0,-,,,,
 Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.67, Polarised,3110, -, -,70,0.00,-6.00,0.00,-4.00,STANDARD,No,0,-,,,,
 Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.74, Polarised,3710, -, -,70,0.00,-6.00,0.00,-4.00,STANDARD,No,0,-,,,,
-Seiko ,Prime X ASP Near,Progressive,CLEAR,1.5,-,3300,3500,3600,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
-Seiko ,Prime X ASP Near,Progressive,CLEAR,1.6,-,3700,3900,4000,70,+6.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
-Seiko ,Prime X ASP Near,Progressive,CLEAR,1.67,-,4700,4900,5000,70,+6.00,-7.50,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,4000,4200,4300,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,5400,5600,5700,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,3900,4100,4200,70,+6.00,-7.50,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,4100,4300,4400,70,+6.00,-12.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,5300,5500,5600,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Seiko ,Prime X ASP Near,Progressive,CLEAR,1.74,-,6200,6400,6500,70,+6.50,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near | Intermediate | Equal,Single,Partial
-Seiko , Prime Xceed Asp Near,Progressive,CLEAR,1.5,-,3500,3700,3800,70,+6.00,-7.50,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,CLEAR,1.6,-,3900,4100,4200,70,+6.00,-12.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,CLEAR,1.67,-,4900,5100,5200,70,+6.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,CLEAR,1.74,-,6100,6600,6700,70,+6.00,-7.50,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Intermediate | Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,4100,4300,4400,70,+8.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,4600,4800,4900,70,+10.00,-16.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,5600,5800,5900,70,+10.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,5500,5700,5800,70,+10.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,4200,4400,4500,70,+12.00,-20.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,4500,4700,4800,70,+12.00,-16.00,0.00,-6.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
 Rodenstock , Progressiv Ergo 2,Office,CLEAR,1.5,-,1450,2050, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock , Progressiv Ergo 2,Office,CLEAR,1.6,-,1850,2450, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock , Progressiv Ergo 2,Office,CLEAR,1.67,-,2250,2850, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
-Rodenstock , PureLife Free 2,Progressive,CLEAR,1.54,-,1850,2450, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,None
-Rodenstock , PureLife Free 2,Progressive,CLEAR,1.6,-,2250,2850, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,None
-Rodenstock , PureLife Free 2,Progressive,CLEAR,1.67,-,2650,3250, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,None
-Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.54, ColorMatic,2650, -, -,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert,Near | Equal,Single,None
-Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.6, ColorMatic,3050, -, -,70,+6.00,-10.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near | Equal,Single,None
-Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.67, ColorMatic,3450, -, -,70,+6.00,-13.00,0.00,-6.00,STANDARD,No,0,-,Expert,Near | Equal,Single,None
-Seiko , Pursuit AC-X Asp Near,Progressive,CLEAR,1.6,-,4600,4800,4900,70,+8.00,-10.00,0.00,-5.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near | Equal,Double,Partial
-Seiko , Pursuit AC-X Asp Near,Progressive,CLEAR,1.74,-,6600,6800,6900,70,+8.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near | Equal,Double,Partial
-Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,5800,6000,6100,70,+8.00,-9.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Equal,Double,Partial
-Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,4700,4900,5000,70,+8.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Equal,Double,Partial
-Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,4800,5000,5100,70,+9.00,-11.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Equal,Double,Partial
-Seiko , Pursuit AC-X Asp Near,Progressive,CLEAR,1.67,-,5100,5300,5400,70,+10.00,-16.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near | Equal,Double,Partial
 Seiko , SmartZoom,Anti-Fatigue,CLEAR,1.5,-,1150,1350,1450,70,0.00,-9.00,0.00,-5.00,STANDARD,Yes,150,-,,,,
 Seiko , SmartZoom,Anti-Fatigue,CLEAR,1.67,-,2150,2350,2450,70,0.00,-8.00,0.00,-5.00,STANDARD,Yes,150,-,,,,
 Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.5,Sensity 2   ,1550,1750,1950,70,0.00,-9.00,0.00,-5.00,STANDARD,No,0,-,,,,
@@ -487,26 +669,6 @@ Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,265
 Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.5,Sensity 2   ,1750,1950,2250,70,+12.00,-16.00,0.00,-6.00,STANDARD,No,0,-,,,,
 Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.6,Sensity 2   ,2050,2250,2650,70,+12.00,-14.00,0.00,-6.00,STANDARD,No,0,-,,,,
 Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,1950,2250,2550,70,+12.00,-14.00,0.00,-6.00,STANDARD,No,0,-,,,,
-Seiko , Superior Xcel,Progressive,CLEAR,1.74,-,6000,6200,6300,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Seiko , Superior Xcel,Progressive,CLEAR,1.5,-,3100,3300,3400,70,+10.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Superior Xcel,Progressive,CLEAR,1.67,-,4500,4700,4800,70,+10.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,5200,5400,5500,70,+10.00,-12.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,3700,3900,4000,70,+10.00,-12.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,5100,5300,5400,70,+10.00,-12.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Superior Xcel,Progressive,CLEAR,1.6,-,3500,3700,3800,70,+12.00,-14.00,0.00,-6.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,3800,4000,4100,70,+12.00,-16.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,4200,4400,4500,70,+12.00,-14.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,4100,4300,4400,70,+12.00,-14.00,0.00,-6.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,2700,2900,3000,70,-3.00,-7.00,0.00,-2.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,3700,3900,4000,70,0.00,-5.00,0.00,-2.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,CLEAR,1.5,-,1700,1900,2000,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,CLEAR,1.74,-,4600,4800,4900,70,+6.00,-10.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,2300,2500,2600,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,2800,3000,3100,70,+6.00,-8.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,3800,4000,4100,70,+6.00,-10.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,2300,2500,2600,70,+6.00,-8.00,0.00,-5.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,CLEAR,1.67,-,3100,3300,3400,70,+10.00,-12.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Seiko , Synergy Xtra,Progressive,CLEAR,1.6,-,2200,2300,2400,70,+12.00,-14.00,0.00,-6.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,CLEAR,1.5,-,730,-,830,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,CLEAR,1.56,-,780,880,980,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,CLEAR,1.6,-,930,1030,1130,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
@@ -528,81 +690,6 @@ Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.67,Trans
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,1820,1920,1920,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,,,,
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,CLEAR,1.53,Tribrid (Impact Resistant)   ,1080,1280,1380,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,CLEAR,1.53,Trivex (Impact Resistant)   ,1030,1080,1180,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.5,-,1550,-,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.5,-,1550,-,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.5,-,1550,-,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.56,-,1650,1750,1850,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.56,-,1650,1750,1850,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.56,-,1650,1750,1850,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.6,-,1850,1950,2050,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.6,-,1850,1950,2050,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.6,-,1850,1950,2050,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.67,-,2050,2150,2250,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.67,-,2050,2150,2250,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.67,-,2050,2150,2250,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.74,-,2850,2950,3050,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.74,-,2850,2950,3050,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.74,-,2850,2950,3050,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,NuPolar Grey   ,1900,-,2000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,NuPolar Grey   ,1900,-,2000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,NuPolar Grey   ,1900,-,2000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,NuPolar Grey   ,2250,-,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,NuPolar Grey   ,2250,-,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,NuPolar Grey   ,2250,-,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,NuPolar Grey   ,2750,-,2850,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,NuPolar Grey   ,2750,-,2850,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,NuPolar Grey   ,2750,-,2850,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,Polarised Grey   ,1900,-,2000,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,Polarised Grey   ,1900,-,2000,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.6,Polarised Grey   ,1900,-,2000,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,Polarised Grey   ,2300,-,2400,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,Polarised Grey   ,2300,-,2400,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.67,Polarised Grey   ,2300,-,2400,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,Polarised Grey / Brown / G15 / Gradient Grey / Gradient Brown ,1700,-,1800,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,Polarised Grey / Brown / G15 / Gradient Grey / Gradient Brown ,1700,-,1800,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.5,Polarised Grey / Brown / G15 / Gradient Grey / Gradient Brown ,1700,-,1800,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,2250,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,2250,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,2250,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,2550,2550,2650,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,2550,2550,2650,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,2550,2550,2650,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,3200,3300,3300,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,3200,3300,3300,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,3200,3300,3300,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1750,1850,1950,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1750,1850,1950,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1750,1850,1950,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,4100,4200,4200,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,4100,4200,4200,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,4100,4200,4200,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.53,Transitions (Impact Resistant),2750,2850,2850,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.53,Transitions (Impact Resistant),2750,2850,2850,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.53,Transitions (Impact Resistant),2750,2850,2850,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2900,3000,3000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2900,3000,3000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2900,3000,3000,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2550,2650,2650,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2550,2650,2650,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2550,2650,2650,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2950,3050,3050,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2950,3050,3050,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2950,3050,3050,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,2150,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,2150,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,2150,2250,2350,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,2050,2150,2250,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,2050,2150,2250,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,2050,2150,2250,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,2250,2350,2350,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Fast Grey  ,2200,2300,2300,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Fast Grey  ,2200,2300,2300,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Fast Grey  ,2200,2300,2300,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Near|Intermediate|Equal,Single,Full
 Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,CLEAR,1.54,-,3300,3850,-,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,CLEAR,1.6,-,3650,4250,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,CLEAR,1.67,-,4050,4550,-,70,+6.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
@@ -611,46 +698,6 @@ Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,TINTED,1.6, ColorMatic
 Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.54,ColorMatic,4100,-,-,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,,,,
 Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.6,ColorMatic,4450,-,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,,,,
 Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.67,ColorMatic,4850,-,-,70,+6.00,-12.00,0.00,-4.00,STANDARD,No,0,-,,,,
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,CLEAR,1.5,-,4250,4800,-,70,+4.00,-5.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,CLEAR,1.6,-,4600,5200,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,CLEAR,1.67,-,5000,5800,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.5,-,5400,-,-,70,+4.00,-5.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.6,-,5500,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.67,-,5800,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.5,ColorMatic,5400,-,-,70,+4.00,-5.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.6,ColorMatic,5500,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.67,ColorMatic,5800,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,TINTED,1.5,ColorMatic Sun,5500,-,-,70,+4.00,-5.00,0.00,-4.00,STANDARD,Already,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,TINTED,1.6,ColorMatic Sun,5500,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,Already,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,TINTED,1.67,ColorMatic Sun,5800,-,-,70,+4.00,-6.00,0.00,-4.00,STANDARD,Already,0,-,Expert | Balance | Entry,Intermediate,Double,Full
-Rodenstock ,Impression Mineral,Progressive,CLEAR,1.6,-,4490,-,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,Full
-Rodenstock ,Impression Mineral,Progressive,CLEAR,1.8,-,4490,-,-,70,+6.00,-14.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.5,-,1150,-,1250,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.56,-,1250,1350,1450,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.6,-,1350,1450,1550,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.67,-,1450,1550,1650,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.74,-,2100,2200,2200,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.5,NuPolar Grey   ,1550,-,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.6,NuPolar Grey   ,1950,-,2050,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.67,NuPolar Grey   ,2450,-,2550,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.5,Polarized    ,1350,-,1450,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1600,1700,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1950,2050,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2650,2750,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1450,1550,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,3050,3150,3150,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2650,2750,2750,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,1750,1850,1850,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2090,2190,2190,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2450,2550,2550,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,2300,2400,2400,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,1650,1750,1850,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,1450,1550,1650,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Full
-Opto-tech ,Mineral Glass,Progressive,CLEAR,1.9,White ,3100,-,3200,70,-6.00,-20.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Opto-tech ,Mineral Glass,Progressive,CLEAR,1.8,White ,2750,-,2850,70,-5.00,-18.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Opto-tech ,Mineral Glass,Progressive,CLEAR,1.7,White / Pink Hi-index   ,1950,-,2050,70,-3.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Opto-tech ,Mineral Glass,Progressive,PHOTOCHROMIC,1.52,Photogray Xtra   ,1950,-,2050,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,None
-Opto-tech ,Mineral Glass,Progressive,CLEAR,1.52,White / Pink    ,1650,-,1750,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
 Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,CLEAR,1.54,-,2800,3350,-,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,CLEAR,1.6,-,3150,3750,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,CLEAR,1.67,-,3550,3950,-,70,+6.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
@@ -659,8 +706,6 @@ Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,TINTED,1.6, ColorMat
 Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.54,ColorMatic,3600,-,-,70,+6.00,-8.00,0.00,-4.00,STANDARD,No,0,-,,,,
 Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.6,ColorMatic,3950,-,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,No,0,-,,,,
 Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.67,ColorMatic,4350,-,-,70,+6.00,-12.00,0.00,-4.00,STANDARD,No,0,-,,,,
-Rodenstock ,Multigressiv Mineral,Progressive,CLEAR,1.6,-,3960,-,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,None
-Rodenstock ,Multigressiv Mineral,Progressive,CLEAR,1.8,-,3960,-,-,70,+6.00,-14.00,0.00,-4.00,STANDARD,Yes,150,-,Expert,Near | Equal,Single,None
 Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,CLEAR,1.54,-,1850,2450,-,70,+6.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,CLEAR,1.6,-,2250,2850,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,CLEAR,1.67,-,2650,3250,-,70,+6.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
@@ -672,48 +717,3 @@ Pentax ,Office,Office,CLEAR,1.55,-,1235,1430,1530,70,+6.00,-10.00,0.00,-4.00,STA
 Pentax ,Office,Office,CLEAR,1.59,-,1495,1690, -,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Pentax ,Office,Office,CLEAR,1.6,-,1625,1820,1920,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
 Pentax ,Office,Office,CLEAR,1.67,-,2015,2210,2310,70,+7.50,-10.00,0.00,-4.00,STANDARD,Yes,150,-,,,,
-Rodenstock ,Progressiv Life Mineral,Progressive,CLEAR,1.6,-,2980,-,-,70,+6.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Rodenstock ,Progressiv Life Mineral,Progressive,CLEAR,1.8,-,4880,-,-,70,+6.00,-14.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,None
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.5,-,880,-,980,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.56,-,930,1030,1130,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.6,-,1080,1180,1280,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.67,-,1230,1330,1430,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.74,-,1780,1880,1880,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.5,NuPolar Grey   ,1630,-,1730,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.6,NuPolar Grey   ,1830,-,1930,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.67,NuPolar Grey   ,2130,-,2230,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.5,Polarized    ,1570,-,1670,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1430,1530,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1730,1830,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2380,2480,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1080,1180,1280,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,3180,3280,3280,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2280,2380,2380,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,1470,1570,1570,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,1820,1920,1920,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2140,2240,2240,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,1970,2070,2070,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,1330,1430,1530,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,1180,1330,1430,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.5,-,1270,-,1370,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.56,-,1420,1520,1620,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.6,-,1570,1670,1770,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.67,-,1720,1820,1920,70,+4.00,-10.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.74,-,2370,2470,2470,70,+4.00,-12.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near | Intermediate | Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.5,Gloss Mirror Polarized  ,1620,-,1720,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.6,NuPolar Grey   ,1860,-,1960,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.6,NuPolar Grey   ,2120,-,2220,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.67,NuPolar Grey   ,2620,-,2720,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.5,Polarized    ,1570,-,1670,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1920,2020,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,2290,2390,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2870,2970,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,1470,1570,1670,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,3670,3770,3770,70,+4.00,-12.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near | Intermediate | Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2770,2870,2870,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,1860,1960,1960,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,2310,2410,2410,70,+4.00,-8.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,2630,2730,2730,70,+4.00,-10.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,2460,2560,2560,70,+4.00,-6.00,0.00,-4.00,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.53,Tribrid (Impact Resistant)   ,1820,1920,2020,70,+4.00,-8.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,CLEAR,1.53,Trivex (Impact Resistant)   ,1670,1820,1920,70,+4.00,-6.00,0.00,-4.00,STANDARD,Yes,150,-,Balance,Near|Intermediate|Equal,Single,Partial
