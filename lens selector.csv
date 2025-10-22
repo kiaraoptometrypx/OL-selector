@@ -262,53 +262,65 @@ Seiko ,Seiko AS UVF,Stock SV,CLEAR,1.6,-,-,730,-,70,0,-14,0,-6,STANDARD,No,150,A
 Seiko ,Single Vision RX ASP,Custom SV,CLEAR,1.67,-,1500,1700,1800,70,0,-10,0,-5,STANDARD,Yes,150,ASP,,,,,Partial
 Seiko ,Single Vision RX ASP,Custom SV,CLEAR,1.74,-,2100,2300,2400,70,5,-7,0,-5,STANDARD,Yes,150,ASP,,,,,Partial
 Seiko ,Single Vision RX ASP,Custom SV,CLEAR,1.6,-,1000,1200,1300,70,6,-8,0,-5,STANDARD,Yes,150,ASP,,,,,Partial
-Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.59,Grey,-,470,-,70,0,0,0,0,STANDARD,No,150,SPH,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.59,Grey,-,570,-,70,0,0,0,0,STANDARD,No,150,SPH,,,,,None
 Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.56,Grey,-,500,-,70,0,0,0,0,STANDARD,No,150,SPH,,,,,None
 Advance Lens,RX Single Vision,Custom SV,PHOTOCHROMIC,1.56,Grey,-,600,-,70,4,-6,0,-4,STANDARD,No,0,SPH,,,,,Partial
 Advance Lens,RX Single Vision,Custom SV,PHOTOCHROMIC,1.6,Grey,-,740,-,70,4,-6,0,-4,STANDARD,No,0,SPH,,,,,Partial
 Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.59,Photochromic Grey & Polarized Grey/Brown,-,740,-,70,0,0,0,0,STANDARD,No,150,SPH,,,,,None
 Advance Lens,RX Single Vision,Custom SV,PHOTOCHROMIC,1.67,Grey,-,1700,-,70,4,-8,0,-4,STANDARD,No,0,SPH,,,,,Partial
+Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,-,1285,1285,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,-,1320,1320,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,-,1485,1485,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,-,1570,1570,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,-,1850,1850,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,-,1960,1960,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,-,2350,2350,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Mineral Glass,Progressive,PHOTOCHROMIC,1.52,Photogray Xtra   ,-,2050,2050,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.53,Transitions XTRActive Grey,-,1785,1785,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.53,Transitions XTRActive Grey,-,1920,1920,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.53,Transitions XTRActive Grey,-,1985,1985,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive Grey,-,2070,2070,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive Grey,-,2400,2400,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive Grey,-,2560,2560,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive Grey,-,2850,2850,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
 Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,895,995,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,1030,1130,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
 Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,1095,1195,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,-,1180,1280,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.5,Transitions XTRActive   ,-,1285,1285,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.5,Transitions XTRActive   ,-,1320,1320,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.5,Transitions XTRActive   ,-,1485,1485,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,-,1550,1650,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,-,1570,1570,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,-,1570,1670,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.6,Transitions XTRActive   ,-,1635,1635,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.6,Transitions XTRActive   ,-,1770,1770,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,-,1785,1785,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.6,Transitions XTRActive   ,-,1835,1835,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Sunergy Grey / Brown   ,-,1850,1950,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,-,1850,1850,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,-,1920,1920,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,-,1920,1920,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.67,Transitions XTRActive   ,-,1955,1955,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,-,1960,1960,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,-,1985,1985,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
-Opto-tech ,Mineral Glass,Progressive,PHOTOCHROMIC,1.52,Photogray Xtra   ,-,2050,2050,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,-,2070,2070,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.67,Transitions XTRActive   ,-,2090,2090,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.67,Transitions XTRActive   ,-,2155,2155,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,-,2190,2190,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,-,2240,2240,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Fast Grey  ,-,2300,2300,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,2250,2350,70,4,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.5,Transitions XTRActive   ,-,2350,2350,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,1180,1280,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,1550,1650,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,1570,1670,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,1850,1950,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,2300,2300,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
 Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.56,Vibrant Dark Brown / Green / Blue / Purple / Pink  ,-,2350,2350,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,-,2400,2400,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,-,2410,2410,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,-,2550,2550,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.53,Transitions XTRActive (Impact Resistant)  ,-,2560,2560,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.6,Transitions XTRActive Grey,-,1635,1635,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.6,Transitions XTRActive Grey,-,1770,1770,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.6,Transitions XTRActive Grey,-,1835,1835,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive Grey,-,1920,1920,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive Grey,-,2190,2190,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,2250,2350,70,4,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive Grey,-,2410,2410,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive Grey,-,2650,2650,70,4,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1280,1380,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1345,1445,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
+Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1045,1145,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1600,1700,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1430,1530,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1920,2020,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.67,Transitions XTRActive Grey,-,1955,1955,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.67,Transitions XTRActive Grey,-,2090,2090,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.67,Transitions XTRActive Grey,-,2155,2155,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive Grey,-,2240,2240,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive Grey,-,2550,2550,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
 Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,2550,2650,70,4,-10,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.6,Transitions XTRActive   ,-,2650,2650,70,4,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,-,2730,2730,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.53,Transitions (Impact Resistant),-,2850,2850,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive Grey,-,2730,2730,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive Grey,-,3050,3050,70,4,-10,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1580,1680,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1595,1695,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
+Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1445,1545,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1950,2050,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1730,1830,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,2290,2390,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
 Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.74,Transitions  Normal  ,-,2995,2995,70,4,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.67,Transitions XTRActive   ,-,3050,3050,70,4,-10,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.74,Transitions  Normal  ,-,3130,3130,70,4,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
 Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,-,3150,3150,70,4,-12,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
 Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.74,Transitions  Normal  ,-,3195,3195,70,4,-12,0,-4,STANDARD,No,0,ATO,,,,,Full
@@ -316,225 +328,213 @@ Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.74,Trans
 Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,3300,3300,70,4,-12,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
 Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,-,3770,3770,70,4,-12,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
 Opto-tech ,Freeform Ultimate Lifestyle,Progressive,PHOTOCHROMIC,1.74,Transitions  Normal  ,-,4200,4200,70,4,-12,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1280,1380,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1580,1680,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2230,2330,70,4,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1345,1445,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
-Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1595,1695,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
 Opto-tech ,ASV Sports Dynamic Sun Lens,Custom SV,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2295,2395,70,4,-12,0,-4,STANDARD,No,0,ATO,,,,,Full
-Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1045,1145,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1445,1545,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
 Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2095,2195,70,4,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1600,1700,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1950,2050,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
 Opto-tech ,Individual Progressive – Comfort,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2650,2750,70,4,-12,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1430,1530,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,1730,1830,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
 Opto-tech ,Progressive – Custom Flat Alpha,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2380,2480,70,4,-12,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,1920,2020,70,4,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.67,Sunergy Grey   ,-,2290,2390,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
 Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,PHOTOCHROMIC,1.74,Sunergy Grey   ,-,2870,2970,70,4,-12,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Pentax ,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.55, Sensity 2 Grey,-,850, -,70,0,-5,0,-2,STANDARD,No,150,SPH,,,,,Partial
-Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.5, Sensity 2,-,1500, -,70,8,-8.5,0,-4,STANDARD,No,0,ASP,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.5, Sensity 2,-,1500, -,70,10,-10,0,-6,STANDARD,No,0,SPH,,,,,Partial
-Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.55, Sensity 2,-,1600, -,70,8,-10,0,-4,STANDARD,No,0,ASP,,,,,Partial
-Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.5, Sensity 2 Dark,-,1600, -,70,8,-8.5,0,-4,STANDARD,No,0,ASP,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.55, Sensity 2,-,1600, -,70,8,-11,0,-4,HIGH,No,0,SPH,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.5, Sensity 2 Dark,-,1600, -,70,10,-10,0,-6,STANDARD,No,0,SPH,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.5, Sensity 2,-,1650, -,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.55, Sensity 2 Dark,-,1700, -,70,8,-10,0,-4,STANDARD,No,0,ASP,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.55, Sensity 2 Dark,-,1700, -,70,8,-11,0,-4,HIGH,No,0,SPH,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.55, Sensity 2,-,1750, -,70,6,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.5, Sensity 2 Dark,-,1750, -,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.6, Sensity 2,-,1800, -,70,8,-10,0,-4,STANDARD,No,0,ASP,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.59, Sensity 2,-,1800, -,70,6,-10,0,-4,STANDARD,No,0,SPH,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.6, Sensity 2,-,1800, -,70,8,-13,0,-4,HIGH,No,0,SPH,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.55, Sensity 2 Dark,-,1850, -,70,6,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
-Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.5, Sensity 2,-,1850, -,70,8,-8.5,0,-4,STANDARD,No,0,DAS,,,,,Partial
-Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.6, Sensity 2 Dark,-,1900, -,70,8,-10,0,-4,STANDARD,No,0,ASP,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.59, Sensity 2 Dark,-,1900, -,70,6,-10,0,-4,STANDARD,No,0,SPH,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.6, Sensity 2 Dark,-,1900, -,70,8,-13,0,-4,HIGH,No,0,SPH,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.59, Sensity 2,-,1950, -,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.6, Sensity 2,-,1950, -,70,6,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
-Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.5, Sensity 2 Dark,-,1950, -,70,8,-8.5,0,-4,STANDARD,No,0,DAS,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.59, Sensity 2 Dark,-,2050, -,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.6, Sensity 2 Dark,-,2050, -,70,6,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
-Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.6, Sensity 2,-,2050, -,70,8,-10,0,-4,STANDARD,No,0,DAS,,,,,Partial
-Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.67, Sensity 2,-,2100, -,70,10,-15,0,-4,STANDARD,No,0,ASP,,,,,Partial
-Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.6, Sensity 2 Dark,-,2150, -,70,8,-10,0,-4,STANDARD,No,0,DAS,,,,,Partial
-Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.67, Sensity 2 Dark,-,2200, -,70,10,-15,0,-4,STANDARD,No,0,ASP,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.67, Sensity 2,-,2200, -,70,8,-15,0,-4,HIGH,No,0,SPH,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.67, Sensity 2,-,2250, -,70,7.5,-13,0,-4,HIGH,No,0,ATO,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.67, Sensity 2 Dark,-,2300, -,70,8,-15,0,-4,HIGH,No,0,SPH,,,,,Partial
-Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.67, Sensity 2 Dark,-,2350, -,70,7.5,-13,0,-4,HIGH,No,0,ATO,,,,,Partial
-Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.67, Sensity 2,-,2350, -,70,10,-15,0,-4,STANDARD,No,0,DAS,,,,,Partial
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.5, Sensity 2,-,2405, -,70,6,-8,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.67, Sensity 2 Dark,-,2450, -,70,10,-15,0,-4,STANDARD,No,0,DAS,,,,,Partial
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,-,2505, -,70,6,-8,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.55, Sensity 2,-,2535, -,70,6,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.5, Sensity 2,-,2600, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,-,2635, -,70,6,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,-,2700, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.55, Sensity 2,-,2730, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.59, Sensity 2,-,2795, -,70,6,-10,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.5, Sensity 2,-,2795, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,-,2830, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,-,2895, -,70,6,-10,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,-,2895, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.6, Sensity 2,-,2925, -,70,6,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.59, Sensity 2,-,2925, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.55, Sensity 2,-,2925, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,-,3025, -,70,6,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,-,3025, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,-,3025, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.6, Sensity 2,-,3120, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.59, Sensity 2,-,3120, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,-,3220, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,-,3220, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.5, Sensity 2,-,3250, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.67, Sensity 2,-,3315, -,70,7.5,-13,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.6, Sensity 2,-,3315, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark,-,3350, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.55, Sensity 2,-,3380, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,-,3415, -,70,7.5,-13,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,-,3415, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark,-,3480, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.67, Sensity 2,-,3510, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.59, Sensity 2,-,3575, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,-,3610, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark,-,3675, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67, Sensity 2,-,3705, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6, Sensity 2,-,3770, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,-,3805, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark,-,3870, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67, Sensity 2,-,4160, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark,-,4260, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,600,-,65,0,-8,0,-4,STANDARD,No,150,ASP,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey   ,-,430,-,70,0,-6,0,-2,STANDARD,No,150,ASP,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey   ,-,430,-,70,0,-4,0,-4,STANDARD,No,150,ASP,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.6,Sunergy Grey   ,-,600,-,70,0,-10,0,-2,STANDARD,No,150,ASP,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey   ,-,430,-,65,0.25,4,0,-2,STANDARD,No,150,ASP,,,,,None
-Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.54,ColorMatic,-,1770, -,70,0,-8,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.6,ColorMatic,-,1970, -,70,0,-10,0,-6,STANDARD,No,0,-,,,,,
-Rodenstock ,Cosmolit Free,Custom SV,PHOTOCHROMIC,1.54,ColorMatic,-,2200,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.67,ColorMatic,-,2270, -,70,0,-12,0,-6,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon 2,Myopia Control,PHOTOCHROMIC,1.54,ColorMatic,-,2270, -,70,0,-8,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic,-,2400, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Rodenstock , MyCon 2,Myopia Control,PHOTOCHROMIC,1.6,ColorMatic,-,2470, -,70,0,-10,0,-6,STANDARD,No,0,-,,,,,
-Rodenstock ,Multigressiv Mono 2,Custom SV,PHOTOCHROMIC,1.54,ColorMatic,-,2500,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock ,Cosmolit Free,Custom SV,PHOTOCHROMIC,1.6,ColorMatic,-,2600,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock , MyCon 2,Myopia Control,PHOTOCHROMIC,1.67,ColorMatic,-,2770, -,70,0,-12,0,-6,STANDARD,No,0,-,,,,,
-Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic,-,2800, -,70,6,-10,0,-6,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic,-,2800, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert,Near|Equal,Single,None,
-Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,PHOTOCHROMIC,1.54,ColorMatic,-,2800,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.74,ColorMatic,-,2870, -,70,0,-12,0,-6,STANDARD,No,0,-,,,,,
-Rodenstock ,Multigressiv Mono 2,Custom SV,PHOTOCHROMIC,1.6,ColorMatic,-,2900,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock ,Cosmolit Free,Custom SV,PHOTOCHROMIC,1.67,ColorMatic,-,3000,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic,-,3200, -,70,6,-13,0,-6,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic,-,3200, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,None,
-Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,PHOTOCHROMIC,1.6,ColorMatic,-,3200,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock ,Multigressiv Mono 2,Custom SV,PHOTOCHROMIC,1.67,ColorMatic,-,3300,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock , MyCon 2,Myopia Control,PHOTOCHROMIC,1.74,ColorMatic,-,3370, -,70,0,-12,0,-6,STANDARD,No,0,-,,,,,
-Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic,-,3500, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial,
-Rodenstock ,Multigressiv B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.54,ColorMatic,-,3550,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic,-,3600, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,None,
-Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,PHOTOCHROMIC,1.67,ColorMatic,-,3600,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.54,ColorMatic,-,3750,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic,-,3800, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial,
-Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic,-,3900, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial,
-Rodenstock ,Multigressiv B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.6,ColorMatic,-,3900,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock ,Impression B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.54,ColorMatic,-,4050,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic,-,4100, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert,Near|Equal,Single,Full,
-Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.6,ColorMatic,-,4100,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic,-,4200, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial,
-Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.54,ColorMatic,-,4250,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic,-,4300, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial,
-Rodenstock ,Multigressiv B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.67,ColorMatic,-,4300,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.54,ColorMatic,-,4400, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
-Rodenstock ,Impression B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.6,ColorMatic,-,4400,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic,-,4500, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,Full,
-Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.67,ColorMatic,-,4500,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic,-,4600, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial,
-Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.6,ColorMatic,-,4600,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,PHOTOCHROMIC,1.5,ColorMatic,-,4650,-,70,4,-5,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,PHOTOCHROMIC,1.6,ColorMatic,-,4750,-,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock ,Impression B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.67,ColorMatic,-,4800,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.6,ColorMatic,-,4850, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
-Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic,-,4900, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,Full,
-Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.54,ColorMatic,-,4950, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
-Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.67,ColorMatic,-,5000,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,PHOTOCHROMIC,1.67,ColorMatic,-,5050,-,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.67,ColorMatic,-,5150, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
-Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.6,ColorMatic,-,5400, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.5,ColorMatic,-,5550,-,70,4,-5,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.6,ColorMatic,-,5650,-,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
-Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.67,ColorMatic,-,5700, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.67,ColorMatic,-,5950,-,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
-Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,-,1600,1850,70,10,-20,0,-6,STANDARD,No,0,ATO,,,,,Partial
-Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.5,Sensity 2   ,-,1700,1950,70,0,-9,0,-5,STANDARD,No,0,ATO,,,,,Partial
-Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,-,1800,2250,70,10,-12,0,-6,STANDARD,No,0,ATO,,,,,Full
-Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,1900,2350,70,10,-15,0,-5,STANDARD,No,0,ATO,,,,,Partial
-Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.5,Sensity 2   ,-,1900,2250,70,12,-16,0,-6,STANDARD,No,0,ATO,,,,,Full
-Seiko ,Single Vision RX ASP,Custom SV,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,1950,2100,70,0,-8,0,-5,STANDARD,No,0,ASP,,,,,Partial
-Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.6,Sensity 2   ,-,2000,2450,70,4,-6,0,-5,STANDARD,No,0,ATO,,,,,Partial
-Seiko ,Single Vision RX ASP,Custom SV,PHOTOCHROMIC,1.6,Sensity 2   ,-,2050,2200,70,0,-9,0,-5,STANDARD,No,0,ASP,,,,,Partial
-Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,2100,2550,70,12,-14,0,-6,STANDARD,No,0,ATO,,,,,Full
-Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.5,Sensity 2   ,-,2150,2500,70,6,-12,0,-5,STANDARD,No,0,ATO,,,,,Full
-Seiko ,Single Vision RX ASP,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,2150,2300,70,5,-7,0,-5,STANDARD,No,0,ASP,,,,,Partial
-Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.6,Sensity 2   ,-,2200,2650,70,12,-14,0,-6,STANDARD,No,0,ATO,,,,,Full
-Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,-,2250,2400,70,6,-12,0,-5,STANDARD,No,0,ATO,,,,,Full
-Seiko ,Single Vision RX ASP,Custom SV,PHOTOCHROMIC,1.67,Sensity 2   ,-,2350,2500,70,4,-6,0,-5,STANDARD,No,0,ASP,,,,,Partial
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,-,2450,2600,70,6,-10,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,-,2450,2600,70,6,-8,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko , A-Zone Base 5 - Wide View Aspheric for Base 5,Custom SV,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,2550,2700,70,6,-12,0,-5,STANDARD,No,0,DAS,,,,,Full
-Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,2550,2700,70,6,-10,0,-5,STANDARD,No,0,ATO,,,,,Full
-Seiko ,A-Zone Base 3 - Wide View Aspheric for Base 3,Custom SV,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,2550,2700,70,10,-12,0,-6,STANDARD,No,0,DAS,,,,,Full
-Seiko , A-Zone Base 5 - Wide View Aspheric for Base 5,Custom SV,PHOTOCHROMIC,1.6,Sensity 2   ,-,2650,2800,70,6,-12,0,-5,STANDARD,No,0,DAS,,,,,Full
-Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.6,Sensity 2   ,-,2650,2800,70,6,-10,0,-5,STANDARD,No,0,ATO,,,,,Full
-Seiko ,A-Zone Base 3 - Wide View Aspheric for Base 3,Custom SV,PHOTOCHROMIC,1.6,Sensity 2   ,-,2650,2800,70,12,-12,0,-6,STANDARD,No,0,DAS,,,,,Full
-Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,2800,3250,70,10,-12,0,-6,STANDARD,No,0,ATO,,,,,Full
-Seiko , A-Zone Base 5 - Wide View Aspheric for Base 5,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,2850,3000,70,6,-10,0,-5,STANDARD,No,0,DAS,,,,,Full
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,2850,3000,70,-3,-7,0,-2,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko ,A-Zone Base 3 - Wide View Aspheric for Base 3,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,2850,3000,70,10,-12,0,-6,STANDARD,No,0,DAS,,,,,Full
-Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,2900,3050,70,10,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.67,Sensity 2   ,-,2900,3350,70,10,-12,0,-6,STANDARD,No,0,ATO,,,,,Full
-Seiko , A-Zone Base 5 - Wide View Aspheric for Base 5,Custom SV,PHOTOCHROMIC,1.67,Sensity 2   ,-,2950,3100,70,6,-12,0,-5,STANDARD,No,0,DAS,,,,,Full
-Seiko , Emblem,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,-,2950,3100,70,6,-12,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,-,2950,3100,70,6,-8,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko ,A-Zone Base 3 - Wide View Aspheric for Base 3,Custom SV,PHOTOCHROMIC,1.67,Sensity 2   ,-,2950,3100,70,8,-10,0,-5,STANDARD,No,0,DAS,,,,,Full
-Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.67,Sensity 2   ,-,3000,3150,70,0,-8,0,-5,STANDARD,No,0,ATO,,,,,Partial
-Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,3250,3400,70,6,-7.5,0,-5,STANDARD,No,0,ATO,,,,,Full
-Seiko , Emblem,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,-,3350,3500,70,6,-7.5,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.67,Sensity 2   ,-,3350,3500,70,6,-7.5,0,-5,STANDARD,No,0,ATO,,,,,Full
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,-,3850,4000,70,10,-12,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,3850,4000,70,0,-5,0,-2,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,-,3950,4100,70,12,-16,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,-,3950,4100,70,6,-10,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko , Emblem,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,-,4050,4500,70,6,-12,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,-,4050,4200,70,6,-7.5,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,-,4150,4300,70,6,-12,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,-,4250,4400,70,8,-10,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,4250,4400,70,12,-14,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,4250,4400,70,6,-12,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,-,4350,4500,70,12,-20,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,-,4350,4500,70,12,-14,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,4650,4800,70,12,-16,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,-,4750,4900,70,10,-16,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,4850,5000,70,8,-10,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial,
-Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,-,4950,5100,70,9,-11,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial,
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,5250,5400,70,10,-12,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,-,5350,5500,70,10,-12,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,5450,5600,70,6,-10,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,-,5550,5700,70,6,-10,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,5650,5800,70,10,-13,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,-,5750,5900,70,10,-13,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast/Dark    ,-,5950,6100,70,6,-12,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
-Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,-,5950,6100,70,8,-9,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial,
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity 2   ,-,6050,6200,70,6,-10,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast/Dark    ,-,6550,6700,70,6,-7.5,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity 2   ,-,6650,6800,70,6,-12,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast/Dark    ,-,7550,7700,70,6,-10,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
-Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity 2   ,-,7650,7800,70,6,-7.5,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,1500, -,70,10,-10,0,-6,STANDARD,No,0,SPH,,,,,Partial
+Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.55," Sensity 2 Brown, Grey, Green",-,1600, -,70,8,-10,0,-4,STANDARD,No,0,ASP,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.55," Sensity 2 Brown, Grey, Green",-,1600, -,70,8,-11,0,-4,HIGH,No,0,SPH,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,1650, -,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.55," Sensity 2 Brown, Grey, Green",-,1750, -,70,6,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
+Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,1800, -,70,8,-10,0,-4,STANDARD,No,0,ASP,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.59," Sensity 2 Brown, Grey, Green",-,1800, -,70,6,-10,0,-4,STANDARD,No,0,SPH,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,1800, -,70,8,-13,0,-4,HIGH,No,0,SPH,,,,,Partial
+Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,1850, -,70,8,-8.5,0,-4,STANDARD,No,0,DAS,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.59," Sensity 2 Brown, Grey, Green",-,1950, -,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,1950, -,70,6,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
+Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2050, -,70,8,-10,0,-4,STANDARD,No,0,DAS,,,,,Partial
+Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,2100, -,70,10,-15,0,-4,STANDARD,No,0,ASP,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,2200, -,70,8,-15,0,-4,HIGH,No,0,SPH,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,2250, -,70,7.5,-13,0,-4,HIGH,No,0,ATO,,,,,Partial
+Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,2350, -,70,10,-15,0,-4,STANDARD,No,0,DAS,,,,,Partial
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,2405, -,70,6,-8,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.55," Sensity 2 Brown, Grey, Green",-,2535, -,70,6,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,2600, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.55," Sensity 2 Brown, Grey, Green",-,2730, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.59," Sensity 2 Brown, Grey, Green",-,2795, -,70,6,-10,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,2795, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2925, -,70,6,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.59," Sensity 2 Brown, Grey, Green",-,2925, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.55," Sensity 2 Brown, Grey, Green",-,2925, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,3120, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.59," Sensity 2 Brown, Grey, Green",-,3120, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,3250, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,3315, -,70,7.5,-13,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,3315, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.55," Sensity 2 Brown, Grey, Green",-,3380, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,3510, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.59," Sensity 2 Brown, Grey, Green",-,3575, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,3705, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,3770, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,4160, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,1500, -,70,8,-8.5,0,-4,STANDARD,No,0,ASP,,,,,Partial
+Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.5, Sensity 2 Dark Grey,-,1600, -,70,8,-8.5,0,-4,STANDARD,No,0,ASP,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.5, Sensity 2 Dark Grey,-,1600, -,70,10,-10,0,-6,STANDARD,No,0,SPH,,,,,Partial
+Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,1700, -,70,8,-10,0,-4,STANDARD,No,0,ASP,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,1700, -,70,8,-11,0,-4,HIGH,No,0,SPH,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.5, Sensity 2 Dark Grey,-,1750, -,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,1850, -,70,6,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
+Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,1900, -,70,8,-10,0,-4,STANDARD,No,0,ASP,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.59, Sensity 2 Dark Grey,-,1900, -,70,6,-10,0,-4,STANDARD,No,0,SPH,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,1900, -,70,8,-13,0,-4,HIGH,No,0,SPH,,,,,Partial
+Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.5, Sensity 2 Dark Grey,-,1950, -,70,8,-8.5,0,-4,STANDARD,No,0,DAS,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.59, Sensity 2 Dark Grey,-,2050, -,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,2050, -,70,6,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
+Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,2150, -,70,8,-10,0,-4,STANDARD,No,0,DAS,,,,,Partial
+Pentax , Single Vision ASP Aspheric ,Custom SV,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,2200, -,70,10,-15,0,-4,STANDARD,No,0,ASP,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,2300, -,70,8,-15,0,-4,HIGH,No,0,SPH,,,,,Partial
+Pentax , Energy,Anti-Fatigue,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,2350, -,70,7.5,-13,0,-4,HIGH,No,0,ATO,,,,,Partial
+Pentax , Single Vision DAS Double Aspheric ,Custom SV,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,2450, -,70,10,-15,0,-4,STANDARD,No,0,DAS,,,,,Partial
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark Grey,-,2505, -,70,6,-8,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,2635, -,70,6,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark Grey,-,2700, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,2830, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark Grey,-,2895, -,70,6,-10,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark Grey,-,2895, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,3025, -,70,6,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark Grey,-,3025, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,3025, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,3220, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark Grey,-,3220, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.5, Sensity 2 Dark Grey,-,3350, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,3415, -,70,7.5,-13,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,3415, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,3480, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Flex,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,3610, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.59, Sensity 2 Dark Grey,-,3675, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,3805, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,3870, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,4260, -,70,7.5,-13,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax ,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,850, -,70,0,-5,0,-2,STANDARD,No,150,SPH,,,,,Partial
+Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.6,Sunergy Grey,-,600,-,65,0,-8,0,-4,STANDARD,No,150,ASP,,,,,None
+Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,70,0,-6,0,-2,STANDARD,No,150,ASP,,,,,None
+Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,70,0,-4,0,-4,STANDARD,No,150,ASP,,,,,None
+Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.6,Sunergy Grey,-,600,-,70,0,-10,0,-2,STANDARD,No,150,ASP,,,,,None
+Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,65,0.25,4,0,-2,STANDARD,No,150,ASP,,,,,None
+Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.54,ColorMatic Grey,-,1770, -,70,0,-8,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.6,ColorMatic Grey,-,1970, -,70,0,-10,0,-6,STANDARD,No,0,-,,,,,
+Rodenstock ,Cosmolit Free,Custom SV,PHOTOCHROMIC,1.54,ColorMatic Grey,-,2200,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.67,ColorMatic Grey,-,2270, -,70,0,-12,0,-6,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon 2,Myopia Control,PHOTOCHROMIC,1.54,ColorMatic Grey,-,2270, -,70,0,-8,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic Grey,-,2400, -,70,6,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Rodenstock , MyCon 2,Myopia Control,PHOTOCHROMIC,1.6,ColorMatic Grey,-,2470, -,70,0,-10,0,-6,STANDARD,No,0,-,,,,,
+Rodenstock ,Multigressiv Mono 2,Custom SV,PHOTOCHROMIC,1.54,ColorMatic Grey,-,2500,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock ,Cosmolit Free,Custom SV,PHOTOCHROMIC,1.6,ColorMatic Grey,-,2600,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock , MyCon 2,Myopia Control,PHOTOCHROMIC,1.67,ColorMatic Grey,-,2770, -,70,0,-12,0,-6,STANDARD,No,0,-,,,,,
+Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic Grey,-,2800, -,70,6,-10,0,-6,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic Grey,-,2800, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert,Near|Equal,Single,None,
+Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,PHOTOCHROMIC,1.54,ColorMatic Grey,-,2800,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.74,ColorMatic Grey,-,2870, -,70,0,-12,0,-6,STANDARD,No,0,-,,,,,
+Rodenstock ,Multigressiv Mono 2,Custom SV,PHOTOCHROMIC,1.6,ColorMatic Grey,-,2900,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock ,Cosmolit Free,Custom SV,PHOTOCHROMIC,1.67,ColorMatic Grey,-,3000,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock , Life Free 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic Grey,-,3200, -,70,6,-13,0,-6,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic Grey,-,3200, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,None,
+Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,PHOTOCHROMIC,1.6,ColorMatic Grey,-,3200,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock ,Multigressiv Mono 2,Custom SV,PHOTOCHROMIC,1.67,ColorMatic Grey,-,3300,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock , MyCon 2,Myopia Control,PHOTOCHROMIC,1.74,ColorMatic Grey,-,3370, -,70,0,-12,0,-6,STANDARD,No,0,-,,,,,
+Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic Grey,-,3500, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial,
+Rodenstock ,Multigressiv B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.54,ColorMatic Grey,-,3550,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock , PureLife Free 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic Grey,-,3600, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,None,
+Rodenstock ,Multigressiv Mono Plus 2,Anti-Fatigue,PHOTOCHROMIC,1.67,ColorMatic Grey,-,3600,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.54,ColorMatic Grey,-,3750,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic Grey,-,3800, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial,
+Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic Grey,-,3900, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial,
+Rodenstock ,Multigressiv B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.6,ColorMatic Grey,-,3900,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock ,Impression B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.54,ColorMatic Grey,-,4050,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.54,ColorMatic Grey,-,4100, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert,Near|Equal,Single,Full,
+Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.6,ColorMatic Grey,-,4100,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic Grey,-,4200, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial,
+Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.54,ColorMatic Grey,-,4250,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock , Multigressiv MyView 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic Grey,-,4300, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,Partial,
+Rodenstock ,Multigressiv B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.67,ColorMatic Grey,-,4300,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.54,ColorMatic Grey,-,4400, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
+Rodenstock ,Impression B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.6,ColorMatic Grey,-,4400,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.6,ColorMatic Grey,-,4500, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,Full,
+Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.67,ColorMatic Grey,-,4500,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Rodenstock , Multigressiv Mylife 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic Grey,-,4600, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Single,Partial,
+Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.6,ColorMatic Grey,-,4600,-,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,PHOTOCHROMIC,1.5,ColorMatic Grey,-,4650,-,70,4,-5,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,PHOTOCHROMIC,1.6,ColorMatic Grey,-,4750,-,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock ,Impression B.I.G. NORM Mono,Custom SV,PHOTOCHROMIC,1.67,ColorMatic Grey,-,4800,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.6,ColorMatic Grey,-,4850, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
+Rodenstock , Impression 2,Progressive,PHOTOCHROMIC,1.67,ColorMatic Grey,-,4900, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert,Near|Equal,Single,Full,
+Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.54,ColorMatic Grey,-,4950, -,70,6,-8,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
+Rodenstock ,Impression B.I.G. NORM Mono Plus,Anti-Fatigue,PHOTOCHROMIC,1.67,ColorMatic Grey,-,5000,-,70,6,-12,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,PHOTOCHROMIC,1.67,ColorMatic Grey,-,5050,-,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,PHOTOCHROMIC,1.67,ColorMatic Grey,-,5150, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
+Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.6,ColorMatic Grey,-,5400, -,70,6,-10,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.5,ColorMatic Grey,-,5550,-,70,4,-5,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.6,ColorMatic Grey,-,5650,-,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
+Rodenstock , Impression B.I.G. Norm,Progressive,PHOTOCHROMIC,1.67,ColorMatic Grey,-,5700, -,70,6,-13,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,PHOTOCHROMIC,1.67,ColorMatic Grey,-,5950,-,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
+Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,1700,1950,70,0,-9,0,-5,STANDARD,No,0,ATO,,,,,Partial
+Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,1900,2250,70,12,-16,0,-6,STANDARD,No,0,ATO,,,,,Full
+Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2000,2450,70,4,-6,0,-5,STANDARD,No,0,ATO,,,,,Partial
+Seiko ,Single Vision RX ASP,Custom SV,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2050,2200,70,0,-9,0,-5,STANDARD,No,0,ASP,,,,,Partial
+Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,2150,2500,70,6,-12,0,-5,STANDARD,No,0,ATO,,,,,Full
+Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2200,2650,70,12,-14,0,-6,STANDARD,No,0,ATO,,,,,Full
+Seiko ,Single Vision RX ASP,Custom SV,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,2350,2500,70,4,-6,0,-5,STANDARD,No,0,ASP,,,,,Partial
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,2450,2600,70,6,-10,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko , A-Zone Base 5 - Wide View Aspheric for Base 5,Custom SV,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2650,2800,70,6,-12,0,-5,STANDARD,No,0,DAS,,,,,Full
+Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2650,2800,70,6,-10,0,-5,STANDARD,No,0,ATO,,,,,Full
+Seiko ,A-Zone Base 3 - Wide View Aspheric for Base 3,Custom SV,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2650,2800,70,12,-12,0,-6,STANDARD,No,0,DAS,,,,,Full
+Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,2900,3350,70,10,-12,0,-6,STANDARD,No,0,ATO,,,,,Full
+Seiko , A-Zone Base 5 - Wide View Aspheric for Base 5,Custom SV,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,2950,3100,70,6,-12,0,-5,STANDARD,No,0,DAS,,,,,Full
+Seiko , Emblem,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,2950,3100,70,6,-12,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,2950,3100,70,6,-8,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko ,A-Zone Base 3 - Wide View Aspheric for Base 3,Custom SV,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,2950,3100,70,8,-10,0,-5,STANDARD,No,0,DAS,,,,,Full
+Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,3000,3150,70,0,-8,0,-5,STANDARD,No,0,ATO,,,,,Partial
+Seiko , Emblem,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,3350,3500,70,6,-7.5,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,3350,3500,70,6,-7.5,0,-5,STANDARD,No,0,ATO,,,,,Full
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,3950,4100,70,12,-16,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,3950,4100,70,6,-10,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko , Emblem,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,4050,4500,70,6,-12,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,4150,4300,70,6,-12,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,4350,4500,70,12,-20,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,4350,4500,70,12,-14,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,4750,4900,70,10,-16,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,4950,5100,70,9,-11,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial,
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,5350,5500,70,10,-12,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,5550,5700,70,6,-10,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,5750,5900,70,10,-13,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,5950,6100,70,8,-9,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial,
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.5," Sensity 2 Brown, Grey, Green",-,6050,6200,70,6,-10,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.6," Sensity 2 Brown, Grey, Green",-,6650,6800,70,6,-12,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.67," Sensity 2 Brown, Grey, Green",-,7650,7800,70,6,-7.5,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
+Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.5,Sensity Fast Grey / Dark Grey,-,1600,1850,70,10,-20,0,-6,STANDARD,No,0,ATO,,,,,Partial
+Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.5,Sensity Fast Grey / Dark Grey,-,1800,2250,70,10,-12,0,-6,STANDARD,No,0,ATO,,,,,Full
+Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,1900,2350,70,10,-15,0,-5,STANDARD,No,0,ATO,,,,,Partial
+Seiko ,Single Vision RX ASP,Custom SV,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,1950,2100,70,0,-8,0,-5,STANDARD,No,0,ASP,,,,,Partial
+Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,2100,2550,70,12,-14,0,-6,STANDARD,No,0,ATO,,,,,Full
+Seiko ,Single Vision RX ASP,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,2150,2300,70,5,-7,0,-5,STANDARD,No,0,ASP,,,,,Partial
+Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.5,Sensity Fast Grey / Dark Grey,-,2250,2400,70,6,-12,0,-5,STANDARD,No,0,ATO,,,,,Full
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.5,Sensity Fast Grey / Dark Grey,-,2450,2600,70,6,-8,0,-5,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko , A-Zone Base 5 - Wide View Aspheric for Base 5,Custom SV,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,2550,2700,70,6,-12,0,-5,STANDARD,No,0,DAS,,,,,Full
+Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,2550,2700,70,6,-10,0,-5,STANDARD,No,0,ATO,,,,,Full
+Seiko ,A-Zone Base 3 - Wide View Aspheric for Base 3,Custom SV,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,2550,2700,70,10,-12,0,-6,STANDARD,No,0,DAS,,,,,Full
+Seiko , SmartZoom Xceed,Anti-Fatigue,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,2800,3250,70,10,-12,0,-6,STANDARD,No,0,ATO,,,,,Full
+Seiko , A-Zone Base 5 - Wide View Aspheric for Base 5,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,2850,3000,70,6,-10,0,-5,STANDARD,No,0,DAS,,,,,Full
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,2850,3000,70,-3,-7,0,-2,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko ,A-Zone Base 3 - Wide View Aspheric for Base 3,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,2850,3000,70,10,-12,0,-6,STANDARD,No,0,DAS,,,,,Full
+Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,2900,3050,70,10,-12,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,3250,3400,70,6,-7.5,0,-5,STANDARD,No,0,ATO,,,,,Full
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.5,Sensity Fast Grey / Dark Grey,-,3850,4000,70,10,-12,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Seiko , Synergy Xtra,Progressive,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,3850,4000,70,0,-5,0,-2,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast Grey / Dark Grey,-,4050,4200,70,6,-7.5,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast Grey / Dark Grey,-,4250,4400,70,8,-10,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,4250,4400,70,12,-14,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,4250,4400,70,6,-12,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,4650,4800,70,12,-16,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Seiko , Pursuit AC-X Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,4850,5000,70,8,-10,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Equal,Double,Partial,
+Seiko , Superior Xcel,Progressive,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,5250,5400,70,10,-12,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Single,Full,
+Seiko ,Prime X ASP Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,5450,5600,70,6,-10,0,-5,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
+Seiko , Prime Xceed Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,5650,5800,70,10,-13,0,-6,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Full,
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.5,Sensity Fast Grey / Dark Grey,-,5950,6100,70,6,-12,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.6,Sensity Fast Grey / Dark Grey,-,6550,6700,70,6,-7.5,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
+Seiko , Brilliance Asp Near,Progressive,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,-,7550,7700,70,6,-10,0,-5,STANDARD,No,0,-,Expert|Balance|Entry,Near|Intermediate|Equal,Double,Full,
 Advance Lens,RX Single Vision,Custom SV,POLARIZED,1.5,Grey / Brown,640,-,-,70,4,-6,0,-4,STANDARD,No,0,SPH,,,,,Partial
 Advance Lens,RX Single Vision,Custom SV,POLARIZED,1.5,Polarized Gloss Mirror Grey / Brown,790,-,-,70,4,-6,0,-4,STANDARD,No,0,SPH,,,,,Partial
 Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.56,Grey / Brown,310,-,-,70,0,0,0,0,STANDARD,No,150,SPH,,,,,None
@@ -579,44 +579,44 @@ Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED
 Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.67,NuPolar Grey   ,2620,-,2720,70,4,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
 Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.5,Polarized    ,1570,-,1670,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
 Opto-tech ,Progressive Sun Lens – Comfort Sports Dynamic,Progressive,POLARIZED,1.53,Transitions Drivewear (Impact Resistant)  ,2770,2870,2870,70,4,-6,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Single,Partial,
-Pentax , Allfocus,Progressive,POLARIZED,1.5, Polarised,2405,2600, -,70,3,-8,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus,Progressive,POLARIZED,1.6, Polarised,3575,3770, -,70,4.5,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus,Progressive,POLARIZED,1.59, Polarised,3120,3315, -,70,6,-10,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
-Pentax , Allfocus Expert,Progressive,POLARIZED,1.5, Polarised,3250,3445, -,70,3,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Expert,Progressive,POLARIZED,1.59, Polarised,3900,4095, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Expert,Progressive,POLARIZED,1.6, Polarised,4420,4615, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
-Pentax , Allfocus Flex,Progressive,POLARIZED,1.5, Polarised,2600,2795, -,70,3,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Flex,Progressive,POLARIZED,1.59, Polarised,3250,3445, -,70,4.5,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Flex,Progressive,POLARIZED,1.6, Polarised,3770,3965, -,70,4.5,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
-Pentax , Allfocus Pro,Progressive,POLARIZED,1.5, Polarised,2795,2990, -,70,3,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Pro,Progressive,POLARIZED,1.6, Polarised,3965,4160, -,70,4.5,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Allfocus Pro,Progressive,POLARIZED,1.59, Polarised,3445,3640, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
-Pentax , Energy,Anti-Fatigue,POLARIZED,1.5, Polarised,1650,1800, -,70,3,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Pentax , Energy,Anti-Fatigue,POLARIZED,1.6, Polarised,2450,2600, -,70,4.5,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
-Pentax , Energy,Anti-Fatigue,POLARIZED,1.59, Polarised,2200,2350, -,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,POLARIZED,1.6, Polarised,2300,2450, -,70,6,-10,0,-4,STANDARD,No,0,SPH,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,POLARIZED,1.5, Polarised,1500,1650, -,70,7,-8,0,-4,STANDARD,No,0,SPH,,,,,Partial
-Pentax ,Single Vision SPH Spheric,Custom SV,POLARIZED,1.59, Polarised,2050,2200, -,70,9,-9,0,-6,STANDARD,No,0,SPH,,,,,Partial
-Rodenstock , Impression B.I.G. Norm,Progressive,POLARIZED,1.54, Polarised,4800, -, -,70,6,-6,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
-Rodenstock , Impression B.I.G. Norm,Progressive,POLARIZED,1.6, Polarised,5150, -, -,70,6,-6,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,POLARIZED,1.54, Polarised,3850, -, -,70,6,-6,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
-Rodenstock , Multigressiv B.I.G. Norm,Progressive,POLARIZED,1.6, Polarised,4600, -, -,70,6,-6,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
-Rodenstock , MyCon,Myopia Control,POLARIZED,1.54, Polarised,2110, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon,Myopia Control,POLARIZED,1.6, Polarised,2310, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon,Myopia Control,POLARIZED,1.67, Polarised,2610, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon,Myopia Control,POLARIZED,1.74, Polarised,3210, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.54, Polarised,2610, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.6, Polarised,2810, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.67, Polarised,3110, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.74, Polarised,3710, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
-Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,POLARIZED,1.5,-,4500,-,-,70,4,-5,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,POLARIZED,1.6,-,4600,-,-,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,POLARIZED,1.67,-,4900,-,-,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.5,-,5400,-,-,70,4,-5,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.6,-,5500,-,-,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
-Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.67,-,5800,-,-,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
-Seiko , I Xceed,Custom SV,POLARIZED,1.6,PolarThin    ,2200,2400,2800,70,6,-10,0,-5,STANDARD,Yes,150,ATO,,,,,Full
-Seiko , I Xceed,Custom SV,POLARIZED,1.67,PolarThin    ,3200,3400,3500,70,6,-7.5,0,-5,STANDARD,Yes,150,ATO,,,,,Full
+Pentax , Allfocus,Progressive,POLARIZED,1.5, Grey,2405,2600, -,70,3,-8,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus,Progressive,POLARIZED,1.6, Grey,3575,3770, -,70,4.5,-10,0,-4,HIGH,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus,Progressive,POLARIZED,1.59, Grey,3120,3315, -,70,6,-10,0,-4,STANDARD,No,0,-,Entry,Near|Equal,Single,None,
+Pentax , Allfocus Expert,Progressive,POLARIZED,1.5, Grey,3250,3445, -,70,3,-8,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Expert,Progressive,POLARIZED,1.59, Grey,3900,4095, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Expert,Progressive,POLARIZED,1.6, Grey,4420,4615, -,70,6,-10,0,-4,HIGH,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
+Pentax , Allfocus Flex,Progressive,POLARIZED,1.5, Grey,2600,2795, -,70,3,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Flex,Progressive,POLARIZED,1.59, Grey,3250,3445, -,70,4.5,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Flex,Progressive,POLARIZED,1.6, Grey,3770,3965, -,70,4.5,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,None,
+Pentax , Allfocus Pro,Progressive,POLARIZED,1.5, Grey,2795,2990, -,70,3,-8,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Pro,Progressive,POLARIZED,1.6, Grey,3965,4160, -,70,4.5,-10,0,-4,HIGH,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Allfocus Pro,Progressive,POLARIZED,1.59, Grey,3445,3640, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Equal,Single,Partial,
+Pentax , Energy,Anti-Fatigue,POLARIZED,1.5, Grey,1650,1800, -,70,3,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Pentax , Energy,Anti-Fatigue,POLARIZED,1.6, Grey,2450,2600, -,70,4.5,-10,0,-4,HIGH,No,0,ATO,,,,,Partial
+Pentax , Energy,Anti-Fatigue,POLARIZED,1.59, Grey,2200,2350, -,70,6,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,POLARIZED,1.6, Grey,2300,2450, -,70,6,-10,0,-4,STANDARD,No,0,SPH,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,POLARIZED,1.5, Grey,1500,1650, -,70,7,-8,0,-4,STANDARD,No,0,SPH,,,,,Partial
+Pentax ,Single Vision SPH Spheric,Custom SV,POLARIZED,1.59, Grey,2050,2200, -,70,9,-9,0,-6,STANDARD,No,0,SPH,,,,,Partial
+Rodenstock , Impression B.I.G. Norm,Progressive,POLARIZED,1.54, Grey,4800, -, -,70,6,-6,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
+Rodenstock , Impression B.I.G. Norm,Progressive,POLARIZED,1.6, Grey,5150, -, -,70,6,-6,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Full,
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,POLARIZED,1.54, Grey,3850, -, -,70,6,-6,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
+Rodenstock , Multigressiv B.I.G. Norm,Progressive,POLARIZED,1.6, Grey,4600, -, -,70,6,-6,0,-6,STANDARD,No,0,-,Expert|Balance|Entry,Equal|Intermediate,Double,Partial,
+Rodenstock , MyCon,Myopia Control,POLARIZED,1.54, Grey,2110, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon,Myopia Control,POLARIZED,1.6, Grey,2310, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon,Myopia Control,POLARIZED,1.67, Grey,2610, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon,Myopia Control,POLARIZED,1.74, Grey,3210, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.54, Grey,2610, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.6, Grey,2810, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.67, Grey,3110, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock , MyCon 2,Myopia Control,POLARIZED,1.74, Grey,3710, -, -,70,0,-6,0,-4,STANDARD,No,0,-,,,,,
+Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,POLARIZED,1.5, Grey,4500,-,-,70,4,-5,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,POLARIZED,1.6, Grey,4600,-,-,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock ,Impression B.I.G. NORM Mono Sport,Custom SV,POLARIZED,1.67, Grey,4900,-,-,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Full
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.5, Grey,5400,-,-,70,4,-5,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.6, Grey,5500,-,-,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
+Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,POLARIZED,1.67, Grey,5800,-,-,70,4,-6,0,-4,STANDARD,No,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
+Seiko , I Xceed,Custom SV,POLARIZED,1.6, Grey,2200,2400,2800,70,6,-10,0,-5,STANDARD,Yes,150,ATO,,,,,Full
+Seiko , I Xceed,Custom SV,POLARIZED,1.67, Grey,3200,3400,3500,70,6,-7.5,0,-5,STANDARD,Yes,150,ATO,,,,,Full
 Advance Lens,RX Single Vision,Custom SV,TINTED,1.5,Grey / Brown,340,-,-,70,4,-6,0,-4,STANDARD,Already,0,SPH,,,,,Partial
 Advance Lens,RX Single Vision,Custom SV,TINTED,1.56,Grey / Brown,550,-,-,70,4,-8,0,-4,STANDARD,Already,0,SPH,,,,,Partial
 Advance Lens,RX Single Vision,Custom SV,TINTED,1.6,Grey / Brown,550,-,-,70,4,-10,0,-4,STANDARD,Already,0,SPH,,,,,Partial
