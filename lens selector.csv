@@ -2,7 +2,7 @@ BRAND,PRODUCT_NAME,LENS_DESIGN,CLEAR_CHANGING_TINT,INDEX,EXTRA_NOTE,UV_400_PRICE
 Asahi ,Asahi Lite ASP Aspheric,Stock SV,CLEAR,1.67,-,650,850,-,70,-15,-3,0,-4,STANDARD,No,150,ASP,,,,,None
 Asahi ,Asahi Lite ASP Aspheric,Stock SV,CLEAR,1.74,-,920,1150,-,70,-15,-4,0,-3,STANDARD,No,150,ASP,,,,,None
 Asahi ,Asahi Lite ASP Aspheric,Stock SV,CLEAR,1.56,-,-,450,-,70,-6,0,0,-4,STANDARD,No,150,ASP,,,,,None
-Asahi ,Asahi Lite ASP Aspheric,Stock SV,CLEAR,1.61,-,520,600,-,70,-6,0,0,-2,STANDARD,No,150,ASP,,,,,None
+Asahi ,Asahi Lite ASP Aspheric,Stock SV,CLEAR,1.6,-,520,600,-,70,-6,0,0,-2,STANDARD,No,150,ASP,,,,,None
 Asahi ,Asahi Lite ASP Aspheric,Stock SV,CLEAR,1.56,-,-,450,-,65,0.25,4,0,-4,STANDARD,No,150,ASP,,,,,None
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,CLEAR,1.5,-,730,-,830,70,4,-6,0,-4,STANDARD,Yes,150,ATO,,,,,Partial
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,CLEAR,1.56,-,780,880,980,70,4,-6,0,-4,STANDARD,Yes,150,ATO,,,,,Partial
@@ -645,3 +645,4 @@ Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,TINTED,1.6,ColorMatic Sun
 Rodenstock ,Impression B.I.G. NORM Sport L,Progressive,TINTED,1.67,ColorMatic Sun,5800,-,-,70,4,-6,0,-4,STANDARD,Already,0,-,Expert|Balance|Entry,Intermediate,Double,Full,
 Rodenstock ,Multigressiv B.I.G. NORM Mono,Custom SV,TINTED,1.6, ColorMatic Sun (tinted adaptive sunglasses),3850,-,-,70,6,-10,0,-4,STANDARD,Already,0,ATO,,,,,Full
 Rodenstock ,Multigressiv B.I.G. NORM Mono Plus,Anti-Fatigue,TINTED,1.6, ColorMatic Sun (tinted adaptive sunglasses),4050,-,-,70,6,-10,0,-4,STANDARD,Already,0,ATO,,,,,Partial
+
