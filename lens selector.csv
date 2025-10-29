@@ -117,13 +117,13 @@ Pentax ,Single Vision SPH Spheric,Custom SV,CLEAR,1.55,-,700,850,1000,70,8,-11,0
 Pentax ,Single Vision SPH Spheric,Custom SV,CLEAR,1.6,-,900,1050,1200,70,8,-13,0,-4,STANDARD,Yes,150,SPH,,,,,Partial
 Pentax ,Single Vision SPH Spheric,Custom SV,CLEAR,1.67,-,1300,1450,1600,70,8,-15,0,-4,STANDARD,Yes,150,SPH,,,,,Partial
 Pentax ,Single Vision SPH Spheric,Custom SV,CLEAR,1.5,-,600,750, -,70,10,-10,0,-6,STANDARD,Yes,150,SPH,,,,,Partial
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,CLEAR,1.67,-,450,500,-,70,-12.5,-15,0,0,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,CLEAR,1.74,-,-,750,-,70,-4,-13,0,-2,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,CLEAR,1.74,-,-,750,-,70,-4,-10,0,-3,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,CLEAR,1.67,-,450,500,-,70,-3,-12,0,-2,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,CLEAR,1.67,-,450,500,-,70,-3,-10,0,-4,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,CLEAR,1.56,-,250,300,350,70,0,-8,0,-4,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,CLEAR,1.6,-,300,350,400,70,0,-8,0,-4,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,CLEAR,1.67,-,450,500,-,70,-12.5,-15,0,0,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,CLEAR,1.74,-,-,750,-,70,-4,-13,0,-2,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,CLEAR,1.74,-,-,750,-,70,-4,-10,0,-3,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,CLEAR,1.67,-,450,500,-,70,-3,-12,0,-2,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,CLEAR,1.67,-,450,500,-,70,-3,-10,0,-4,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,CLEAR,1.56,-,250,300,350,70,0,-8,0,-4,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,CLEAR,1.6,-,300,350,400,70,0,-8,0,-4,STANDARD,No,150,NONE,,,,,None
 Rodenstock , Impression 2,Progressive,CLEAR,1.54,-,3150,3750, -,70,6,-8,0,-4,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Full,
 Rodenstock , Impression 2,Progressive,CLEAR,1.6,-,3550,4150, -,70,6,-10,0,-6,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Full,
 Rodenstock , Impression 2,Progressive,CLEAR,1.67,-,3950,4550, -,70,6,-13,0,-6,STANDARD,Yes,150,-,Expert,Near|Equal,Single,Full,
@@ -409,11 +409,11 @@ Pentax , Allfocus Pro,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,3805,
 Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.6, Sensity 2 Dark Grey,-,3870, -,70,6,-10,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
 Pentax , Allfocus Expert,Progressive,PHOTOCHROMIC,1.67, Sensity 2 Dark Grey,-,4260, -,70,7.5,-13,0,-4,STANDARD,No,0,-,Balance,Near|Intermediate|Equal,Double,Full,
 Pentax ,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.55, Sensity 2 Dark Grey,-,850, -,70,0,-5,0,-2,STANDARD,No,150,SPH,,,,,Partial
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.6,Sunergy Grey,-,600,-,65,0,-8,0,-4,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,70,0,-6,0,-2,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,70,0,-4,0,-4,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.6,Sunergy Grey,-,600,-,70,0,-10,0,-2,STANDARD,No,150,NONE,,,,,None
-Rayfilter ,Rayfilter Stock ASP Aspheric,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,65,0.25,4,0,-2,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,PHOTOCHROMIC,1.6,Sunergy Grey,-,600,-,65,0,-8,0,-4,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,70,0,-6,0,-2,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,70,0,-4,0,-4,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,PHOTOCHROMIC,1.6,Sunergy Grey,-,600,-,70,0,-10,0,-2,STANDARD,No,150,NONE,,,,,None
+Rayfilter ,Rayfilter,Stock SV,PHOTOCHROMIC,1.56,Sunergy Grey,-,430,-,65,0.25,4,0,-2,STANDARD,No,150,NONE,,,,,None
 Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.54,ColorMatic Grey,-,1770, -,70,0,-8,0,-4,STANDARD,No,0,-,,,,,
 Rodenstock , MyCon,Myopia Control,PHOTOCHROMIC,1.6,ColorMatic Grey,-,1970, -,70,0,-10,0,-6,STANDARD,No,0,-,,,,,
 Rodenstock ,Cosmolit Free,Custom SV,PHOTOCHROMIC,1.54,ColorMatic Grey,-,2200,-,70,6,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
