@@ -447,11 +447,10 @@ Seiko ,Seiko AS UVF,Stock SV,CLEAR,1.6,-,7,-,730,-,70,0,-14,0,-6,STANDARD,No,150
 Seiko ,Single Vision RX ASP,Custom SV,CLEAR,1.67,-,7,1500,1700,1800,70,0,-10,0,-5,STANDARD,Yes,150,ASP,,,,,Partial
 Seiko ,Single Vision RX ASP,Custom SV,CLEAR,1.74,-,7,2100,2300,2400,70,5,-7,0,-5,STANDARD,Yes,150,ASP,,,,,Partial
 Seiko ,Single Vision RX ASP,Custom SV,CLEAR,1.6,-,7,1000,1200,1300,70,6,-8,0,-5,STANDARD,Yes,150,ASP,,,,,Partial
-Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.59,Grey,3,-,570,-,70,0,0,0,0,HIGH,No,150,SPH,,,,,None
-Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.56,Grey,3,-,500,-,70,0,0,0,0,STANDARD,No,150,SPH,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.59,Grey,3,-,570,-,70,0,0,0,0,HIGH,No,150,NONE,,,,,None
 Advance Lens,RX Single Vision,Custom SV,PHOTOCHROMIC,1.56,Grey,7,-,600,-,70,4,-6,0,-4,STANDARD,No,0,SPH,,,,,Partial
 Advance Lens,RX Single Vision,Custom SV,PHOTOCHROMIC,1.6,Grey,7,-,740,-,70,4,-6,0,-4,STANDARD,No,0,SPH,,,,,Partial
-Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.59,Photochromic Grey & Polarized Grey/Brown,3,-,740,-,70,0,0,0,0,HIGH,No,150,SPH,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,PHOTOCHROMIC,1.59,Photochromic Grey & Polarized Grey/Brown,3,-,740,-,70,0,0,0,0,HIGH,No,150,NONE,,,,,None
 Advance Lens,RX Single Vision,Custom SV,PHOTOCHROMIC,1.67,Grey,7,-,1700,-,70,4,-8,0,-4,STANDARD,No,0,SPH,,,,,Partial
 Opto-tech ,Atoric Single Vision (ASV),Custom SV,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,7,-,1285,1285,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,PHOTOCHROMIC,1.5,Transitions XTRActive Grey,7,-,1320,1320,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
@@ -584,9 +583,9 @@ Seiko , SmartZoom,Anti-Fatigue,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,7
 Seiko , I Xceed,Custom SV,PHOTOCHROMIC,1.67,Sensity Fast Grey / Dark Grey,7,-,3250,3400,70,6,-7.5,0,-5,STANDARD,No,0,ATO,,,,,Full
 Advance Lens,RX Single Vision,Custom SV,POLARIZED,1.5,Grey / Brown,7,640,-,-,70,4,-6,0,-4,STANDARD,No,0,SPH,,,,,Partial
 Advance Lens,RX Single Vision,Custom SV,POLARIZED,1.5,Polarized Gloss Mirror Grey / Brown,7,790,-,-,70,4,-6,0,-4,STANDARD,No,0,SPH,,,,,Partial
-Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.56,Grey / Brown,3,310,-,-,70,0,0,0,0,STANDARD,No,150,SPH,,,,,None
-Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.59,Grey / Brown,3,340,-,-,70,0,0,0,0,HIGH,No,150,SPH,,,,,None
-Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.56,Polarized Gloss Mirror Grey / Brown,3,400,-,-,70,0,0,0,0,STANDARD,No,150,SPH,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.56,Grey / Brown,3,310,-,-,70,0,0,0,0,STANDARD,No,150,NONE,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.59,Grey / Brown,3,340,-,-,70,0,0,0,0,HIGH,No,150,NONE,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,POLARIZED,1.56,Polarized Gloss Mirror Grey / Brown,3,400,-,-,70,0,0,0,0,STANDARD,No,150,NONE,,,,,None
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,POLARIZED,1.5,NuPolar Grey   ,7,1400,-,1500,70,4,-6,0,-4,STANDARD,No,0,ATO,,,,,Partial
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,POLARIZED,1.6,NuPolar Grey   ,7,1480,-,1580,70,4,-8,0,-4,STANDARD,No,0,ATO,,,,,Partial
 Opto-tech ,Anti-Fatigue Freeform Functional,Anti-Fatigue,POLARIZED,1.67,NuPolar Grey   ,7,1980,-,2080,70,4,-10,0,-4,STANDARD,No,0,ATO,,,,,Partial
@@ -627,9 +626,9 @@ Advance Lens,RX Single Vision,Custom SV,TINTED,1.56,Grey / Brown,7,550,-,-,70,4,
 Advance Lens,RX Single Vision,Custom SV,TINTED,1.6,Grey / Brown,7,550,-,-,70,4,-10,0,-4,STANDARD,Already,0,SPH,,,,,Partial
 Advance Lens,RX Single Vision,Custom SV,TINTED,1.67,Grey / Brown,7,640,-,-,70,4,-12,0,-4,STANDARD,Already,0,SPH,,,,,Partial
 Advance Lens,RX Single Vision,Custom SV,TINTED,1.53,Grey / Brown,7,790,-,-,70,4,-6,0,-4,HIGH,Already,0,SPH,,,,,Partial
-Advance Lens,Stock Single Vision,Stock SV,TINTED,1.56,Grey / Brown,3,220,-,-,70,0,0,0,0,STANDARD,Already,150,SPH,,,,,None
-Advance Lens,Stock Single Vision,Stock SV,TINTED,1.59,Grey / Brown,3,220,-,-,70,0,0,0,0,HIGH,Already,150,SPH,,,,,None
-Advance Lens,Stock Single Vision,Stock SV,TINTED,1.56,Tinted Gloss Mirror Grey / Brown,3,340,-,-,70,0,0,0,0,STANDARD,Already,150,SPH,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,TINTED,1.56,Grey / Brown,3,220,-,-,70,0,0,0,0,STANDARD,Already,150,NONE,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,TINTED,1.59,Grey / Brown,3,220,-,-,70,0,0,0,0,HIGH,Already,150,NONE,,,,,None
+Advance Lens,Stock Single Vision,Stock SV,TINTED,1.56,Tinted Gloss Mirror Grey / Brown,3,340,-,-,70,0,0,0,0,STANDARD,Already,150,NONE,,,,,None
 Rodenstock , MyCon,Myopia Control,TINTED,1.54, ColorMatic Sun (tinted adaptive sunglasses),7,2210, -, -,70,0,-8,0,-4,STANDARD,Already,0,-,,,,,
 Rodenstock , MyCon,Myopia Control,TINTED,1.6, ColorMatic Sun (tinted adaptive sunglasses),7,2410, -, -,70,0,-10,0,-6,STANDARD,Already,0,-,,,,,
 Rodenstock , MyCon,Myopia Control,TINTED,1.67, ColorMatic Sun (tinted adaptive sunglasses),7,2710, -, -,70,0,-12,0,-6,STANDARD,Already,0,-,,,,,
