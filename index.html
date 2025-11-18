@@ -19,6 +19,8 @@
     --btn-border:#ffffff;
   }
 
+
+
   html,body{
     background:var(--off);
     color:var(--green);
@@ -29,15 +31,15 @@
   }
   h1{font-size:13px;text-align:center;margin:12px 0 10px;}
   h3{font-size:12px;margin:0 0 8px;}
-  .wrap{width:90%;max-width:900px;margin:0 auto;padding:12px;}
+  .wrap{width:90%;max-width:900px;margin:0 auto;padding:5px;}
   .section{background:var(--pale);border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;}
   table{width:100%;border-collapse:collapse;}
-  th,td{border:1px solid var(--line);padding:6px;text-align:center;}
+  th,td{border:1px solid var(--line);padding:5px 3px;text-align:center; height:30px}
   th{background:#e8e8dd;}
 
   /* Inputs */
   input[type="text"], input[type="number"]{
-    width:90px;font-size:12px;padding:4px 6px;border:1px solid #c9c9c1;border-radius:6px;
+    width:90px;font-size:12px;padding:3px 3px;border:1px solid #c9c9c1;border-radius:6px;
     text-align:center;background:#fff;color:var(--green);
   }
   label{font-weight:600}
@@ -51,14 +53,14 @@
   button{
     background:var(--btn-bg);
     color:var(--btn-text);
-    border:2px solid var(--btn-border);
-    padding:8px 12px;
-    border-radius:10px;
+    border:1px solid var(--btn-border);
+    padding:5px 15px;
+    border-radius:7px;
     cursor:pointer;
     font-size:12px;
     font-weight:700;
   }
-  button:focus{outline:2px solid #fff4; outline-offset:2px;}
+  button:focus{outline:1px solid #fff4; outline-offset:1px;}
   button:hover{filter:brightness(1.05);}
   button:active{transform:translateY(1px);}
 
@@ -103,20 +105,34 @@
       <thead><tr><th>Eye</th><th>Sph</th><th>Cyl</th><th>Axis</th></tr></thead>
       <tbody>
         <tr>
-          <td><b>OD</b></td>
+          <td><b>Right Eye</b></td>
           <!-- text inputs so + sign is preserved -->
           <td><input type="text" id="sphOD" placeholder="e.g. -3.25"></td>
           <td><input type="text" id="cylOD" placeholder="e.g. -1.25"></td>
           <td><input type="number" id="axisOD" step="1" placeholder="e.g. 180"></td>
         </tr>
         <tr>
-          <td><b>OS</b></td>
+          <td><b>Left Eye</b></td>
           <td><input type="text" id="sphOS" placeholder="e.g. +2.00"></td>
           <td><input type="text" id="cylOS" placeholder="e.g. -0.75"></td>
           <td><input type="number" id="axisOS" step="1" placeholder="e.g. 90"></td>
         </tr>
+<tr>
+<td><b>Quick Fill Both Eye</b></td>
+<td colspan="3">
+<div class="quickRow"><b>SPH :</b>
+  <button class="quickBtn" onclick="bumpSphOU(+2)">+2.00 </button>
+  <button class="quickBtn" onclick="bumpSphOU(-2)">-2.00 </button>
+  <button class="quickBtn" onclick="bumpSphOU(+0.50)">+0.50 </button>
+  <button class="quickBtn" onclick="bumpSphOU(-0.50)">-0.50 </button>
+</div>
+</td>
+</tr>
       </tbody>
+
     </table>
+
+
 
     <div class="row" style="margin-top:12px; gap:20px;">
       <div class="field w90"><label for="frameA">Frame Size (A)</label><input id="frameA" type="number" placeholder="e.g. 52"></div>
@@ -125,43 +141,40 @@
       <div class="field w90"><label for="monoPD_OS">Left PD</label><input id="monoPD_OS" type="number" placeholder="e.g. 32"></div>
       <div class="field w90" style="display:none;"><label for="safety">Safety</label><input id="safety" type="number" placeholder="2" value="2"></div>
     </div>
-  </div>
 
   <!-- Stacked panes: 1) Thickness calc, 2) Price cap, 3) Fetch -->
-  <div class="section">
     <!-- 1: Thickness Calculation -->
-    <div class="pane" style="margin-bottom:10px;">
-      <h4>Thickness Calculation</h4>
-      <div class="row" style="gap:10px;">
-Choose either
-        <button id="btnCalc">Calculate by Frame Details</button> or 
-        <button id="btnLength">Calculate by Length (mm)</button>
+      <div class="row" style="margin:10px 0px; gap:10px;"> <label>Calculate Lens Size</label>
+        <button id="btnCalc">By RX Details </button> /  
    
           <label for="lengthInput" style="Display:none;">Length (mm)</label>
-          <input id="lengthInput" type="number" value="30" step="1" style="width:40px;">
+          <input id="lengthInput" type="number" value="30" step="1" style="width:40px;"> mm</b>
+        <button id="btnLength" style="background-color:lightsalmon; color:black">By Manual</button>
+
       </div>
-    </div>
 
-   
+  
 
 
+<div id="MBS" style="display:;">
 
   <!-- Thickness -->
-    <div class="pane" style="margin-bottom:10px;">
-    <h3>Minimum Blank Size & Thickness Preview</h3>
-    <div id="thicknessBars" style="margin-top:10px;"></div>
-    <div id="thickNote" class="tiny muted" style="margin-top:4px;"></div>
+
+    <div id="thicknessBars" style="margin-top:10px; display:none"></div>
+    <div id="thickNote" class="tiny muted" style="margin-top:4px; display:none"></div>
     <div id="mbsLine" class="tiny"></div>
   </div>
+ <button style="display:none" onclick="toggleDiv('MBS')">Show Minimum Blank Size & Thickness </button>
+
+</div>
+
+  <div class="section">
+
 
   <!-- Lens Options with Filters in white panes -->
-    <div class="pane" style="margin-bottom:10px;">
     <h3>Lens Options</h3>
- Fetch Lenses Needs Thickness Calculation First <button id="btnFetch">Fetch Lenses</button>
-    <span id="status" class="tiny muted"></span>
-    <button id="btnClearFilters">Clear All Filters</button>
 
-<div class="pane" style="margin:10px 0px 10px 0px;">
+<div class="pane" style="margin:10px 0px 10px 0px; display:none">
       <h4>Price (RM)</h4>
       <div class="row" style="gap:8px;align-items:center;">
         Max Price <input id="priceCap" type="number" placeholder="e.g. 1000" style="width:110px;">
@@ -170,54 +183,96 @@ Choose either
 </div>
 </div>
 
-    <div class="pane" style="margin-bottom:10px;">
+    <div class="pane" style="margin:10px 0;">
       <h4>Appearance</h4>
       <div class="filters">
-        <label class="chip"><input type="checkbox" class="fl-appear" value="Clear" checked> Clear</label>
-        <label class="chip"><input type="checkbox" class="fl-appear" value="Photochromic" checked> Photochromic</label>
-        <label class="chip"><input type="checkbox" class="fl-appear" value="Tinted" checked> Tinted</label>
-        <label class="chip"><input type="checkbox" class="fl-appear" value="Polarized" checked> Polarized</label>
+        <label class="chip"><input type="checkbox" class="fl-appear" value="Clear" > Clear</label>
+        <label class="chip"><input type="checkbox" class="fl-appear" value="Photochromic" > Photochromic</label>
+        <label class="chip"><input type="checkbox" class="fl-appear" value="Tinted" > Tinted</label>
+        <label class="chip"><input type="checkbox" class="fl-appear" value="Polarized" > Polarized</label>
       </div>
     </div>
 
     <div class="pane" style="margin-bottom:10px;">
-      <h4>Index Group</h4>
+      <h4>Lens Material</h4>
       <div class="filters">
-        <label class="chip"><input type="checkbox" class="fl-index" value="1.5" checked> 1.5 group</label>
-        <label class="chip"><input type="checkbox" class="fl-index" value="Safety" checked> Safety (1.53/1.59)</label>
-        <label class="chip"><input type="checkbox" class="fl-index" value="1.6" checked> 1.6 group</label>
-        <label class="chip"><input type="checkbox" class="fl-index" value="1.67" checked> 1.67 group</label>
-        <label class="chip"><input type="checkbox" class="fl-index" value="1.74" checked> 1.74 group</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="1.5" >Normal</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="1.6">Thinner</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="1.67" > Extra Thin</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="1.74">Most Thin</label>
+        <label class="chip"><input type="checkbox" class="fl-index" value="Safety" > Safety Material</label>
       </div>
     </div>
 
     <div class="pane" style="margin-bottom:10px;">
       <h4>Function</h4>
       <div class="filters">
-        <label class="chip"><input type="checkbox" class="fl-func" value="SV" checked> SV</label>
-        <label class="chip"><input type="checkbox" class="fl-func" value="Multifocal" checked> Multifocal</label>
-        <label class="chip"><input type="checkbox" class="fl-func" value="Office" checked> Office</label>
-        <label class="chip"><input type="checkbox" class="fl-func" value="Anti-fatigue" checked> Anti-Fatigue</label>
+        <label class="chip"><input type="checkbox" class="fl-func" value="SV" > Single Vision</label>
+        <label class="chip"><input type="checkbox" class="fl-func" value="Multifocal" > Multifocal</label>
+        <label class="chip"><input type="checkbox" class="fl-func" value="Office" > Office</label>
+        <label class="chip"><input type="checkbox" class="fl-func" value="Anti-fatigue" > Anti-Fatigue</label>
+<label class="chip"><input type="checkbox" class="fl-func" value="Myopia Control" > Myopia Control</label>
+
       </div>
-    </div>
+
+   </div>
+
+<div class="pane" style="margin-bottom:10px;">
+  <h4>Lens Performance</h4>
+  <div class="filters">
+    <label class="chip"><input type="checkbox" class="fl-perf" value="Basic Economical"> Basic Economical</label>
+    <label class="chip"><input type="checkbox" class="fl-perf" value="Premium Economical"> Premium Economical</label>
+    <label class="chip"><input type="checkbox" class="fl-perf" value="Premium Custom"> Premium Custom</label>
+    <label class="chip"><input type="checkbox" class="fl-perf" value="Luxury Custom"> Luxury Custom</label>
+  </div>
+</div>
+
+
+
+
+
+
+ <button style="background-color:lightsalmon; color:black"id="btnFetch">Search Lenses</button>
+    <span id="status" class="tiny muted"></span>
+    <button id="btnClearFilters">Clear All Filters</button>
 
     <table id="resultsTable" style="margin-top:8px;">
       <thead>
         <tr>
           <th>Product</th>
-          <th>Index</th>
-          <th>Type</th>
-          <th>Price (UV420)</th>
-          <th>High-Clarity +RM</th>
-          <th>Stock/RX</th>
+	  <th>Lens Type</th>
+          <th>Blue-Reduce<br>Coating</th>
+          <th>Premium<br>Coating</th>
+          <th>Lens Size</th>
         </tr>
       </thead>
       <tbody id="resultsBody">
-        <tr><td colspan="6" class="muted">Calculate thickness first, then click “Fetch Lenses”.</td></tr>
+        <tr><td colspan="6" class="muted">Calculate Lens Size first, then click “Search Lenses”.</td></tr>
       </tbody>
     </table>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
 /* =========================
@@ -381,13 +436,55 @@ function getIndexGroup(val=""){
   if(Math.abs(n-1.74)<0.02) return "1.74";
   return "1.5";
 }
-function getFunctionCat(val=""){
+function getFunctionCat(val = "") {
   const s = val.toLowerCase();
-  if(s.includes("anti")) return "Anti-fatigue";
-  if(s.includes("office") || s.includes("room")) return "Office";
-  if(s.includes("pal") || s.includes("progress") || s.includes("multi")) return "Multifocal";
+
+  // --- Myopia Control ---
+  if (
+    s.includes("myopia control") ||
+    s.includes("mc") ||
+    s.includes("control")
+  ) {
+    return "Myopia Control";
+  }
+
+  // --- Multifocal ---
+  if (
+    s.includes("pal") ||
+    s.includes("progress") ||
+    s.includes("progressive") ||
+    s.includes("multifocal") ||
+    s.includes("bifocal")
+  ) {
+    return "Multifocal";
+  }
+
+  // --- Office ---
+  if (
+    s.includes("office") ||
+    s.includes("room") ||
+    s.includes("workspace") ||
+    s.includes("near variable") ||
+    s.includes("nvf") ||
+    s.includes("computer")
+  ) {
+    return "Office";
+  }
+
+  // --- Anti-fatigue ---
+  if (
+    s.includes("anti-fatigue") ||
+    s.includes("antifatigue") ||
+    s.includes("relax") ||
+    s.includes("boost") ||
+    s.includes("af")
+  ) {
+    return "Anti-fatigue";
+  }
+
   return "SV";
 }
+
 function checkedValues(selector){
   return Array.from(document.querySelectorAll(selector)).filter(i=>i.checked).map(i=>i.value);
 }
@@ -396,18 +493,29 @@ function checkedValues(selector){
    RESULTS TABLE
 ========================= */
 function withinCap(price, cap){ if(!cap) return true; return Number(price) <= cap * 1.10; } // buffer kept silently
+
+
 function buildResults(geom, rx){
   const body = document.getElementById("resultsBody");
   body.innerHTML = "";
 
   if(!geom){
-    body.innerHTML = `<tr><td colspan="6" class="muted">Calculate thickness first, then click “Fetch Lenses”.</td></tr>`;
+    body.innerHTML = `<tr><td colspan="6" class="muted" style="color:var(--warn);font-weight:700;">Calculate Lens Size first, then click “Search Lenses”.</td></tr>`;
     return;
   }
 
   const appearSet = checkedValues(".fl-appear");
   const indexSet  = checkedValues(".fl-index");
   const funcSet   = checkedValues(".fl-func");
+
+  // 🚨 RULE: Each group MUST have ≥1 checked
+  if (appearSet.length === 0 || indexSet.length === 0 || funcSet.length === 0) {
+    body.innerHTML = `
+      <tr><td colspan="6" class="muted" style="color:var(--warn);font-weight:700;">
+        Please select at least one filter in every group.
+      </td></tr>`;
+    return;
+  }
 
   const cap = parseFloat(document.getElementById("priceCap").value)||0;
   const FhOD = effectivePower(rx.OD.S, rx.OD.C, rx.OD.Ax);
@@ -419,30 +527,41 @@ function buildResults(geom, rx){
 
     const app = getAppearance(row["CLEAR_CHANGING_TINT"]||"");
     const idxGroup = getIndexGroup(row["INDEX"]||"");
-    const func = getFunctionCat(row["FUNCTION"]||"");
+    const func = getFunctionCat(row["LENS_DESIGN"]||"");
+// Convert short codes to full words
+let funcDisplay = func;
+if (func === "SV") funcDisplay = "Single Vision";
 
-    if(appearSet.length && !appearSet.includes(app)) return;
-    if(indexSet.length  && !indexSet.includes(idxGroup)) return;
-    if(funcSet.length   && !funcSet.includes(func)) return;
+
+    // strict filter matching
+    if(!appearSet.includes(app)) return;
+    if(!indexSet.includes(idxGroup)) return;
+    if(!funcSet.includes(func)) return;
 
     const dia = parseFloat(row["DIA"]||"0");
-    let stockMsg = "Stock OK";
+    let stockMsg = "Ok";
+
     if(dia < geom.MBS){
-      const shortfall = +(geom.MBS - dia).toFixed(1);
-      const prism = Math.abs(((shortfall/2)/10) * FhOD).toFixed(1); // Prentice
-      const isStock = /stock/i.test(row["LENS_DESIGN"]||"") || /stock/i.test(row["PRODUCT_NAME"]||"");
-      stockMsg = isStock
-        ? `<span style="color:var(--warn);font-weight:700;">⚠ Lens too small – ${prism}Δ prism risk.</span>`
-        : `Custom diameter +RM100 (larger lens).`;
+      stockMsg = `<span style="color:var(--warn);font-weight:700;">⚠ Cannot fit</span>`;
     }
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${row["PRODUCT_NAME"]||""}</td>
-      <td>${row["INDEX"]||""}</td>
-      <td>${app} / ${func}</td>
-      <td>${price ? "RM"+price : "—"}</td>
-      <td>${row["HIGH_CLARITY_COATING_PRICE_RM"] ? "+RM"+row["HIGH_CLARITY_COATING_PRICE_RM"] : "—"}</td>
+      <td>${row["INDEX"]||""}  ${app}  ${funcDisplay}</td>
+
+
+<td>${fmtRM(price)}</td>
+<td>${
+  row["HIGH_CLARITY_COATING_PRICE_RM"] &&
+  !isNaN(parseFloat(row["HIGH_CLARITY_COATING_PRICE_RM"]))
+    ? fmtRM(row["HIGH_CLARITY_COATING_PRICE_RM"])
+    : "—"
+}</td>
+
+
+
+
       <td>${stockMsg}</td>
     `;
     body.appendChild(tr);
@@ -450,11 +569,18 @@ function buildResults(geom, rx){
   });
 
   if(!count){
-    const tr = document.createElement("tr");
-    tr.innerHTML = `<td colspan="6" class="muted">No items match filters or price cap.</td>`;
-    body.appendChild(tr);
+    body.innerHTML = `<tr><td colspan="6" class="muted">No items match filters or price cap.</td></tr>`;
   }
 }
+
+
+
+
+
+
+
+
+
 
 /* =========================
    BARS / THICKNESS
@@ -557,29 +683,38 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const pdOD = getVal("monoPD_OD"), pdOS = getVal("monoPD_OS");
     const safety = getVal("safety") || 2;
 
-    if(!A || !DBL || !pdOD || !pdOS){
-      document.getElementById("mbsLine").innerHTML = "<span style='color:var(--warn);'>Please key in frame details and PD.</span>";
-      LAST_GEOM = null; LAST_MODE = null;
-      document.getElementById("thicknessBars").innerHTML = "";
-      document.getElementById("thickNote").textContent = "";
-      return;
-    }
+if(!A || !DBL || !pdOD || !pdOS){
+  document.getElementById("mbsLine").innerHTML = 
+    `<div style="margin-bottom:4px;">
+       <span style='color:var(--warn);'>Please key in frame details and PD.</span>
+     </div>`;
+  LAST_GEOM = null; LAST_MODE = null;
+  document.getElementById("thicknessBars").innerHTML = "";
+  document.getElementById("thickNote").textContent = "";
+  return;
+}
+
 
     LAST_GEOM = computeMBS(A,DBL,pdOD,pdOS,safety); // {semiOD, semiOS, MBS}
     LAST_MODE = "frame";
-    document.getElementById("mbsLine").innerHTML = `<strong> - Minimum Blank Size:</strong> <strong> ${LAST_GEOM.MBS.toFixed(1)} mm</strong>`;
+    document.getElementById("mbsLine").innerHTML = `<div style="margin-bottom:4px;">Minimum Lens Size <strong> ${LAST_GEOM.MBS.toFixed(0)} mm</strong> diameter</div>`;
     renderBars(rx, LAST_GEOM, "frame");
   };
 
-  // Calculate by Length — thickness only
-  document.getElementById("btnLength").onclick=()=>{
-    const rx = parseRx();
-    const len = getVal("lengthInput") || 30;
-    LAST_GEOM = { semiOD: len, semiOS: len, MBS: 2*len };
-    LAST_MODE = "length";
-    document.getElementById("mbsLine").textContent = `Thickness at ${len} mm`;
-    renderBars(rx, LAST_GEOM, "length", len);
-  };
+// Calculate by Length — thickness only
+document.getElementById("btnLength").onclick = () => {
+  const rx = parseRx();
+  const len = getVal("lengthInput") || 30;
+  LAST_GEOM = { semiOD: len, semiOS: len, MBS: 2 * len };
+  LAST_MODE = "length";
+
+  // Bold the diameter + margin-bottom
+  document.getElementById("mbsLine").innerHTML =
+    `<div style="margin-bottom:4px;">Minimum Lens Size <strong>${len * 2} mm</strong> diameter</div>`;
+
+  renderBars(rx, LAST_GEOM, "length", len);
+};
+
 
   // Fetch Lenses — uses LAST_GEOM + filters
   document.getElementById("btnFetch").onclick=()=>{
@@ -595,12 +730,69 @@ document.getElementById("btnClearFilters").onclick = () => {
 
   // Optional: also clear the table message so it's obvious filters are cleared
   // const body = document.getElementById("resultsBody");
-  // body.innerHTML = `<tr><td colspan="6" class="muted">Filters cleared. Click “Fetch Lenses”.</td></tr>`;
+  // body.innerHTML = `<tr><td colspan="6" class="muted">Filters cleared. Click “Search Lenses”.</td></tr>`;
 };
+
+function fmtRM(n){
+  if (!n || isNaN(n)) return "—";
+  return Number(n).toLocaleString("en-MY"); 
+}
 
 
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function bumpSph(id, amount){
+  const el = document.getElementById(id);
+  if(!el) return;
+
+  let v = parseToNumber(el.value || "0");
+
+  // ADD or SUBTRACT
+  v = v + amount;
+
+  // Snap to 0.25
+  v = round025number(v);
+
+  // Keep + sign
+  el.value = formatSigned025(v);
+}
+
+function bumpSphOU(amount){
+  bumpSph("sphOD", amount);
+  bumpSph("sphOS", amount);
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
