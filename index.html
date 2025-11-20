@@ -21,6 +21,13 @@
 
 
 
+th {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
   html,body{
     background:var(--off);
     color:var(--green);
@@ -29,12 +36,12 @@
     line-height:1.35;
     margin:0;
   }
-  h1{font-size:13px;text-align:center;margin:12px 0 10px;}
-  h3{font-size:12px;margin:0 0 8px;}
+  h1{font-size:30px;text-align:center;margin:12px 0 10px;}
+  h3{font-size:20px;margin:0 0 8px;}
   .wrap{width:90%;max-width:900px;margin:0 auto;padding:5px;}
   .section{background:var(--pale);border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0;}
   table{width:100%;border-collapse:collapse;}
-  th,td{border:1px solid var(--line);padding:5px 3px;text-align:center; height:30px}
+  th,td{border:1px solid var(--line);padding:5px 5px 5px 10px; height:25px}
   th{background:#e8e8dd;}
 
   /* Inputs */
@@ -96,31 +103,317 @@
 <body>
 
 <div class="wrap">
-  <h1>Lens Selector (Geometry & Fitting)</h1>
+<div style="height:200px"></div>
+  <h1>Kiara Optometry's Ophthalmic Lens Selector</h1>
+<div style="height:200px"></div>
 
-  <!-- Prescription + Frame -->
   <div class="section">
-    <h3>Prescription & Frame Details</h3>
+
+
+<h3>Let's Connect! Send A Whatsapp</h3>
+
+
+<div class="pane" style="margin:10px 0 10px 0">
+
+  <b>Name :</b> &nbsp&nbsp&nbsp&nbsp <input id="waName" type="text"
+         placeholder=""
+         style="width:300px; height:20px">
+</div>
+
+<div class="pane" style="margin:0px 0 10px 0">
+    <b>Whatsapp :</b> &nbsp&nbsp&nbsp&nbsp <input id="waNumber" type="text"
+           placeholder="With country code (e.g. 601170199170)"
+           style="width:300px; height:20px">
+
+   &nbsp&nbsp&nbsp&nbsp <span id="countryDisplay" style="font-size:13px; color:#0b3d2e;">Malaysia</span>
+  </div>
+
+<div class="pane" style="margin:0px 0 0px 0">
+
+  <b>Message :</b> &nbsp&nbsp&nbsp&nbsp<textarea id="waMessage" rows="4"
+            placeholder="Type or select preset messages..."
+            style="width:500px; height:70px; border-radius:6px; border:1px solid lightgrey"></textarea>
+
+</div>
+
+
+<div style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:10px;">
+
+  <!-- Undo / Redo -->
+  <div style="display:flex; gap:10px; margin:10px 0 10px 0">
+    <button type="button" onclick="undoMsg()">Undo Message</button>
+    <button type="button" onclick="redoMsg()">Redo Message</button>
+
+  <!-- Open WhatsApp -->
+  <button onclick="openWhatsApp()" style="background-color:lightsalmon; color:black">
+    Send WhatsApp
+  </button>
+</div>
+
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const numberInput = document.getElementById("waNumber");
+  numberInput.addEventListener("input", updateCountryDisplay);
+});
+
+let history = [];
+let redoStack = [];
+
+/* === Undo / Redo Management === */
+function saveState() {
+  const msg = document.getElementById("waMessage").value;
+  history.push(msg);
+  if (history.length > 30) history.shift();
+  redoStack = [];
+}
+
+function addPreset(text) {
+  const box = document.getElementById("waMessage");
+  let current = box.value.trim();
+
+  saveState();
+
+  // Adds each preset on a new paragraph
+  if (!current) {
+    box.value = text;
+  } else {
+    box.value = `${current}\n\n${text}`;
+  }
+}
+
+// ✅ Separate function, not inside addPreset
+function addPersonalPreset() {
+  const nameInput = document.getElementById("waName").value.trim();
+  const name = capitalizeName(nameInput) || "there";
+  const message = `Greetings from Kiara Optometry! Thank you for dropping by ${name}.`;
+
+  addPreset(message);
+}
+
+
+
+
+function undoMsg() {
+  if (history.length === 0) return;
+  const box = document.getElementById("waMessage");
+  redoStack.push(box.value);
+  box.value = history.pop() || "";
+}
+
+function redoMsg() {
+  if (redoStack.length === 0) return;
+  const box = document.getElementById("waMessage");
+  history.push(box.value);
+  box.value = redoStack.pop();
+}
+
+/* === Name Formatting === */
+function capitalizeName(name) {
+  name = name.trim();
+  if (!name) return "";
+  return name
+    .split(/\s+/) // split by spaces
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+    .join(" ");
+}
+
+
+/* === Country Flag & Name Display === */
+document.addEventListener("DOMContentLoaded", () => {
+  const numberInput = document.getElementById("waNumber");
+  numberInput.addEventListener("input", updateCountryDisplay);
+});
+
+/* === Country Flag & Name Display === */
+function detectCountry(num) {
+  const countries = [
+    // --- SE Asia ---
+{ code: "60", name: "Malaysia" },
+{ code: "65", name: "Singapore" },
+{ code: "62", name: "Indonesia" },
+{ code: "63", name: "Philippines" },
+{ code: "66", name: "Thailand" },
+{ code: "84", name: "Vietnam" },
+{ code: "673", name: "Brunei" },
+{ code: "95", name: "Myanmar" },
+{ code: "856", name: "Laos" },
+
+// --- East Asia ---
+{ code: "81", name: "Japan" },
+{ code: "82", name: "South Korea" },
+{ code: "86", name: "China" },
+{ code: "852", name: "Hong Kong" },
+{ code: "853", name: "Macau" },
+{ code: "886", name: "Taiwan" },
+
+// --- South Asia ---
+{ code: "91", name: "India" },
+{ code: "92", name: "Pakistan" },
+{ code: "94", name: "Sri Lanka" },
+{ code: "880", name: "Bangladesh" },
+{ code: "977", name: "Nepal" },
+
+// --- Oceania ---
+{ code: "61", name: "Australia" },
+{ code: "64", name: "New Zealand" },
+{ code: "687", name: "New Caledonia" },
+
+// --- Middle East ---
+{ code: "971", name: "UAE" },
+{ code: "966", name: "Saudi Arabia" },
+{ code: "965", name: "Kuwait" },
+{ code: "968", name: "Oman" },
+{ code: "973", name: "Bahrain" },
+{ code: "974", name: "Qatar" },
+{ code: "962", name: "Jordan" },
+
+// --- Africa ---
+{ code: "27", name: "South Africa" },
+{ code: "234", name: "Nigeria" },
+{ code: "254", name: "Kenya" },
+{ code: "255", name: "Tanzania" },
+{ code: "256", name: "Uganda" },
+{ code: "263", name: "Zimbabwe" },
+{ code: "20", name: "Egypt" },
+
+// --- Europe ---
+{ code: "44", name: "United Kingdom" },
+{ code: "33", name: "France" },
+{ code: "49", name: "Germany" },
+{ code: "34", name: "Spain" },
+{ code: "39", name: "Italy" },
+{ code: "31", name: "Netherlands" },
+{ code: "32", name: "Belgium" },
+{ code: "36", name: "Hungary" },
+{ code: "43", name: "Austria" },
+{ code: "41", name: "Switzerland" },
+{ code: "46", name: "Sweden" },
+{ code: "47", name: "Norway" },
+{ code: "45", name: "Denmark" },
+{ code: "351", name: "Portugal" },
+{ code: "420", name: "Czech Republic" },
+{ code: "421", name: "Slovakia" },
+{ code: "48", name: "Poland" },
+{ code: "358", name: "Finland" },
+{ code: "40", name: "Romania" },
+{ code: "30", name: "Greece" },
+{ code: "385", name: "Croatia" },
+{ code: "386", name: "Slovenia" },
+{ code: "372", name: "Estonia" },
+{ code: "371", name: "Latvia" },
+{ code: "370", name: "Lithuania" },
+{ code: "353", name: "Ireland" },
+
+// --- Americas ---
+{ code: "1", name: "United States / Canada" },
+{ code: "55", name: "Brazil" },
+{ code: "54", name: "Argentina" },
+{ code: "57", name: "Colombia" },
+{ code: "51", name: "Peru" },
+{ code: "56", name: "Chile" },
+{ code: "58", name: "Venezuela" }
+
+  ];
+
+  num = num.trim().replace(/[^\d+]/g, "");
+  if (num.startsWith("+")) num = num.slice(1);
+
+
+  let match = countries.find(c => num.startsWith(c.code));
+  if (!num) return { flag: "🌍", name: "Enter number" };
+  return match || { flag: "🌍", name: "Unknown Country" };
+}
+
+function updateCountryDisplay() {
+  const num = document.getElementById("waNumber").value;
+  const info = detectCountry(num);
+  const display = document.getElementById("countryDisplay");
+  display.textContent = info.name; 
+}
+
+function formatPhone(num) {
+  num = num.trim();
+
+  // If starts with +, remove it BEFORE stripping non-digits
+  if (num.startsWith("+")) num = num.slice(1);
+
+  // Remove everything except digits
+  num = num.replace(/[^\d]/g, "");
+
+  // If user types 0xxxx... → treat as Malaysia
+  if (num.startsWith("0")) {
+    return "6" + num;  // 017 → 6017
+  }
+
+  // If starts with 60 → already Malaysia
+  if (num.startsWith("60")) {
+    return num;
+  }
+
+  // Otherwise foreign number → leave as is
+  return num;
+}
+
+
+
+
+/* === WhatsApp Link Builder === */
+function openWhatsApp() {
+  let name = document.getElementById("waName").value.trim();
+  let num = document.getElementById("waNumber").value.trim();
+  const msg = document.getElementById("waMessage").value.trim();
+
+  if (!num) return alert("Please enter a phone number");
+
+  name = capitalizeName(name);
+  document.getElementById("waName").value = name;
+
+  num = formatPhone(num);
+  document.getElementById("waNumber").value = num;
+
+  const url = `https://wa.me/${num}?text=${encodeURIComponent(msg)}`;
+  window.open(url, "_blank");
+}
+
+</script>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="section">
+    <h3>Key in Prescription & Calculate Lens Size</h3>
+<div class="pane" style="margin-top:10px">
+
     <table>
-      <thead><tr><th>Eye</th><th>Sph</th><th>Cyl</th><th>Axis</th></tr></thead>
       <tbody>
         <tr>
-          <td><b>Right Eye</b></td>
-          <!-- text inputs so + sign is preserved -->
+          <td style="width:170px">Right Eye : SPH / CYL / AXIS </td>
           <td><input type="text" id="sphOD" placeholder="e.g. -3.25"></td>
           <td><input type="text" id="cylOD" placeholder="e.g. -1.25"></td>
           <td><input type="number" id="axisOD" step="1" placeholder="e.g. 180"></td>
         </tr>
         <tr>
-          <td><b>Left Eye</b></td>
+          <td style="width:170px">Left Eye : SPH / CYL / AXIS </td>
           <td><input type="text" id="sphOS" placeholder="e.g. +2.00"></td>
           <td><input type="text" id="cylOS" placeholder="e.g. -0.75"></td>
           <td><input type="number" id="axisOS" step="1" placeholder="e.g. 90"></td>
         </tr>
 <tr>
-<td><b>Quick Fill Both Eye</b></td>
+<td>Quick Fill Both Eye</td>
 <td colspan="3">
-<div class="quickRow"><b>SPH :</b>
+<div class="quickRow">SPH :
   <button class="quickBtn" onclick="bumpSphOU(+2)">+2.00 </button>
   <button class="quickBtn" onclick="bumpSphOU(-2)">-2.00 </button>
   <button class="quickBtn" onclick="bumpSphOU(+0.50)">+0.50 </button>
@@ -131,25 +424,30 @@
       </tbody>
 
     </table>
+</div>
 
-
-
-    <div class="row" style="margin-top:12px; gap:20px;">
+<div class="pane" style="margin-top:10px">
+<h4>Frame Details</h4>
+    <div class="row" style="gap:20px;">
       <div class="field w90"><label for="frameA">Frame Size (A)</label><input id="frameA" type="number" placeholder="e.g. 52"></div>
       <div class="field w90"><label for="frameDBL">Bridge (DBL)</label><input id="frameDBL" type="number" placeholder="e.g. 17"></div>
       <div class="field w90"><label for="monoPD_OD">Right PD</label><input id="monoPD_OD" type="number" placeholder="e.g. 31"></div>
       <div class="field w90"><label for="monoPD_OS">Left PD</label><input id="monoPD_OS" type="number" placeholder="e.g. 32"></div>
       <div class="field w90" style="display:none;"><label for="safety">Safety</label><input id="safety" type="number" placeholder="2" value="2"></div>
     </div>
+</div>
 
-  <!-- Stacked panes: 1) Thickness calc, 2) Price cap, 3) Fetch -->
-    <!-- 1: Thickness Calculation -->
-      <div class="row" style="margin:10px 0px; gap:10px;"> <label>Calculate Lens Size</label>
-        <button id="btnCalc">By RX Details </button> /  
+
+<div class="pane" style="margin-top:10px">
+ 
+<h4>Calculate Lens Size</h4>
+      <div class="row" style="margin:10px 0px; gap:10px;">   
+     <button id="btnCalc">By RX Details </button> &nbsp&nbsp&nbsp OR &nbsp&nbsp&nbsp 
    
           <label for="lengthInput" style="Display:none;">Length (mm)</label>
-          <input id="lengthInput" type="number" value="30" step="1" style="width:40px;"> mm</b>
+
         <button id="btnLength" style="background-color:lightsalmon; color:black">By Manual</button>
+          <input id="lengthInput" type="number" value="30" step="1" style="width:40px;">Input Longest Radius in mm</b>
 
       </div>
 
@@ -167,12 +465,16 @@
  <button style="display:none" onclick="toggleDiv('MBS')">Show Minimum Blank Size & Thickness </button>
 
 </div>
+</div>
+
+
+
+
+
+
 
   <div class="section">
-
-
-  <!-- Lens Options with Filters in white panes -->
-    <h3>Lens Options</h3>
+    <h3>Find Your Lens Here</h3>
 
 <div class="pane" style="margin:10px 0px 10px 0px; display:none">
       <h4>Price (RM)</h4>
@@ -205,13 +507,14 @@
     </div>
 
     <div class="pane" style="margin-bottom:10px;">
-      <h4>Function</h4>
+      <h4>Lens Type</h4>
       <div class="filters">
-        <label class="chip"><input type="checkbox" class="fl-func" value="SV" > Single Vision</label>
-        <label class="chip"><input type="checkbox" class="fl-func" value="Multifocal" > Multifocal</label>
-        <label class="chip"><input type="checkbox" class="fl-func" value="Office" > Office</label>
-        <label class="chip"><input type="checkbox" class="fl-func" value="Anti-fatigue" > Anti-Fatigue</label>
-<label class="chip"><input type="checkbox" class="fl-func" value="Myopia Control" > Myopia Control</label>
+<label class="chip"><input type="checkbox" class="fl-func" value="SV" onclick="updatePerformanceOptions()"> Single Vision</label>
+<label class="chip"><input type="checkbox" class="fl-func" value="Multifocal" onclick="updatePerformanceOptions()"> Multifocal</label>
+<label class="chip"><input type="checkbox" class="fl-func" value="Office" onclick="updatePerformanceOptions()"> Office</label>
+<label class="chip"><input type="checkbox" class="fl-func" value="Anti-fatigue" onclick="updatePerformanceOptions()"> Anti-Fatigue</label>
+<label class="chip"><input type="checkbox" class="fl-func" value="Myopia Control" onclick="updatePerformanceOptions()"> Myopia Control</label>
+
 
       </div>
 
@@ -219,48 +522,258 @@
 
 <div class="pane" style="margin-bottom:10px;">
   <h4>Lens Performance</h4>
-  <div class="filters">
-    <label class="chip"><input type="checkbox" class="fl-perf" value="Basic Economical"> Basic Economical</label>
-    <label class="chip"><input type="checkbox" class="fl-perf" value="Premium Economical"> Premium Economical</label>
-    <label class="chip"><input type="checkbox" class="fl-perf" value="Premium Custom"> Premium Custom</label>
-    <label class="chip"><input type="checkbox" class="fl-perf" value="Luxury Custom"> Luxury Custom</label>
-  </div>
+
+  <!-- This container will be dynamically replaced -->
+  <div id="perfContainer" class="filters"></div>
 </div>
 
 
 
+<div style="height:20px"></div>
 
 
 
  <button style="background-color:lightsalmon; color:black"id="btnFetch">Search Lenses</button>
     <span id="status" class="tiny muted"></span>
     <button id="btnClearFilters">Clear All Filters</button>
+<div style="height:20px"></div>
+
 
     <table id="resultsTable" style="margin-top:8px;">
-      <thead>
-        <tr>
-          <th>Product</th>
-	  <th>Lens Type</th>
-          <th>Blue-Reduce<br>Coating</th>
-          <th>Premium<br>Coating</th>
-          <th>Lens Size</th>
-        </tr>
-      </thead>
+    
+
+<thead>
+  <tr>
+    <th style="user-select:none;">Pick</th>
+    <th onclick="sortResults(0)">Product<br> ▲▼</th>
+    <th onclick="sortResults(1)">Lens Type<br> ▲▼</th>
+    <th onclick="sortResults(2)">Normal<br>Blue-Reduce<br> ▲▼</th>
+    <th onclick="sortResults(3)">Premium<br>Glare-Reduce<br> ▲▼</th>
+    <th onclick="sortResults(4)">Lens Size<br> ▲▼</th>
+  </tr>
+</thead>
+
+
+
       <tbody id="resultsBody">
         <tr><td colspan="6" class="muted">Calculate Lens Size first, then click “Search Lenses”.</td></tr>
       </tbody>
     </table>
   </div>
+
+
+<div class="section">
+  <h3>Shortlisted Lenses</h3>
+  <table id="shortlistTable" style="width:100%;">
+    <thead>
+      <tr>
+        <th>Pick</th>
+        <th>Product</th>
+        <th>Lens Type</th>
+        <th>Blue-Reduce</th>
+        <th>Premium</th>
+        <th>Lens Size</th>
+      </tr>
+    </thead>
+    <tbody id="shortlistBody">
+    </tbody>
+  </table>
+</div>
 </div>
 
 
 
+<script>
+let sortState = { col: null, asc: true };
+
+function sortResults(colIndex) {
+  const table = document.getElementById("resultsTable");
+  const rows = Array.from(document.querySelectorAll("#resultsBody tr"));
+
+  // Toggle direction
+  if (sortState.col === colIndex) {
+    sortState.asc = !sortState.asc;
+  } else {
+    sortState.col = colIndex;
+    sortState.asc = true;
+  }
+
+  rows.sort((a, b) => {
+    const A = a.children[colIndex].innerText.trim();
+    const B = b.children[colIndex].innerText.trim();
+
+    // --- Numeric sorting if RM or number ---
+    const numA = parseFloat(A.replace(/[^0-9.]/g, ""));
+    const numB = parseFloat(B.replace(/[^0-9.]/g, ""));
+
+    const bothNum = !isNaN(numA) && !isNaN(numB);
+
+    if (bothNum) {
+      return sortState.asc ? numA - numB : numB - numA;
+    }
+
+    // --- Text sorting ---
+    return sortState.asc
+      ? A.localeCompare(B)
+      : B.localeCompare(A);
+  });
+
+  // Re-attach sorted rows
+  const body = document.getElementById("resultsBody");
+  body.innerHTML = "";
+  rows.forEach(r => body.appendChild(r));
+}
+</script>
+
+
+
+
+
+<script>
+let shortlistedItems = new Set();
+
+function addToShortlist(rowData) {
+  const id = rowData.PRODUCT_NAME + "|" + rowData.INDEX; // unique key
+
+  // --- Prevent duplicates ---
+  if (shortlistedItems.has(id)) return;
+  shortlistedItems.add(id);
+
+  const tbody = document.getElementById("shortlistBody");
+
+  // Remove “Empty” message
+  const emptyRow = tbody.querySelector(".empty-shortlist");
+  if (emptyRow) emptyRow.remove();
+
+  const tr = document.createElement("tr");
+  tr.setAttribute("data-id", id);
+
+  tr.innerHTML = `
+<td><input type="checkbox" checked onclick="removeShortlist('${id}')"></td>
+    <td>${rowData.PRODUCT_NAME}</td>
+    <td>${rowData.INDEX} / ${rowData.CLEAR_CHANGING_TINT}</td>
+    <td>${fmtRM(rowData.UV_420_BL_PRICE_RM)}</td>
+    <td>${fmtRM(rowData.HIGH_CLARITY_COATING_PRICE_RM)}</td>
+    <td>${rowData.DIA}</td>
+  `;
+
+  tbody.appendChild(tr);
+}
+
+function removeShortlist(id) {
+  shortlistedItems.delete(id);
+
+  const tbody = document.getElementById("shortlistBody");
+  const row = tbody.querySelector(`tr[data-id="${id}"]`);
+  if (row) row.remove();
+
+  // Uncheck result table checkbox
+  const pickBox = document.getElementById("pick_" + id);
+  if (pickBox) pickBox.checked = false;
+
+  // If empty → show placeholder
+  if (tbody.children.length === 0) {
+    tbody.innerHTML = `
+      <tr class="empty-shortlist">
+        <td colspan="6" class="muted tiny">Nothing shortlisted yet.</td>
+      </tr>`;
+  }
+}
+
+
+</script>
+<script>
+function toggleShortlist(box, rowData, id) {
+  if (box.checked) {
+    addToShortlist(rowData);
+  } else {
+    removeShortlist(id);
+  }
+}
+</script>
 
 
 
 
 
 
+
+<script>
+const PERF_OPTIONS = {
+  "SV": [
+    "Basic Economical",
+    "Premium Economical",
+    "Premium Custom",
+    "Luxury Custom"
+  ],
+
+  "Multifocal": [
+    "Basic",
+    "All-Round",
+    "Distance Preferred",
+    "Near Preferred",
+    "Premium All-Round",
+    "Custom PAL"
+  ],
+
+  "Office": [
+    "Basic Office",
+    "Room Distance",
+    "Intermediate Priority",
+    "Near Priority",
+    "Wide-Field Premium"
+  ],
+
+  "Anti-fatigue": [
+    "Standard Boost",
+    "Premium Boost",
+    "Relaxation Plus",
+    "Anti-Fatigue Custom"
+  ],
+
+  "Myopia Control": [
+    "Standard MC",
+    "Advanced MC",
+    "Nighttime MC",
+    "Peripheral Plus MC"
+  ]
+};
+</script>
+
+
+<script>
+function updatePerformanceOptions() {
+
+  const funcSelected = Array.from(document.querySelectorAll(".fl-func"))
+    .filter(cb => cb.checked)
+    .map(cb => cb.value);
+
+  const container = document.getElementById("perfContainer");
+
+  if (funcSelected.length === 0) {
+    container.innerHTML = "<div class='muted tiny'>Select a <b>Lens Type</b> first.</div>";
+    return;
+  }
+
+  // For now, follow the FIRST selected function
+  const func = funcSelected[0];
+
+  const items = PERF_OPTIONS[func] || ["No performance choices available"];
+
+  container.innerHTML = items
+    .map(p => `
+      <label class="chip">
+        <input type="checkbox" class="fl-perf" value="${p}">
+        ${p}
+      </label>
+    `)
+    .join("");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updatePerformanceOptions();   
+});
+</script>
 
 
 
@@ -417,13 +930,20 @@ document.addEventListener("DOMContentLoaded", init);
 /* =========================
    FILTER GROUPING HELPERS
 ========================= */
-function getAppearance(val=""){
-  const s = val.toLowerCase();
+function getAppearance(row){
+  const tint = (row["TINT_OPTION"] || "").trim();
+
+  if (tint === "Yes") return "Tinted";
+  if (tint === "Already") return "Tinted";
+  // "No" → not tinted
+
+  const s = (row["CLEAR_CHANGING_TINT"] || "").toLowerCase();
   if(s.includes("polar")) return "Polarized";
-  if(s.includes("tint"))  return "Tinted";
   if(s.includes("chang") || s.includes("photo")) return "Photochromic";
+
   return "Clear";
 }
+
 function getIndexGroup(val=""){
   const n = parseFloat(val)||0;
   if(n===1.53 || n===1.59) return "Safety";
@@ -522,12 +1042,21 @@ function buildResults(geom, rx){
 
   let count = 0;
   PRODUCTS.forEach(row=>{
-    const price = parseFloat(row["UV_420_BL_PRICE_RM"]||"0");
-    if(!withinCap(price, cap)) return;
+let price = parseFloat(row["UV_420_BL_PRICE_RM"] || "0");
 
-    const app = getAppearance(row["CLEAR_CHANGING_TINT"]||"");
+// Add RM150 for tinting (Yes = tinting needed; Already = built-in)
+const tintOpt = (row["TINT_OPTION"] || "").trim();
+if (tintOpt === "Yes") {
+  price += 150;
+}    if(!withinCap(price, cap)) return;
+
+    const app = getAppearance(row);
     const idxGroup = getIndexGroup(row["INDEX"]||"");
     const func = getFunctionCat(row["LENS_DESIGN"]||"");
+
+
+
+
 // Convert short codes to full words
 let funcDisplay = func;
 if (func === "SV") funcDisplay = "Single Vision";
@@ -545,25 +1074,48 @@ if (func === "SV") funcDisplay = "Single Vision";
       stockMsg = `<span style="color:var(--warn);font-weight:700;">⚠ Cannot fit</span>`;
     }
 
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${row["PRODUCT_NAME"]||""}</td>
-      <td>${row["INDEX"]||""}  ${app}  ${funcDisplay}</td>
-
-
-<td>${fmtRM(price)}</td>
-<td>${
-  row["HIGH_CLARITY_COATING_PRICE_RM"] &&
-  !isNaN(parseFloat(row["HIGH_CLARITY_COATING_PRICE_RM"]))
-    ? fmtRM(row["HIGH_CLARITY_COATING_PRICE_RM"])
-    : "—"
-}</td>
 
 
 
 
-      <td>${stockMsg}</td>
-    `;
+const key = row["PRODUCT_NAME"] + "_" + Math.random().toString(36).slice(2);
+
+const rowHTML = `
+  <td>${row["PRODUCT_NAME"]||""}</td>
+  <td>${row["INDEX"]||""} ${app} ${funcDisplay}</td>
+  <td>${fmtRM(price)}</td>
+  <td>${
+    row["HIGH_CLARITY_COATING_PRICE_RM"] &&
+    !isNaN(parseFloat(row["HIGH_CLARITY_COATING_PRICE_RM"]))
+      ? fmtRM(row["HIGH_CLARITY_COATING_PRICE_RM"])
+      : "—"
+  }</td>
+  <td>${stockMsg}</td>
+`;
+
+const id = row["PRODUCT_NAME"] + "|" + row["INDEX"];
+
+const tr = document.createElement("tr");
+tr.setAttribute("data-id", id);
+
+tr.innerHTML = `
+  <td>
+    <input type="checkbox"
+      id="pick_${id}"
+      onchange='toggleShortlist(this, ${JSON.stringify(row)}, "${id}")'>
+  </td>
+  ${rowHTML}
+`;
+
+
+
+
+
+
+
+
+
+
     body.appendChild(tr);
     count++;
   });
@@ -790,7 +1342,7 @@ function bumpSphOU(amount){
 
 
 
-
+<div style="height:200px"></div>
 
 
 
