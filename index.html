@@ -547,16 +547,17 @@ function openWhatsApp() {
     <th style="user-select:none;">Pick</th>
     <th onclick="sortResults(0)">Product<br> ▲▼</th>
     <th onclick="sortResults(1)">Lens Type<br> ▲▼</th>
-    <th onclick="sortResults(2)">Normal<br>Blue-Reduce<br> ▲▼</th>
-    <th onclick="sortResults(3)">Premium<br>Glare-Reduce<br> ▲▼</th>
-    <th onclick="sortResults(4)">Lens Size<br> ▲▼</th>
+    <th onclick="sortResults(2)">UV400<br> ▲▼</th>
+    <th onclick="sortResults(3)">Blue-Reduce<br> ▲▼</th>
+    <th onclick="sortResults(4)">Premium<br> ▲▼</th>
+    <th onclick="sortResults(5)">Lens Size<br> ▲▼</th>
   </tr>
 </thead>
 
 
 
       <tbody id="resultsBody">
-        <tr><td colspan="6" class="muted">Calculate Lens Size first, then click “Search Lenses”.</td></tr>
+        <tr><td colspan="7" class="muted">Calculate Lens Size first, then click “Search Lenses”.</td></tr>
       </tbody>
     </table>
   </div>
@@ -583,232 +584,199 @@ function openWhatsApp() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
+/* =========================================================
+   MASTER SCRIPT (REWRITE) — FIXED FUNCTION FILTERING
+   - No duplicate functions
+   - Robust getFunctionCat for: Custom SV / Stock SV / Multifocal / Office /
+     Anti-fatigue / Myopia Control
+   - Perf options refresh on lens-type change
+   - Optional perf filtering if you tick perf chips
+========================================================= */
+
+/* =========================
+   SORT
+========================= */
 let sortState = { col: null, asc: true };
 
-function sortResults(colIndex) {
-  const table = document.getElementById("resultsTable");
-  const rows = Array.from(document.querySelectorAll("#resultsBody tr"));
+function sortResults(colIndex){
+  const body = document.getElementById("resultsBody");
+  if(!body) return;
 
-  // Toggle direction
-  if (sortState.col === colIndex) {
-    sortState.asc = !sortState.asc;
-  } else {
-    sortState.col = colIndex;
-    sortState.asc = true;
-  }
+  const rows = Array.from(body.querySelectorAll("tr"))
+    .filter(r => r.children.length > colIndex + 1);
 
-  rows.sort((a, b) => {
-    const A = a.children[colIndex].innerText.trim();
-    const B = b.children[colIndex].innerText.trim();
+  if (sortState.col === colIndex) sortState.asc = !sortState.asc;
+  else { sortState.col = colIndex; sortState.asc = true; }
 
-    // --- Numeric sorting if RM or number ---
-    const numA = parseFloat(A.replace(/[^0-9.]/g, ""));
-    const numB = parseFloat(B.replace(/[^0-9.]/g, ""));
+  const tdIndex = colIndex + 1; // +1 because col0 is checkbox
 
-    const bothNum = !isNaN(numA) && !isNaN(numB);
+  rows.sort((a,b)=>{
+    const A = (a.children[tdIndex]?.innerText || "").trim();
+    const B = (b.children[tdIndex]?.innerText || "").trim();
 
-    if (bothNum) {
-      return sortState.asc ? numA - numB : numB - numA;
-    }
+    const nA = parseFloat(A.replace(/[^0-9.-]/g,""));
+    const nB = parseFloat(B.replace(/[^0-9.-]/g,""));
+    const aNum = !isNaN(nA);
+    const bNum = !isNaN(nB);
 
-    // --- Text sorting ---
-    return sortState.asc
-      ? A.localeCompare(B)
-      : B.localeCompare(A);
+    if (aNum && bNum) return sortState.asc ? (nA-nB) : (nB-nA);
+    if (aNum !== bNum) return aNum ? -1 : 1;
+    return sortState.asc ? A.localeCompare(B) : B.localeCompare(A);
   });
 
-  // Re-attach sorted rows
-  const body = document.getElementById("resultsBody");
   body.innerHTML = "";
-  rows.forEach(r => body.appendChild(r));
+  rows.forEach(r=>body.appendChild(r));
 }
-</script>
 
-
-
-
-
-<script>
+/* =========================
+   SHORTLIST (7 cols)
+========================= */
 let shortlistedItems = new Set();
 
-function addToShortlist(rowData) {
-  const id = rowData.PRODUCT_NAME + "|" + rowData.INDEX; // unique key
-
-  // --- Prevent duplicates ---
-  if (shortlistedItems.has(id)) return;
+function addToShortlist(rowData, finalUV420Price){
+  const id = rowData.PRODUCT_NAME + "|" + rowData.INDEX;
+  if(shortlistedItems.has(id)) return;
   shortlistedItems.add(id);
 
   const tbody = document.getElementById("shortlistBody");
-
-  // Remove “Empty” message
   const emptyRow = tbody.querySelector(".empty-shortlist");
-  if (emptyRow) emptyRow.remove();
+  if(emptyRow) emptyRow.remove();
 
   const tr = document.createElement("tr");
   tr.setAttribute("data-id", id);
 
   tr.innerHTML = `
-<td><input type="checkbox" checked onclick="removeShortlist('${id}')"></td>
-    <td>${rowData.PRODUCT_NAME}</td>
-    <td>${rowData.INDEX} / ${rowData.CLEAR_CHANGING_TINT}</td>
-    <td>${fmtRM(rowData.UV_420_BL_PRICE_RM)}</td>
-    <td>${fmtRM(rowData.HIGH_CLARITY_COATING_PRICE_RM)}</td>
-    <td>${rowData.DIA}</td>
+    <td><input type="checkbox" checked onclick="removeShortlist('${id}')"></td>
+    <td>${rowData.PRODUCT_NAME || ""}</td>
+    <td>${rowData.INDEX || ""} / ${getAppearance(rowData)} / ${getFunctionCat(rowData["LENS_DESIGN"]||"")}</td>
+    <td>${fmtRM(rowData.UV_400_PRICE_RM)}</td>
+    <td>${fmtRM(finalUV420Price)}</td>
+    <td>${
+      rowData.HIGH_CLARITY_COATING_PRICE_RM &&
+      !isNaN(parseFloat(rowData.HIGH_CLARITY_COATING_PRICE_RM))
+        ? fmtRM(rowData.HIGH_CLARITY_COATING_PRICE_RM)
+        : "—"
+    }</td>
+    <td>${rowData.DIA || "-"}</td>
   `;
-
   tbody.appendChild(tr);
 }
 
-function removeShortlist(id) {
+function removeShortlist(id){
   shortlistedItems.delete(id);
 
   const tbody = document.getElementById("shortlistBody");
   const row = tbody.querySelector(`tr[data-id="${id}"]`);
-  if (row) row.remove();
+  if(row) row.remove();
 
-  // Uncheck result table checkbox
   const pickBox = document.getElementById("pick_" + id);
-  if (pickBox) pickBox.checked = false;
+  if(pickBox) pickBox.checked = false;
 
-  // If empty → show placeholder
-  if (tbody.children.length === 0) {
+  if(tbody.children.length === 0){
     tbody.innerHTML = `
       <tr class="empty-shortlist">
-        <td colspan="6" class="muted tiny">Nothing shortlisted yet.</td>
+        <td colspan="7" class="muted tiny">Nothing shortlisted yet.</td>
       </tr>`;
   }
 }
 
-
-</script>
-<script>
-function toggleShortlist(box, rowData, id) {
-  if (box.checked) {
-    addToShortlist(rowData);
-  } else {
-    removeShortlist(id);
-  }
+function toggleShortlist(box, rowData, id, finalUV420Price){
+  if(box.checked) addToShortlist(rowData, finalUV420Price);
+  else removeShortlist(id);
 }
-</script>
 
+/* =========================
+   PERFORMANCE SCORING (tag only)
+========================= */
+const VIEW_STYLE_SCORE = { ASP:1, SPH:3, DAS:2, ATO:4 };
+const VIEW2_STYLE_SCORE = { ASP:1, SPH:2 };
+const SV_PERSON_SCORE = { Full:3, Partial:2, None:1 };
 
+function perfScore(row){
+  const v1 = (row["VIEWING_STYLE"] || "").trim();
+  const v2 = (row["2_VIEWING_STYLE"] || "").trim();
+  const sv = (row["SV_PERSONALIZATION"] || "").trim();
 
+  const s1 = VIEW_STYLE_SCORE[v1] || 0;
+  const s2 = VIEW2_STYLE_SCORE[v2] || 0;
+  const s3 = SV_PERSON_SCORE[sv] || 0;
 
+  return { s1, s2, s3, total: s1+s2+s3 };
+}
 
-
-
-<script>
+/* =========================
+   PERF OPTIONS UI
+========================= */
 const PERF_OPTIONS = {
-  "SV": [
-    "Basic Economical",
-    "Premium Economical",
-    "Premium Custom",
-    "Luxury Custom"
-  ],
-
-  "Multifocal": [
-    "Basic",
-    "All-Round",
-    "Distance Preferred",
-    "Near Preferred",
-    "Premium All-Round",
-    "Custom PAL"
-  ],
-
-  "Office": [
-    "Basic Office",
-    "Room Distance",
-    "Intermediate Priority",
-    "Near Priority",
-    "Wide-Field Premium"
-  ],
-
-  "Anti-fatigue": [
-    "Standard Boost",
-    "Premium Boost",
-    "Relaxation Plus",
-    "Anti-Fatigue Custom"
-  ],
-
-  "Myopia Control": [
-    "Standard MC",
-    "Advanced MC",
-    "Nighttime MC",
-    "Peripheral Plus MC"
-  ]
+  "SV": ["Basic Economical","Premium Economical","Premium Custom","Luxury Custom"],
+  "Multifocal": ["Basic","All-Round","Distance Preferred","Near Preferred","Premium All-Round","Custom PAL"],
+  "Office": ["Basic Office","Room Distance","Intermediate Priority","Near Priority","Wide-Field Premium"],
+  "Anti-fatigue": ["Standard Boost","Premium Boost","Relaxation Plus","Anti-Fatigue Custom"],
+  "Myopia Control": ["Standard MC","Advanced MC","Nighttime MC","Peripheral Plus MC"]
 };
-</script>
 
-
-<script>
-function updatePerformanceOptions() {
-
+function updatePerformanceOptions(){
   const funcSelected = Array.from(document.querySelectorAll(".fl-func"))
-    .filter(cb => cb.checked)
-    .map(cb => cb.value);
+    .filter(cb=>cb.checked)
+    .map(cb=>cb.value);
 
   const container = document.getElementById("perfContainer");
+  if(!container) return;
 
-  if (funcSelected.length === 0) {
+  if(!funcSelected.length){
     container.innerHTML = "<div class='muted tiny'>Select a <b>Lens Type</b> first.</div>";
     return;
   }
 
-  // For now, follow the FIRST selected function
-  const func = funcSelected[0];
-
+  const func = funcSelected[0]; // follow first checked lens type
   const items = PERF_OPTIONS[func] || ["No performance choices available"];
 
-  container.innerHTML = items
-    .map(p => `
-      <label class="chip">
-        <input type="checkbox" class="fl-perf" value="${p}">
-        ${p}
-      </label>
-    `)
-    .join("");
+  container.innerHTML = items.map(p=>`
+    <label class="chip">
+      <input type="checkbox" class="fl-perf" value="${p}">
+      ${p}
+    </label>
+  `).join("");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  updatePerformanceOptions();   
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
 /* =========================
-   CONFIG
+   CONFIG / STATE
 ========================= */
 const CSV_URL = "https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/lens%20selector.csv";
 const INDICES = [1.56, 1.60, 1.67, 1.74];
-const CENTER_MINUS = 1.3;   // minus lens min center thickness
-const EDGE_PLUS    = 1.3;   // plus lens min center thickness
-const BASE_PX      = 50 * 0.6; // px per mm before scale radios
+const CENTER_MINUS = 1.3;
+const EDGE_PLUS    = 1.3;
+const BASE_PX      = 50 * 0.6;
+
+let PRODUCTS = [];
+let LAST_GEOM = null;
+let LAST_MODE = null;
 
 function minusCorr(n){ if(n===1.56) return 1.075; if(n===1.60) return 1.025; return 1; }
 function plusCorr(n){  if(n===1.56) return 1.10;  if(n===1.60) return 1.05;  if(n===1.67) return 1.025; if(n===1.74) return 1.0125; return 1; }
 
 /* =========================
-   STATE
-========================= */
-let PRODUCTS = [];
-let LAST_GEOM = null;   // {semiOD, semiOS, MBS}
-let LAST_MODE = null;   // "frame" | "length"
-
-/* =========================
-   INPUT ROUNDING (text inputs keep + sign)
+   INPUT ROUNDING
 ========================= */
 function parseToNumber(str){
   if(!str) return 0;
@@ -837,16 +805,6 @@ function roundAxis(el){
   if(v > 180) v = v % 180;
   el.value = v;
 }
-document.addEventListener("DOMContentLoaded", ()=>{
-  ['sphOD','cylOD','sphOS','cylOS'].forEach(id=>{
-    const el = document.getElementById(id);
-    el.addEventListener('blur', ()=> onSignedBlur(el));
-  });
-  ['axisOD','axisOS'].forEach(id=>{
-    const el = document.getElementById(id);
-    el.addEventListener('blur', ()=> roundAxis(el));
-  });
-});
 
 /* =========================
    OPTICS
@@ -854,7 +812,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 function effectivePower(S,C,axisDeg){
   const a = ((axisDeg % 180) + 180) % 180;
   const s = Math.sin(a * Math.PI / 180);
-  return S + C * s * s; // horizontal meridian power
+  return S + C * s * s;
 }
 function minusThickness(S,C,A,n,y){
   const Fh = Math.abs(effectivePower(S,C,A));
@@ -864,7 +822,7 @@ function minusThickness(S,C,A,n,y){
 }
 function plusThickness(S,C,A,n,y){
   const Fh = effectivePower(S,C,A);
-  let t = EDGE_PLUS + (y*y*Fh)/(2000*(n-1)); // center thickness from rim sag
+  let t = EDGE_PLUS + (y*y*Fh)/(2000*(n-1));
   t = Math.max(t, 1.3);
   t *= plusCorr(n);
   return t;
@@ -889,18 +847,29 @@ function computeMBS(A, DBL, pdOD, pdOS, safety=2){
 ========================= */
 function getVal(id){ return parseFloat(document.getElementById(id)?.value) || 0; }
 function parseRx(){
-  const SOD = parseToNumber(document.getElementById("sphOD")?.value);
-  const COD = parseToNumber(document.getElementById("cylOD")?.value);
-  const SOS = parseToNumber(document.getElementById("sphOS")?.value);
-  const COS = parseToNumber(document.getElementById("cylOS")?.value);
   return {
-    OD:{ S:SOD, C:COD, Ax:getVal("axisOD") },
-    OS:{ S:SOS, C:COS, Ax:getVal("axisOS") }
+    OD:{ S:parseToNumber(document.getElementById("sphOD")?.value),
+         C:parseToNumber(document.getElementById("cylOD")?.value),
+         Ax:getVal("axisOD") },
+    OS:{ S:parseToNumber(document.getElementById("sphOS")?.value),
+         C:parseToNumber(document.getElementById("cylOS")?.value),
+         Ax:getVal("axisOS") }
   };
+}
+function checkedValues(selector){
+  return Array.from(document.querySelectorAll(selector)).filter(i=>i.checked).map(i=>i.value);
+}
+function withinCap(price, cap){
+  if(!cap) return true;
+  return Number(price) <= cap * 1.10;
+}
+function fmtRM(n){
+  if(n===undefined || n===null || n==="" || isNaN(n)) return "—";
+  return Number(n).toLocaleString("en-MY");
 }
 
 /* =========================
-   CSV LOADING (DOM-safe)
+   CSV LOADING
 ========================= */
 async function loadCSV(url){
   const res = await fetch(url, { cache:"no-store" });
@@ -914,35 +883,34 @@ async function loadCSV(url){
     return obj;
   });
 }
-async function init(){
+async function initCSV(){
   const statusEl = document.getElementById("status");
   if(statusEl) statusEl.textContent = "Loading CSV…";
   try{
     PRODUCTS = await loadCSV(CSV_URL);
-    if(statusEl) statusEl.textContent = ""; // blank on success
+    if(statusEl) statusEl.textContent = "";
   }catch(e){
     if(statusEl) statusEl.textContent = "CSV load failed.";
     console.error("CSV load error:", e);
   }
 }
-document.addEventListener("DOMContentLoaded", init);
 
 /* =========================
    FILTER GROUPING HELPERS
 ========================= */
-function getAppearance(row){
-  const tint = (row["TINT_OPTION"] || "").trim();
-
-  if (tint === "Yes") return "Tinted";
-  if (tint === "Already") return "Tinted";
-  // "No" → not tinted
-
+function getBaseAppearance(row){
   const s = (row["CLEAR_CHANGING_TINT"] || "").toLowerCase();
-  if(s.includes("polar")) return "Polarized";
-  if(s.includes("chang") || s.includes("photo")) return "Photochromic";
-
+  if (s.includes("polar")) return "Polarized";
+  if (s.includes("chang") || s.includes("photo")) return "Photochromic";
   return "Clear";
 }
+
+function isTintCandidate(row){
+  const t = (row["TINT_OPTION"] || "").trim();
+  return t === "Yes" || t === "Already";
+}
+
+
 
 function getIndexGroup(val=""){
   const n = parseFloat(val)||0;
@@ -956,183 +924,158 @@ function getIndexGroup(val=""){
   if(Math.abs(n-1.74)<0.02) return "1.74";
   return "1.5";
 }
-function getFunctionCat(val = "") {
-  const s = val.toLowerCase();
 
-  // --- Myopia Control ---
-  if (
-    s.includes("myopia control") ||
-    s.includes("mc") ||
-    s.includes("control")
-  ) {
-    return "Myopia Control";
-  }
+function getFunctionCat(val=""){
+  const s = (val || "").toLowerCase().trim();
 
-  // --- Multifocal ---
+  // 1) SINGLE VISION (Custom SV, Stock SV, SV, Single Vision)
   if (
+    s.includes("custom sv") ||
+    s.includes("stock sv")  ||
+    s.includes("single vision") ||
+    /\bsv\b/.test(s)
+  ) return "SV";
+
+  // 2) MULTIFOCAL / PAL
+  if (
+    s.includes("custom pal") ||
+    s.includes("stock pal")  ||
     s.includes("pal") ||
     s.includes("progress") ||
     s.includes("progressive") ||
-    s.includes("multifocal") ||
-    s.includes("bifocal")
-  ) {
-    return "Multifocal";
-  }
+    s.includes("multifocal")
+  ) return "Multifocal";
 
-  // --- Office ---
+  // 3) OFFICE
   if (
     s.includes("office") ||
-    s.includes("room") ||
-    s.includes("workspace") ||
-    s.includes("near variable") ||
     s.includes("nvf") ||
-    s.includes("computer")
-  ) {
-    return "Office";
-  }
+    s.includes("workspace") ||
+    s.includes("room distance")
+  ) return "Office";
 
-  // --- Anti-fatigue ---
+  // 4) ANTI-FATIGUE
   if (
     s.includes("anti-fatigue") ||
     s.includes("antifatigue") ||
-    s.includes("relax") ||
     s.includes("boost") ||
-    s.includes("af")
-  ) {
-    return "Anti-fatigue";
-  }
+    s.includes("relax")
+  ) return "Anti-fatigue";
 
+  // 5) MYOPIA CONTROL
+  if (
+    s.includes("myopia control") ||
+    /\bmc\b/.test(s)
+  ) return "Myopia Control";
+
+  // fallback
   return "SV";
 }
 
-function checkedValues(selector){
-  return Array.from(document.querySelectorAll(selector)).filter(i=>i.checked).map(i=>i.value);
-}
 
 /* =========================
-   RESULTS TABLE
+   BUILD RESULTS (tint + UV400 + perf)
 ========================= */
-function withinCap(price, cap){ if(!cap) return true; return Number(price) <= cap * 1.10; } // buffer kept silently
-
-
 function buildResults(geom, rx){
   const body = document.getElementById("resultsBody");
   body.innerHTML = "";
 
   if(!geom){
-    body.innerHTML = `<tr><td colspan="6" class="muted" style="color:var(--warn);font-weight:700;">Calculate Lens Size first, then click “Search Lenses”.</td></tr>`;
+    body.innerHTML = `<tr><td colspan="7" class="muted" style="color:var(--warn);font-weight:700;">
+      Calculate Lens Size first, then click “Search Lenses”.
+    </td></tr>`;
     return;
   }
 
   const appearSet = checkedValues(".fl-appear");
   const indexSet  = checkedValues(".fl-index");
   const funcSet   = checkedValues(".fl-func");
+  const perfSet   = checkedValues(".fl-perf"); // optional
 
-  // 🚨 RULE: Each group MUST have ≥1 checked
-  if (appearSet.length === 0 || indexSet.length === 0 || funcSet.length === 0) {
-    body.innerHTML = `
-      <tr><td colspan="6" class="muted" style="color:var(--warn);font-weight:700;">
-        Please select at least one filter in every group.
-      </td></tr>`;
+  if(!appearSet.length || !indexSet.length || !funcSet.length){
+    body.innerHTML = `<tr><td colspan="7" class="muted" style="color:var(--warn);font-weight:700;">
+      Please select at least one filter in every group.
+    </td></tr>`;
     return;
   }
 
   const cap = parseFloat(document.getElementById("priceCap").value)||0;
-  const FhOD = effectivePower(rx.OD.S, rx.OD.C, rx.OD.Ax);
-
   let count = 0;
+
   PRODUCTS.forEach(row=>{
-let price = parseFloat(row["UV_420_BL_PRICE_RM"] || "0");
+    let priceUV420 = parseFloat(row["UV_420_BL_PRICE_RM"] || "0");
 
-// Add RM150 for tinting (Yes = tinting needed; Already = built-in)
-const tintOpt = (row["TINT_OPTION"] || "").trim();
-if (tintOpt === "Yes") {
-  price += 150;
-}    if(!withinCap(price, cap)) return;
+    // tint: only "Yes" adds RM150
+    const tintOpt = (row["TINT_OPTION"] || "").trim();
+    if(tintOpt === "Yes") priceUV420 += 150;
 
-    const app = getAppearance(row);
+    if(!withinCap(priceUV420, cap)) return;
+
+const baseApp = getBaseAppearance(row);
+const tintOk  = isTintCandidate(row);
+
+// Appearance filter logic:
+// - Clear/Photochromic/Polarized use baseApp
+// - Tinted uses TINT_OPTION Yes/Already
+const appOK =
+  appearSet.includes(baseApp) ||
+  (appearSet.includes("Tinted") && tintOk);
+
+
+
     const idxGroup = getIndexGroup(row["INDEX"]||"");
-    const func = getFunctionCat(row["LENS_DESIGN"]||"");
+    const func     = getFunctionCat(row["LENS_DESIGN"]||"");
 
-
-
-
-// Convert short codes to full words
-let funcDisplay = func;
-if (func === "SV") funcDisplay = "Single Vision";
-
-
-    // strict filter matching
-    if(!appearSet.includes(app)) return;
+if(!appOK) return;
     if(!indexSet.includes(idxGroup)) return;
     if(!funcSet.includes(func)) return;
 
-    const dia = parseFloat(row["DIA"]||"0");
-    let stockMsg = "Ok";
-
-    if(dia < geom.MBS){
-      stockMsg = `<span style="color:var(--warn);font-weight:700;">⚠ Cannot fit</span>`;
+    // optional perf filter: only apply if user ticks perf chips
+    if(perfSet.length){
+      const pChoice = (row["PERFORMANCE"] || row["LENS_PERFORMANCE"] || "").trim();
+      if(pChoice && !perfSet.includes(pChoice)) return;
     }
 
+    const dia = parseFloat(row["DIA"]||"0");
+    const stockMsg = (dia && dia < geom.MBS)
+      ? `<span style="color:var(--warn);font-weight:700;">⚠ Cannot fit</span>`
+      : "Ok";
 
+    const funcDisplay = (func==="SV") ? "Single Vision" : func;
+    const p = perfScore(row);
+    const perfTag = p.total ? ` • Perf ${p.total}` : "";
 
+    const id = row["PRODUCT_NAME"] + "|" + row["INDEX"];
+    const tr = document.createElement("tr");
+    tr.setAttribute("data-id", id);
 
-
-const key = row["PRODUCT_NAME"] + "_" + Math.random().toString(36).slice(2);
-
-const rowHTML = `
-  <td>${row["PRODUCT_NAME"]||""}</td>
-  <td>${row["INDEX"]||""} ${app} ${funcDisplay}</td>
-  <td>${fmtRM(price)}</td>
-  <td>${
-    row["HIGH_CLARITY_COATING_PRICE_RM"] &&
-    !isNaN(parseFloat(row["HIGH_CLARITY_COATING_PRICE_RM"]))
-      ? fmtRM(row["HIGH_CLARITY_COATING_PRICE_RM"])
-      : "—"
-  }</td>
-  <td>${stockMsg}</td>
-`;
-
-const id = row["PRODUCT_NAME"] + "|" + row["INDEX"];
-
-const tr = document.createElement("tr");
-tr.setAttribute("data-id", id);
-
-tr.innerHTML = `
-  <td>
-    <input type="checkbox"
-      id="pick_${id}"
-      onchange='toggleShortlist(this, ${JSON.stringify(row)}, "${id}")'>
-  </td>
-  ${rowHTML}
-`;
-
-
-
-
-
-
-
-
-
+    tr.innerHTML = `
+      <td>
+        <input type="checkbox"
+          id="pick_${id}"
+          onchange='toggleShortlist(this, ${JSON.stringify(row)}, "${id}", ${priceUV420})'>
+      </td>
+      <td>${row["PRODUCT_NAME"] || ""}</td>
+      <td>${row["INDEX"] || ""} ${app} ${funcDisplay}${perfTag}</td>
+      <td>${fmtRM(row["UV_400_PRICE_RM"])}</td>
+      <td>${fmtRM(priceUV420)}</td>
+      <td>${
+        row["HIGH_CLARITY_COATING_PRICE_RM"] &&
+        !isNaN(parseFloat(row["HIGH_CLARITY_COATING_PRICE_RM"]))
+          ? fmtRM(row["HIGH_CLARITY_COATING_PRICE_RM"])
+          : "—"
+      }</td>
+      <td>${stockMsg}</td>
+    `;
 
     body.appendChild(tr);
     count++;
   });
 
   if(!count){
-    body.innerHTML = `<tr><td colspan="6" class="muted">No items match filters or price cap.</td></tr>`;
+    body.innerHTML = `<tr><td colspan="7" class="muted">No items match filters or price cap.</td></tr>`;
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* =========================
    BARS / THICKNESS
@@ -1157,7 +1100,7 @@ function renderBars(rx, geom, mode, lenOverride){
   container.querySelectorAll('input[name="barScale"]').forEach(r=>{
     r.addEventListener("change", ()=>{ scale=parseFloat(r.value); draw(); });
   });
-  frameInput.addEventListener("input", ()=>draw());
+  frameInput.addEventListener("input", draw);
 
   function eyeLabel(isPlus){ return isPlus ? "(center)" : "(edge)"; }
 
@@ -1202,141 +1145,108 @@ function renderBars(rx, geom, mode, lenOverride){
       container.appendChild(row);
     });
 
-    // concise note
-const note = [];
-const odStatus = effectivePower(rx.OD.S, rx.OD.C, rx.OD.Ax) >= 0
-  ? "center thickness (plus)"
-  : "edge thickness (minus)";
-const osStatus = effectivePower(rx.OS.S, rx.OS.C, rx.OS.Ax) >= 0
-  ? "center thickness (plus)"
-  : "edge thickness (minus)";
-
-note.push(`Right Lens shows <strong>${odStatus}</strong>`);
-note.push(`Left Lens shows <strong>${osStatus}</strong>`);
-
-document.getElementById("thickNote").innerHTML = note.join(" &nbsp;•&nbsp; ");
-
+    const odStatus = effectivePower(rx.OD.S, rx.OD.C, rx.OD.Ax) >= 0 ? "center thickness (plus)" : "edge thickness (minus)";
+    const osStatus = effectivePower(rx.OS.S, rx.OS.C, rx.OS.Ax) >= 0 ? "center thickness (plus)" : "edge thickness (minus)";
+    document.getElementById("thickNote").innerHTML =
+      `Right Lens shows <strong>${odStatus}</strong> • Left Lens shows <strong>${osStatus}</strong>`;
   }
+
   draw();
 }
 
 /* =========================
-   BUTTONS & FLOW
+   QUICK SPH BUTTONS
 ========================= */
-document.addEventListener("DOMContentLoaded", ()=>{
-  // Price cap adjusters
-  document.getElementById("capPlus").onclick=()=>{const e=document.getElementById("priceCap");e.value=(parseFloat(e.value)||0)+100;};
-  document.getElementById("capMinus").onclick=()=>{const e=document.getElementById("priceCap");e.value=Math.max(0,(parseFloat(e.value)||0)-100);};
-
-  // Calculate by Frame — thickness only
-  document.getElementById("btnCalc").onclick=()=>{
-    const rx = parseRx();
-    const A = getVal("frameA"), DBL = getVal("frameDBL");
-    const pdOD = getVal("monoPD_OD"), pdOS = getVal("monoPD_OS");
-    const safety = getVal("safety") || 2;
-
-if(!A || !DBL || !pdOD || !pdOS){
-  document.getElementById("mbsLine").innerHTML = 
-    `<div style="margin-bottom:4px;">
-       <span style='color:var(--warn);'>Please key in frame details and PD.</span>
-     </div>`;
-  LAST_GEOM = null; LAST_MODE = null;
-  document.getElementById("thicknessBars").innerHTML = "";
-  document.getElementById("thickNote").textContent = "";
-  return;
-}
-
-
-    LAST_GEOM = computeMBS(A,DBL,pdOD,pdOS,safety); // {semiOD, semiOS, MBS}
-    LAST_MODE = "frame";
-    document.getElementById("mbsLine").innerHTML = `<div style="margin-bottom:4px;">Minimum Lens Size <strong> ${LAST_GEOM.MBS.toFixed(0)} mm</strong> diameter</div>`;
-    renderBars(rx, LAST_GEOM, "frame");
-  };
-
-// Calculate by Length — thickness only
-document.getElementById("btnLength").onclick = () => {
-  const rx = parseRx();
-  const len = getVal("lengthInput") || 30;
-  LAST_GEOM = { semiOD: len, semiOS: len, MBS: 2 * len };
-  LAST_MODE = "length";
-
-  // Bold the diameter + margin-bottom
-  document.getElementById("mbsLine").innerHTML =
-    `<div style="margin-bottom:4px;">Minimum Lens Size <strong>${len * 2} mm</strong> diameter</div>`;
-
-  renderBars(rx, LAST_GEOM, "length", len);
-};
-
-
-  // Fetch Lenses — uses LAST_GEOM + filters
-  document.getElementById("btnFetch").onclick=()=>{
-    const rx = parseRx();
-    buildResults(LAST_GEOM, rx);
-  };
-});
-
-// Clear all filter checkboxes (does not auto-fetch)
-document.getElementById("btnClearFilters").onclick = () => {
-  document.querySelectorAll('.fl-appear, .fl-index, .fl-func')
-    .forEach(cb => cb.checked = false);
-
-  // Optional: also clear the table message so it's obvious filters are cleared
-  // const body = document.getElementById("resultsBody");
-  // body.innerHTML = `<tr><td colspan="6" class="muted">Filters cleared. Click “Search Lenses”.</td></tr>`;
-};
-
-function fmtRM(n){
-  if (!n || isNaN(n)) return "—";
-  return Number(n).toLocaleString("en-MY"); 
-}
-
-
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
 function bumpSph(id, amount){
   const el = document.getElementById(id);
   if(!el) return;
-
   let v = parseToNumber(el.value || "0");
-
-  // ADD or SUBTRACT
-  v = v + amount;
-
-  // Snap to 0.25
-  v = round025number(v);
-
-  // Keep + sign
+  v = round025number(v + amount);
   el.value = formatSigned025(v);
 }
-
 function bumpSphOU(amount){
   bumpSph("sphOD", amount);
   bumpSph("sphOS", amount);
 }
 
+/* =========================
+   DOM WIRE-UP
+========================= */
+document.addEventListener("DOMContentLoaded", ()=>{
+  initCSV();
+
+  // rounding
+  ['sphOD','cylOD','sphOS','cylOS'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.addEventListener('blur', ()=> onSignedBlur(el));
+  });
+  ['axisOD','axisOS'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.addEventListener('blur', ()=> roundAxis(el));
+  });
+
+  // perf options refresh on lens type change
+  document.querySelectorAll(".fl-func").forEach(cb=>{
+    cb.addEventListener("change", updatePerformanceOptions);
+  });
+  updatePerformanceOptions();
+
+  // price cap buttons (if present)
+  const capPlus  = document.getElementById("capPlus");
+  const capMinus = document.getElementById("capMinus");
+  if(capPlus)  capPlus.onclick = ()=>{const e=document.getElementById("priceCap"); e.value=(parseFloat(e.value)||0)+100;};
+  if(capMinus) capMinus.onclick= ()=>{const e=document.getElementById("priceCap"); e.value=Math.max(0,(parseFloat(e.value)||0)-100);};
+
+  // Calculate by Frame
+  const btnCalc = document.getElementById("btnCalc");
+  if(btnCalc) btnCalc.onclick=()=>{
+    const rx = parseRx();
+    const A = getVal("frameA"), DBL = getVal("frameDBL");
+    const pdOD = getVal("monoPD_OD"), pdOS = getVal("monoPD_OS");
+    const safety = getVal("safety") || 2;
+
+    if(!A || !DBL || !pdOD || !pdOS){
+      document.getElementById("mbsLine").innerHTML =
+        `<div style="margin-bottom:4px;"><span style='color:var(--warn);'>Please key in frame details and PD.</span></div>`;
+      LAST_GEOM=null; LAST_MODE=null;
+      document.getElementById("thicknessBars").innerHTML="";
+      document.getElementById("thickNote").textContent="";
+      return;
+    }
+
+    LAST_GEOM = computeMBS(A,DBL,pdOD,pdOS,safety);
+    LAST_MODE = "frame";
+    document.getElementById("mbsLine").innerHTML =
+      `<div style="margin-bottom:4px;">Minimum Lens Size <strong>${LAST_GEOM.MBS.toFixed(0)} mm</strong> diameter</div>`;
+    renderBars(rx, LAST_GEOM, "frame");
+  };
+
+  // Calculate by Length
+  const btnLength = document.getElementById("btnLength");
+  if(btnLength) btnLength.onclick=()=>{
+    const rx = parseRx();
+    const len = getVal("lengthInput") || 30;
+    LAST_GEOM = { semiOD:len, semiOS:len, MBS:2*len };
+    LAST_MODE = "length";
+    document.getElementById("mbsLine").innerHTML =
+      `<div style="margin-bottom:4px;">Minimum Lens Size <strong>${len*2} mm</strong> diameter</div>`;
+    renderBars(rx, LAST_GEOM, "length", len);
+  };
+
+  // Search Lenses
+  const btnFetch = document.getElementById("btnFetch");
+  if(btnFetch) btnFetch.onclick=()=>{
+    buildResults(LAST_GEOM, parseRx());
+  };
+
+  // Clear filters
+  const btnClear = document.getElementById("btnClearFilters");
+  if(btnClear) btnClear.onclick=()=>{
+    document.querySelectorAll(".fl-appear,.fl-index,.fl-func,.fl-perf").forEach(cb=>cb.checked=false);
+    updatePerformanceOptions();
+  };
+});
 </script>
-
-
 
 
 
