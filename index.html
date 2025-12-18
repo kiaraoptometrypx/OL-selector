@@ -227,24 +227,6 @@ searchInput.addEventListener("input", () => {
 });
 </script>
 
-<script>
-const lensSections = document.querySelectorAll(".sectionlens");
-
-lensSections.forEach(section => {
-  section.addEventListener("click", () => {
-    // If already enlarged, remove class (minimize)
-    if (section.classList.contains("enlarged")) {
-      section.classList.remove("enlarged");
-    } else {
-      // Remove enlarged from others
-      lensSections.forEach(s => s.classList.remove("enlarged"));
-      // Enlarge clicked one
-      section.classList.add("enlarged");
-    }
-  });
-});
-</script>
-
 
 
 
@@ -351,4 +333,5 @@ document.getElementById("recommendBtn").onclick = () => {
 
 </body>
 </html>
+
 
