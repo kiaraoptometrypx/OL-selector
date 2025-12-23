@@ -42,7 +42,33 @@ html,body{
   margin:10px 0;
 }
 
+/* Lightbox overlay */
+#lightboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none; /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
+/* Lightbox image */
+#lightboxOverlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #000;
+  transition: transform 0.3s;
+}
+
+/* Close on hover cursor */
+#lightboxOverlay:hover {
+  cursor: pointer;
+}
 /* Container for all lens sections */
 .lens-container {
   display: grid;
@@ -60,22 +86,10 @@ cursor: pointer;
   overflow: hidden;
 }
 
-/* Enlarge when clicked */
-.sectionlens.enlarged {
-  background:var(--pale);
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:12px;
-  margin:10px 0;  
-position: relative;
-  z-index: 10;
-  transform: scale(1);
-  grid-column: span 2; /* optionally span both columns */
-}
 
 /* Image styling inside sectionlens */
 .sectionlens img {
-  width: 95%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -92,14 +106,16 @@ input, textarea{
 
 textarea{min-height:40px; resize:vertical;}
 
-button{
+button.normal{
   background:var(--btn-bg);
   color:var(--btn-text);
   border:1px solid var(--btn-border);
   padding:6px 14px;
   border-radius:7px;
   font-size:11px;
+  width:150px;
   cursor:pointer;
+  margin:0 20px 0 0;
 }
 
 h2{
@@ -150,15 +166,15 @@ button:active{transform:translateY(1px);}
       <label>Name </label>
       <input id="name" type="text">
 
-      <label>WhatsApp Number - <i>Enter with country code, <span>e.g. 601170199170</span></i></label>
+      <label>WhatsApp Number - <i>Enter with country code, <span style="user-select:none">e.g. 601170199170</span></i></label>
       <input id="phone" type="text" style="font-size:10px" placeholder="">
 
       <label>Notes</label>
       <textarea id="msg"></textarea>
 
       <div><br>
-        <button style="width:150px; margin-left:0%; margin-right:3%" id="greetBtn">Greetings</button>
-        <button style="width:150px" id="sendBtn">Send WhatsApp</button>
+        <button class="normal" id="greetBtn">Greetings</button>
+        <button class="normal" id="sendBtn">Send WhatsApp</button>
       </div>
     </div>
 
@@ -172,10 +188,28 @@ button:active{transform:translateY(1px);}
     <input id="cyl" type="text" step="0.25">
   </div><br>
 
-  <button id="recommendBtn">Recommended Index</button>
+  <button class="normal" id="recommendBtn">Recommended Index</button>
   <p style="margin-left:1%" id="indexResult"></p>
+</div>
 
+
+
+
+<div class="section">
+<h3>Lens Search & Price</h3>
+<label>Search Lenses</label>
 <input type="text" id="searchInput" placeholder="Search images by name or tag">
+<label>Calculator</label>
+<input type="number" id="priceInput" placeholder="Enter Original Price" /><br><br>
+<button class="normal" onclick="calculateStandardDiscount()">Discount</button>
+<button class="normal" onclick="calculateNoExamDiscount()">No Eye Exam Price</button>
+
+<div id="output"></div>
+</div>
+
+<div class="section">
+<div id="dateOutput" style="font-weight:bold;"></div>
+
 
 </div>
 
@@ -258,7 +292,7 @@ Photochomic
 4. Aether - 3 days
 </span>
 
-  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/1.png" alt="Price List 1" data-tags="basic">
+  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/1.png" alt="Price List 1" data-tags="basic" onclick="openLightbox(this.src)">
 </div>
 
 <div class="sectionlens"><h6>Single Vision 2, Standard Stock, Custom Lens</h6>
@@ -335,7 +369,7 @@ Photochromic
 RX
 </span>
 
-  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/2.png" alt="Price List 2" data-tags="premium">
+  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/2.png" alt="Price List 2" data-tags="premium" onclick="openLightbox(this.src)">
 </div>
 
 <div class="sectionlens"><h6>Single Vision 3, Relax Lens</h6>
@@ -412,7 +446,7 @@ Photochromic
 1.74 - RM 3,250
 </span>
 
-  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/3.png" alt="Price List 3" data-tags="tinted">
+  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/3.png" alt="Price List 3" data-tags="tinted" onclick="openLightbox(this.src)">
 </div>
 
 <div class="sectionlens"><h6>Single Vision 4, Ultra Optics</h6>
@@ -472,7 +506,7 @@ Photochromic
 -
 </span>
 
-  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/4.png" alt="Price List 4" data-tags="basic">
+  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/4.png" alt="Price List 4" data-tags="basic" onclick="openLightbox(this.src)">
 </div>
 
 
@@ -483,8 +517,26 @@ Photochromic
 
 <div style="height:200px"></div>
 
+<div id="lightboxOverlay" onclick="closeLightbox()">
+  <img id="lightboxImg" src="">
+</div>
 
 
+
+<script>
+// Open lightbox with the clicked image
+function openLightbox(src) {
+  const overlay = document.getElementById('lightboxOverlay');
+  const img = document.getElementById('lightboxImg');
+  img.src = src;
+  overlay.style.display = 'flex';
+}
+
+// Close lightbox
+function closeLightbox() {
+  document.getElementById('lightboxOverlay').style.display = 'none';
+}
+</script>
 
 
 <script>
@@ -510,6 +562,65 @@ searchInput.addEventListener("input", () => {
 
 
 
+
+<script>
+// Public holidays (Selangor + KL 2025–2026)
+const PUBLIC_HOLIDAYS = new Set([
+  "2025-01-01","2025-01-29","2025-01-30","2025-02-01","2025-02-03",
+  "2025-02-11","2025-03-18","2025-03-31","2025-04-01","2025-05-01",
+  "2025-05-12","2025-06-02","2025-06-07","2025-06-27","2025-08-31",
+  "2025-09-01","2025-09-05","2025-09-15","2025-09-16","2025-10-20",
+  "2025-12-11","2025-12-25","2026-01-01","2026-02-01","2026-02-02",
+  "2026-02-17","2026-02-18","2026-03-07","2026-03-21","2026-03-22",
+  "2026-03-23","2026-05-01","2026-05-27","2026-05-31","2026-06-01",
+  "2026-06-17","2026-08-25","2026-08-31","2026-09-16","2026-11-08",
+  "2026-11-09","2026-12-11","2026-12-25"
+]);
+
+const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+function getOrdinal(n) {
+  let s=["th","st","nd","rd"], v=n%100;
+  return n + (s[(v-20)%10]||s[v]||s[0]);
+}
+
+function addWorkingDays(date, days) {
+  let result = new Date(date);
+  while (days > 0) {
+    result.setDate(result.getDate() + 1);
+    let day = result.getDay();
+    let dateStr = result.toISOString().split('T')[0];
+    if (day !== 0 && day !== 6 && !PUBLIC_HOLIDAYS.has(dateStr)) {
+      days--;
+    }
+  }
+  return result;
+}
+
+function formatDateWithDay(d) {
+  const months = ["January","February","March","April","May","June",
+                  "July","August","September","October","November","December"];
+  return `${getOrdinal(d.getDate())} ${months[d.getMonth()]} ${DAYS[d.getDay()]}`;
+}
+
+function calculateWorkingDays() {
+  let today = new Date();
+  let threeDays = addWorkingDays(today, 3);
+  let sevenDays = addWorkingDays(today, 7);
+
+  // Express option: 3 working days → 2 working days
+  let expressThree = addWorkingDays(today, 2);
+
+  document.getElementById('dateOutput').innerHTML = `
+    Today is ${formatDateWithDay(today)}.<br>
+    3 Working-Day Completion: ${formatDateWithDay(threeDays)}. Add RM30 to expedite ${formatDateWithDay(expressThree)}. <br>
+    7 Working-Day Completion: ${formatDateWithDay(sevenDays)}.
+  `;
+}
+
+// Auto-calculate on page load
+calculateWorkingDays();
+</script>
 
 
 
@@ -592,6 +703,49 @@ document.getElementById("recommendBtn").onclick = () => {
 
 
 
+<script>
+function formatRM(amount) {
+  // Round to nearest whole number and add comma separators
+  return 'RM ' + Math.round(amount).toLocaleString();
+}
+
+function calculateStandardDiscount() {
+  let price = parseFloat(document.getElementById('priceInput').value);
+  if (isNaN(price) || price <= 0) {
+    alert('Please enter a valid price.');
+    return;
+  }
+
+  let discount = 0;
+  if (price <= 299) discount = 10;
+  else if (price <= 699) discount = 15;
+  else discount = 20;
+
+  let netPrice = price * (1 - discount / 100);
+
+  document.getElementById('output').innerHTML = `<br>
+    Original Price: ${formatRM(price)}<br>
+    Net Price: ${formatRM(netPrice)}<br>
+    Description: ${discount}% off until March 2026!
+  `;
+}
+
+function calculateNoExamDiscount() {
+  let price = parseFloat(document.getElementById('priceInput').value);
+  if (isNaN(price) || price <= 0) {
+    alert('Please enter a valid price.');
+    return;
+  }
+
+  let discount = 30;
+  let netPrice = price * (1 - discount / 100);
+  if (netPrice < 200) netPrice = 200;
+
+  document.getElementById('output').innerHTML = `<br>
+   Original Price: ${formatRM(price)}<br>
+   No-Eye-Exam Net Price: ${formatRM(netPrice)}<br>`;
+}
+</script>
 
 
 
