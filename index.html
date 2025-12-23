@@ -161,14 +161,14 @@ button:active{transform:translateY(1px);}
 <div style="height:20px"></div>
 
     <div class="section">
-    <h3>Current Details</h3>
-
+<div>
+<h3>Wearer's Details</h3>
       <label>Name </label>
-      <input id="name" type="text">
+      <input style="width:100%"id="name" type="text">
 
-      <label>WhatsApp Number - <i>Enter with country code, <span style="user-select:none">e.g. 601170199170</span></i></label>
-      <input id="phone" type="text" style="font-size:10px" placeholder="">
-
+      <label>WhatsApp Number - <i>With country code, <span style="user-select:none">e.g. 601170199170</span></i></label>
+      <input style="width:100%" id="phone" type="text" style="font-size:10px" placeholder="">
+</div>
       <label>Notes</label>
       <textarea id="msg"></textarea>
 
@@ -187,9 +187,10 @@ button:active{transform:translateY(1px);}
     <label>Cylinder</label>
     <input id="cyl" type="text" step="0.25">
   </div><br>
-
+<div>
   <button class="normal" id="recommendBtn">Recommended Index</button>
-  <p style="margin-left:1%" id="indexResult"></p>
+  <span style="margin-left:1%; font-weight:bold;" id="indexResult"></span>
+</div>
 </div>
 
 
@@ -197,6 +198,15 @@ button:active{transform:translateY(1px);}
 
 <div class="section">
 <h3>Lens Search & Price</h3>
+<div>
+<b>Index : Low - Median - High</b><br>
+1.56 : RM 250 – 480 to 700 – 2,600<br>
+1.61 : RM 380 – 550 to 900 – 3,150<br>
+1.67 : RM 530 – 650 to 1,450 – 3,550<br>
+1.74 : RM 750 – 880 to 2,100 – 4,850<br>
+----------
+</div>
+
 <label>Search Lenses</label>
 <input type="text" id="searchInput" placeholder="Search images by name or tag">
 <label>Calculator</label>
@@ -204,7 +214,7 @@ button:active{transform:translateY(1px);}
 <button class="normal" onclick="calculateStandardDiscount()">Discount</button>
 <button class="normal" onclick="calculateNoExamDiscount()">No Eye Exam Price</button>
 
-<div id="output"></div>
+<div id="output" style="font-weight:bold;"></div>
 </div>
 
 <div class="section">
@@ -613,8 +623,8 @@ function calculateWorkingDays() {
 
   document.getElementById('dateOutput').innerHTML = `
     Today is ${formatDateWithDay(today)}.<br>
-    3 Working-Day Completion: ${formatDateWithDay(threeDays)}. Add RM30 to expedite ${formatDateWithDay(expressThree)}. <br>
-    7 Working-Day Completion: ${formatDateWithDay(sevenDays)}.
+    3 Days Completion Estimate : ${formatDateWithDay(threeDays)}.<br>
+    7 Days Completion Estimate : ${formatDateWithDay(sevenDays)}.
   `;
 }
 
@@ -724,9 +734,9 @@ function calculateStandardDiscount() {
   let netPrice = price * (1 - discount / 100);
 
   document.getElementById('output').innerHTML = `<br>
-    Original Price: ${formatRM(price)}<br>
-    Net Price: ${formatRM(netPrice)}<br>
-    Description: ${discount}% off until March 2026!
+    Original Price : ${formatRM(price)}<br>
+    Net Price : ${formatRM(netPrice)}<br>
+    Description : ${discount}% off until March 2026!
   `;
 }
 
@@ -742,8 +752,8 @@ function calculateNoExamDiscount() {
   if (netPrice < 200) netPrice = 200;
 
   document.getElementById('output').innerHTML = `<br>
-   Original Price: ${formatRM(price)}<br>
-   No-Eye-Exam Net Price: ${formatRM(netPrice)}<br>`;
+   Original Price : ${formatRM(price)}<br>
+   No-Eye-Exam Net Price : ${formatRM(netPrice)}<br>`;
 }
 </script>
 
