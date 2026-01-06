@@ -197,7 +197,7 @@ button:active{transform:translateY(1px);}
 
 
 <div class="section">
-<h3>Lens Search & Price</h3>
+<h3>Lens Price</h3>
 <div>
 <b>Index : Low - Median - High</b><br>
 1.56 : RM 250 – 480 to 700 – 2,600<br>
@@ -207,14 +207,26 @@ button:active{transform:translateY(1px);}
 ----------
 </div>
 
-<label>Search Lenses</label>
-<input type="text" id="searchInput" placeholder="Search images by name or tag">
+
+
+
 <label>Calculator</label>
-<input type="number" id="priceInput" placeholder="Enter Original Price" /><br><br>
+<input style="margin-bottom:1%" id="priceInput" type="number" placeholder="Price 1 e.g. Frame">
+<input style="margin-bottom:1%" id="input2" type="number" placeholder="Price 2 e.g. Lens">
+<input style="margin-bottom:1%" id="input3" type="number" placeholder="Price 3 e.g. Lens Extra">
+
 <button class="normal" onclick="calculateStandardDiscount()">Discount</button>
 <button class="normal" onclick="calculateNoExamDiscount()">No Eye Exam Price</button>
 
+<button class="normal" style="background-color:maroon" id="rCodeBtn" onclick="applyRCode()">R-Code</button>
+
+
 <div id="output" style="font-weight:bold;"></div>
+</div>
+
+<div class="section">
+<label>Search Lenses</label>
+<input type="text" id="searchInput" placeholder="Search images by name or tag">
 </div>
 
 <div class="section">
@@ -707,43 +719,59 @@ document.getElementById("recommendBtn").onclick = () => {
 
 
 
-
-
+<script>
+function getNumber(id) {
+  let val = parseFloat(document.getElementById(id).value);
+  return isNaN(val) ? 0 : val;
+}
+</script>
 
 
 
 
 <script>
 function formatRM(amount) {
-  // Round to nearest whole number and add comma separators
   return 'RM ' + Math.round(amount).toLocaleString();
 }
 
 function calculateStandardDiscount() {
-  let price = parseFloat(document.getElementById('priceInput').value);
-  if (isNaN(price) || price <= 0) {
-    alert('Please enter a valid price.');
+  let p1 = parseFloat(document.getElementById('priceInput').value) || 0;
+  let p2 = parseFloat(document.getElementById('input2').value) || 0;
+  let p3 = parseFloat(document.getElementById('input3').value) || 0;
+
+  let price = p1 + p2 + p3;
+
+  if (price <= 0) {
+    document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>';
     return;
   }
 
-  let discount = 0;
-  if (price <= 299) discount = 10;
-  else if (price <= 699) discount = 15;
-  else discount = 20;
+let discount = 0;
+if (price <= 249) discount = 0;
+else if (price <= 299) discount = 10;
+else if (price <= 699) discount = 15;
+else discount = 20;
+
 
   let netPrice = price * (1 - discount / 100);
 
-  document.getElementById('output').innerHTML = `<br>
-    Original Price : ${formatRM(price)}<br>
-    Net Price : ${formatRM(netPrice)}<br>
-    Description : ${discount}% off until March 2026!
-  `;
+document.getElementById('output').innerHTML = `<br>
+  Original Price : ${formatRM(price)}<br>
+  Net Price : ${formatRM(netPrice)}<br>
+  ${discount > 0 ? `Description : ${discount}% off until March 2026!<br>` : ``}
+`;
+
 }
 
 function calculateNoExamDiscount() {
-  let price = parseFloat(document.getElementById('priceInput').value);
-  if (isNaN(price) || price <= 0) {
-    alert('Please enter a valid price.');
+  let p1 = parseFloat(document.getElementById('priceInput').value) || 0;
+  let p2 = parseFloat(document.getElementById('input2').value) || 0;
+  let p3 = parseFloat(document.getElementById('input3').value) || 0;
+
+  let price = p1 + p2 + p3;
+
+  if (price <= 0) {
+    document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>';
     return;
   }
 
@@ -752,9 +780,42 @@ function calculateNoExamDiscount() {
   if (netPrice < 200) netPrice = 200;
 
   document.getElementById('output').innerHTML = `<br>
-   Original Price : ${formatRM(price)}<br>
-   No-Eye-Exam Net Price : ${formatRM(netPrice)}<br>`;
+    Original Price : ${formatRM(price)}<br>
+    No-Eye-Exam Net Price : ${formatRM(netPrice)}<br>
+  `;
 }
+
+function applyRCode() {
+  // Sum all 3 inputs
+  let p1 = parseFloat(document.getElementById('priceInput').value) || 0;
+  let p2 = parseFloat(document.getElementById('input2').value) || 0;
+  let p3 = parseFloat(document.getElementById('input3').value) || 0;
+  let price = p1 + p2 + p3;
+
+  if (price <= 0) {
+    document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>';
+    return;
+  }
+
+  // Base discount logic
+  let discount = 0;
+  if (price <= 249) discount = 0;
+  else if (price <= 299) discount = 10;
+  else if (price <= 699) discount = 15;
+  else discount = 20;
+
+  // Extra 5% R-Code
+  discount += 5;
+
+  let netPrice = price * (1 - discount / 100);
+
+  document.getElementById('output').innerHTML = `<br>
+    Original Price : ${formatRM(price)}<br>
+    Net Price : ${formatRM(netPrice)}<br>
+${discount > 0 ? `Description : ${discount}% off (<span style="color:red; font-weight:bold;">R-Code!</span>)<br>` : ``}
+  `;
+}
+
 </script>
 
 
