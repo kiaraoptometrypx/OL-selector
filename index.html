@@ -15,7 +15,13 @@
   --btn-text:#ffffe0;
   --btn-border:#ffffff;
 }
+td.na {
+  color: #999;
+  font-style: italic;
+}
 
+
+/* Visually hidden helper */
 .search-only{
   position:absolute;
   width:1px;
@@ -25,6 +31,7 @@
   clip:rect(0 0 0 0);
 }
 
+/* Base */
 html,body{
   background:var(--off);
   color:var(--green);
@@ -33,7 +40,10 @@ html,body{
   margin:0;
 }
 
-.wrap{width:90%; max-width:600px; margin:0 auto;}
+/* Page wrapper */
+.wrap{ width:90%; max-width:600px; margin:0 auto; padding:12px 0; }
+
+/* Card sections */
 .section{
   background:var(--pale);
   border:1px solid var(--line);
@@ -45,18 +55,14 @@ html,body{
 /* Lightbox overlay */
 #lightboxOverlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: rgba(0,0,0,0.8);
-  display: none; /* hidden by default */
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
-
-/* Lightbox image */
 #lightboxOverlay img {
   max-width: 90%;
   max-height: 90%;
@@ -64,47 +70,45 @@ html,body{
   box-shadow: 0 0 20px #000;
   transition: transform 0.3s;
 }
+#lightboxOverlay:hover { cursor: pointer; }
 
-/* Close on hover cursor */
-#lightboxOverlay:hover {
-  cursor: pointer;
-}
-/* Container for all lens sections */
+/* Lens container (unused in this page but kept for consistency) */
 .lens-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-
-/* Each sectionlens box */
 .sectionlens {
   background:var(--pale);
   border:1px solid var(--line);
   border-radius:10px;
   padding:12px;
-cursor: pointer;
+  cursor: pointer;
   overflow: hidden;
 }
+h4{
+font-size:13px;
+padding:0 0 0 0;
+margin:30px 0 0 0 ;
+font-weight:700;
+}
 
-
-/* Image styling inside sectionlens */
-.sectionlens img {
-  width: 100%;
-  height: auto;
-  display: block;
+h5{
+font-size:11px;
+padding:0 0 0 0;
+margin:0 0 2px 0 ;
+font-weight:500;
+text-decoration: italic;
 }
 
 
-label{font-weight:600; margin-top:8px; display:block;}
-input, textarea{
-  width:100%;
-  padding:6px;
-  border:1px solid #c9c9c1;
-  border-radius:6px;
-  box-sizing:border-box;
-}
 
-textarea{min-height:40px; resize:vertical;}
+.sectionlens img { width:100%; height:auto; display:block; }
+
+/* Form controls */
+label{ font-weight:600; margin-top:8px; display:block; }
+input, textarea { width:100%; padding:6px; border:1px solid #c9c9c1; border-radius:6px; box-sizing:border-box; }
+textarea{ min-height:40px; resize:vertical; }
 
 button.normal{
   background:var(--btn-bg);
@@ -115,478 +119,427 @@ button.normal{
   font-size:11px;
   width:150px;
   cursor:pointer;
-  margin:0 20px 0 0;
+  margin:0 8px 8px 0;
 }
-
-h2{
-  text-align: center;
-  margin: 10px 0;
-  font-size: 18px;
-  color: var(--green);
-}
-h6{
-  font-size:5px;
-  margin: 5px;
-}
-
-button:hover{filter:brightness(1.05);}
-button:active{transform:translateY(1px);}
-
-.row{
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-  margin-top:8px;
-}
-/* force all except headings to 11px */
-.section *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6){
+button.small{
+  background:var(--btn-bg);
+  color:var(--btn-text);
+  border:1px solid var(--btn-border);
+  padding:6px 10px;
+  border-radius:7px;
   font-size:11px;
+  width:15%;
+  cursor:pointer;
+  margin:0 8px 5px 0;
+}
+button:hover{ filter:brightness(1.05); }
+button:active{ transform:translateY(1px); }
+
+/* Typography */
+h2{ text-align:center; margin:10px 0; font-size:18px; color:var(--green); }
+.row{ display:flex; flex-direction:column; gap:6px; margin-top:8px; }
+
+/* Enforce small text inside sections (except headings) */
+.section *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6){ font-size:11px; }
+
+/* Table styling and layout */
+.table-wrapper { max-width:90%; margin:0 auto; }
+table {
+  border-collapse: collapse;
+  width: 90%;
+  table-layout: fixed;
+  background: #ffffe0;
+  border:none;
+}
+th, td {
+  padding: 3px;
+  text-align: center;
+  position: relative;
+  border:none;
+  background: #ffffe0;
+  height:5px;
 }
 
+/* Column widths: first column 25%, remaining share 75% equally (5 columns -> 15% each) */
+th:nth-child(1), td:nth-child(1) { width:15%; }
+th:nth-child(n+2), td:nth-child(n+2) { width:20%; }
 
-
-
+/* Masking (applies to tr, th, td) */
+tr.masked td,
+td.masked,
+th.masked {
+  color: transparent;
+  position: relative;
+}
+tr.masked td::after,
+td.masked::after,
+th.masked::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #ffffe0;
+}
+.flex-row {
+  display: flex;
+  gap: 12px;
+}
+.flex-item {
+  flex: 1; /* equal width */
+  display: flex;
+  flex-direction: column;
+}
+.controls { margin-bottom:8px; }
+.controls button { margin-right:6px; }
 </style>
 </head>
 
 <body>
 
-<div style="height:200px"></div>
-
-
-
-  <div class="wrap">
-
-<h2>Kiara Optometry Lens Selector</h2>
 <div style="height:20px"></div>
 
-    <div class="section">
-<div>
-<h3>Wearer's Details</h3>
-      <label>Name </label>
-      <input style="width:100%"id="name" type="text">
+<div class="wrap">
 
-      <label>WhatsApp Number - <i>With country code, <span style="user-select:none">e.g. 601170199170</span></i></label>
-      <input style="width:100%" id="phone" type="text" style="font-size:10px" placeholder="">
-</div>
-      <label>Notes</label>
-      <textarea id="msg"></textarea>
+  <h2>Kiara Optometry Lens Selector</h2>
 
-      <div><br>
-        <button class="normal" id="greetBtn">Greetings</button>
-        <button class="normal" id="sendBtn">Send WhatsApp</button>
-      </div>
+  <div class="section">
+    <h3>Wearer's Details</h3>
+    <label>Name</label>
+    <input id="name" type="text">
+
+    <label>WhatsApp Number - <i>With country code, e.g. 601170199170</i></label>
+    <input id="phone" type="text" placeholder="">
+
+    <label>Notes</label>
+    <textarea id="msg"></textarea>
+
+    <div style="margin-top:8px;">
+      <button class="normal" id="greetBtn">Greetings</button>
+      <button class="normal" id="sendBtn">Send WhatsApp</button>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h3>Lens Price</h3>
+    <div>
+      <b>Index : Low - Median - High</b><br>
+      1.56 : RM 250 – 480 to 700 – 2,600<br>
+      1.61 : RM 380 – 550 to 900 – 3,150<br>
+      1.67 : RM 530 – 650 to 1,450 – 3,550<br>
+      1.74 : RM 750 – 880 to 2,100 – 4,850<br><br>
+      ----------
+    </div><br>
+
+    <span><b>Price Calculator</b></span><br><br>
+    <input id="priceInput" type="number" placeholder="Price 1 e.g. Frame" style="margin-bottom:6px;">
+    <input id="input2" type="number" placeholder="Price 2 e.g. Lens" style="margin-bottom:6px;">
+    <input id="input3" type="number" placeholder="Price 3 e.g. Lens Extra" style="margin-bottom:6px;">
+
+    <div style="margin-top:8px;">
+      <button class="normal" onclick="calculateStandardDiscount()">Discount</button>
+      <button class="normal" onclick="calculateNoExamDiscount()">No Eye Exam Price</button>
+      <button class="normal" style="background-color:maroon" id="rCodeBtn" onclick="applyRCode()">R-Code</button>
     </div>
 
-<div class="section">
-  <div class="prescription-row">
-    <h3>What Index Is Suitable?</h3>
-    <label>Sphere</label>
-    <input id="sph" type="text" step="0.25"> 
-
-    <label>Cylinder</label>
-    <input id="cyl" type="text" step="0.25">
-  </div><br>
-<div>
-  <button class="normal" id="recommendBtn">Recommended Index</button>
-  <span style="margin-left:1%; font-weight:bold;" id="indexResult"></span>
-</div>
-</div>
-
-
-
-
-<div class="section">
-<h3>Lens Price</h3>
-<div>
-<b>Index : Low - Median - High</b><br>
-1.56 : RM 250 – 480 to 700 – 2,600<br>
-1.61 : RM 380 – 550 to 900 – 3,150<br>
-1.67 : RM 530 – 650 to 1,450 – 3,550<br>
-1.74 : RM 750 – 880 to 2,100 – 4,850<br>
-----------
-</div>
-
-
-
-
-<label>Calculator</label>
-<input style="margin-bottom:1%" id="priceInput" type="number" placeholder="Price 1 e.g. Frame">
-<input style="margin-bottom:1%" id="input2" type="number" placeholder="Price 2 e.g. Lens">
-<input style="margin-bottom:1%" id="input3" type="number" placeholder="Price 3 e.g. Lens Extra">
-
-<button class="normal" onclick="calculateStandardDiscount()">Discount</button>
-<button class="normal" onclick="calculateNoExamDiscount()">No Eye Exam Price</button>
-
-<button class="normal" style="background-color:maroon" id="rCodeBtn" onclick="applyRCode()">R-Code</button>
-
-
-<div id="output" style="font-weight:bold;"></div>
-</div>
-
-<div class="section">
-<label>Search Lenses</label>
-<input type="text" id="searchInput" placeholder="Search images by name or tag">
-</div>
-
-<div class="section">
-<div id="dateOutput" style="font-weight:bold;"></div>
-
-
-</div>
-
+    <div id="output" style="font-weight:bold; margin-top:8px;"></div>
+    <div id="dateOutput" style="font-weight:bold;"></div>
 
   </div>
 
+
+<div class="section">
+  <h3>What Index Is Suitable?</b> - Key in your sphere and cyl power to get an estimate</h3>
+  <div class="flex-row">
+    <div class="flex-item">
+      <label>Sphere</label>
+      <input id="sph" type="text" step="0.25">
+    </div>
+    <div class="flex-item">
+      <label>Cylinder</label>
+      <input id="cyl" type="text" step="0.25">
+    </div>
+  </div>
+
+  <div style="margin-top:8px; display:flex; align-items:center; gap:8px;">
+    <button class="normal" id="recommendBtn">Recommended Index</button>
+    <span id="indexResult" style="font-weight:bold;"></span>
+  </div>
+<br>
+----------<br><br>
+   <div class="controls">
+    <span><b>Lens Filter</b></span><br><br>
+      <button class="small" onclick="toggleMask('idx-156')">1.56</button>
+      <button class="small" onclick="toggleMask('idx-160')">1.60</button>
+      <button class="small" onclick="toggleMask('idx-167')">1.67</button>
+      <button class="small" onclick="toggleMask('idx-174')">1.74</button>
+      <button class="small" onclick="toggleMask('mask-polar-sun')">Polar & Tint</button>
+    </div>
+
+
+</div>
+
+
+<!-- Price matrix -->
+<div class="section">
+
+
 <div class="wrap">
-<div class="lens-container">
 
-<div class="sectionlens"><h6>Single Vision 1, Standard Stock </h6>
+<div style="display:none">
+  <h4>Example</h4>
+  <h5>Description</h5>
+<div class="example-wrapper" style="display: flex; align-items: flex-start; gap: 20px;">
+  <!-- Image on the left -->
+  <div class="image-container">
+    <img src="your-image.jpg" alt="Example Image" style="max-width: 150px;">
+  </div>
 
-<span class="search-only">
-Blue-Light Filter
-1.56 - RM 450
-1.61 - RM 600
-1.67 - RM 850
-1.74 - RM 1,150
-UV400
--
-1.61 - RM 520
-1.67 - RM 650
--
-Blue-Light Filter
-1.56 - RM 480
-1.61 - RM 550
-1.67 - RM 650
-1.74 - RM 880
-UV400
--
-1.61 - RM 380
-1.67 - RM 530
--
-2. Rayfilter Premium - 3 days
-From Taiwan, New Generation low reflection coating.
-3. Asahi-Lite - 3 days
-From Japan, Premium Aspheric, Thinner sides
-Photochromic
--
--
--
--
-Photochromic
-1.56 - RM 630 (V)
--
--
--
-Blue-Light Filter
-1.56 - RM 330
-1.61 - RM 430
-1.67 - RM 630
-1.74 - RM 880
-UV400
-1.56 - RM 250
-1.61 - RM 380
-1.67 - RM 530
--
-1. Rayfilter Basic - 3 days
-From Taiwan, mid-range value for money.
-Photochromic
-1.56 - RM 530
-1.61 - RM 680
-1.67 - RM 700
-1.74 - RM 950
-Blue-Light Filter
-1.56 - RM 450
-1.61 - RM 550
-1.67 - RM 650
-1.74 - RM 750
-UV400
--
--
--
--
-From Europe, Premium Sphere & Aspheric, Best of both combined
-Photochomic
-1.56 - RM 550
-1.61 - RM 750 (F)
-1.67 - RM 850 (F)
--
-4. Aether - 3 days
-</span>
 
-  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/1.png" alt="Price List 1" data-tags="basic" onclick="openLightbox(this.src)">
+  <div class="table-wrapper">
+    <table id="example">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>UV400</th>
+          <th>UV420</th>
+          <th>Photochromic</th>
+          <th class="mask-polar-sun">Polar</th>
+          <th class="mask-polar-sun">Sunglasses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="idx-156">
+          <th>1.56</th>
+          <td data-index="1.56" data-treatment="UV400"></td>
+          <td data-index="1.56" data-treatment="UV420"></td>
+          <td data-index="1.56" data-treatment="Photochromic"></td>
+          <td data-index="1.56" data-treatment="Polarized" class="mask-polar-sun"></td>
+          <td data-index="1.56" data-treatment="Sunglasses" class="mask-polar-sun"></td>
+        </tr>
+        <tr class="idx-160">
+          <th>1.60</th>
+          <td data-index="1.60" data-treatment="UV400"></td>
+          <td data-index="1.60" data-treatment="UV420"></td>
+          <td data-index="1.60" data-treatment="Photochromic"></td>
+          <td data-index="1.60" data-treatment="Polarized" class="mask-polar-sun"></td>
+          <td data-index="1.60" data-treatment="Sunglasses" class="mask-polar-sun"></td>
+        </tr>
+        <tr class="idx-167">
+          <th>1.67</th>
+          <td data-index="1.67" data-treatment="UV400"></td>
+          <td data-index="1.67" data-treatment="UV420"></td>
+          <td data-index="1.67" data-treatment="Photochromic"></td>
+          <td data-index="1.67" data-treatment="Polarized" class="mask-polar-sun"></td>
+          <td data-index="1.67" data-treatment="Sunglasses" class="mask-polar-sun"></td>
+        </tr>
+        <tr class="idx-174">
+          <th>1.74</th>
+          <td data-index="1.74" data-treatment="UV400"></td>
+          <td data-index="1.74" data-treatment="UV420"></td>
+          <td data-index="1.74" data-treatment="Photochromic"></td>
+          <td data-index="1.74" data-treatment="Polarized" class="mask-polar-sun"></td>
+          <td data-index="1.74" data-treatment="Sunglasses" class="mask-polar-sun"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 </div>
 
-<div class="sectionlens"><h6>Single Vision 2, Standard Stock, Custom Lens</h6>
-<span class="search-only">
-Blue-Light Filter
-1.56 - RM 680
-1.61 - RM 750
-1.67 - RM 1,080
-1.74 - RM 1,630
-UV400
-1.56 - RM 480
-1.61 - RM 630
-1.67 - RM 930
-1.74 - RM 1,430
-6. Rayfilter Custom - 7 days
-From Taiwan, simple customized single vision lenses.
-Photochromic
-1.56 - RM 730 
-1.61 - RM 980 
-1.67 - RM 1,380 
-1.74 - RM 1,930
-Blue-Light Filter
-1.56 - RM 850
-1.61 - RM 1,050
-1.67 - RM 1,450
--
-UV400
-1.56 - RM 700
-1.61 - RM 900
-1.67 - RM 1,300
--
-Ultimate Clear Zone from side to side!
-Photochomic
-1.56 - RM 1,350 (F)
-1.61 - RM 1,550 (F)
-1.67 - RM 1,950 (F)
--
-RX
-7. Pentax Custom - 7 days
-Blue-Light Filter
-1.56 - RM 770
-1.61 - RM 920
-1.67 - RM 1,120
-1.74 - RM 1,770
-UV400
-1.56 - RM 710
-1.61 - RM 860
-1.67 - RM 1,060
-1.74 - RM 1,710
-8. Aether Custom - 7 days
-iDrive technology, enhance night vision with coating & lens optics; night myopia
-Photochromic
-1.56 - RM 1,060 (F)
-1.61 - RM 1,360 (F)
-1.67 - RM 1,510 (F)
-1.74 - RM 2,360 (F)
-Blue-Light Filter
-1.56 - RM 480
-1.61 - RM 580
-1.67 - RM 840
-1.74 - RM 1,150
-UV400
--
--
--
--
-5. Pentax - 3 days
-From Japan, Premium Spherical, Stable peripheral vision. Slightly thicker.
-Photochromic
--
-1.61 - RM 730 (F)
--
--
-RX
-</span>
-
-  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/2.png" alt="Price List 2" data-tags="premium" onclick="openLightbox(this.src)">
+  <h4>Rayfilter Basic - 3 days</h4>
+  <h5>Made in Taiwan, mid-range value for money</h5>
+<div>
+  <hr>
 </div>
 
-<div class="sectionlens"><h6>Single Vision 3, Relax Lens</h6>
+<div class="example-wrapper" style="display: flex; align-items: flex-start; gap: 20px;">
+  <!-- Image square -->
+  <div class="image-container" style="width: 100px; height: 100px; flex-shrink: 0;">
+    <img src="https://github.com/kiaraoptometrypx/OL-selector/raw/main/Driving_View.png" 
+         alt="Driving View" 
+         style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
 
-<span class="search-only">
-Blue-Light Filter
-1.56 - RM 1,000
-1.61 - RM 1,200
-1.67 - RM 1,500
-1.74 - RM 2,000
-UV400
-1.56 - RM 850
-1.61 - RM 1,050
-1.67 - RM 1,350
-1.74 - RM 1,850
-Ultimate Clear Zone from side to side!
-Photochomic
-1.56 - RM 1,550 (F)
-1.61 - RM 1,750 (F)
-1.67 - RM 2,050 (F)
--
-RX
-9. Pentax Relax - 7 days
-Blue-Light Filter
-1.56 - RM 930
-1.61 - RM 1,080
-1.67 - RM 1,430
-1.74 - RM 2,180
-UV400
-1.56 - RM 830
-1.61 - RM 980
-1.67 - RM 1,330
-1.74 - RM 1,980
-10. Ultimate Relax - 7 days
-From Germany, but their most premium optics
-Photochromic
-1.56 - RM 1,080
-1.61 - RM 1,330 
-1.67 - RM 1,830 
-1.74 - RM 2,480
-Blue-Light Filter
--
-1.61 - RM 2,450
-1.67 - RM 2,850
--
-UV400
-1.56 - RM 1,850
-1.61 - RM 2,250
-1.67 - RM 2,650
--
-12. Rodenstock Relax - 7 days
-From Germany, top notch lenses, long tradition of optics technology
-Photochromic
-1.56 - RM 2,650 (F)
-1.61 - RM 3,050 (F)
-1.67 - RM 3,450 (F)
--
-Blue-Light Filter
-1.56 - RM 1,400
-1.61 - RM 1,500
-1.67 - RM 1,900
-1.74 - RM 3,050
-UV400
-1.56 - RM 1,300
-1.61 - RM 1,450
-1.67 - RM 1,800
-1.74 - RM 2,850
-11. Meyer Relax - 7 days
-From Germany, top notch lenses, long tradition of optics technology
-Photochromic
-1.56 - RM 1,550
-1.61 - RM 1,800 
-1.67 - RM 2,300 
-1.74 - RM 3,250
-</span>
 
-  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/3.png" alt="Price List 3" data-tags="tinted" onclick="openLightbox(this.src)">
-</div>
 
-<div class="sectionlens"><h6>Single Vision 4, Ultra Optics</h6>
 
-<span class="search-only">
-Blue-Light Filter
-1.50 - RM 1,100
-1.61 - RM 1,300
-1.67 - RM 1,600
-1.74 - RM 2,250
-UV400
-1.50 - RM 950
-1.61 - RM 1,150
-1.67 - RM 1,450
-1.74 - RM 2,100
-Ultimate Clear Zone, super thin and reduce magnification.
-Photochomic
-1.50 - RM 1,850 (F)
-1.61 - RM 2,050 (F)
-1.67 - RM 2,350 (F)
--
-RX
-14. Pentax Double Aspheric - 7 days
-Blue-Light Filter
--
-1.61 - RM 3,150
-1.67 - RM 3,550
--
-UV400
-1.56 - RM 2,600
-1.61 - RM 2,950
-1.67 - RM 3,350
-1.74 - RM 4,850
-15. Rodenstock B.I.G. Norm Custom - 10 days
-From Germany, analyse biometric and produce exceptionally sharp vision.
-Photochromic
-1.56 - RM 3,400 
-1.61 - RM 3,750
-1.67 - RM 4,150
--
-Blue-Light Filter
--
-1.61 - RM 1,850
-1.67 - RM 2,250
--
-UV400
-1.56 - RM 1,250
-1.61 - RM 1,650
-1.67 - RM 2,050
--
-13. Rodenstock Custom - 7 days
-From Germany, top notch lenses, long tradition of optics technology
-Photochromic
-1.56 - RM 2,050 (F)
-1.61 - RM 2,450 (F)
-1.67 - RM 2,850 (F)
--
-</span>
-
-  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/4.png" alt="Price List 4" data-tags="basic" onclick="openLightbox(this.src)">
+  <div class="table-wrapper">
+    <table id="brandA">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>UV400</th>
+          <th>UV420</th>
+          <th>Photochromic</th>
+          <th class="mask-polar-sun">Polar</th>
+          <th class="mask-polar-sun">Sunglasses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="idx-156">
+          <th>1.56</th>
+          <td data-index="1.56" data-treatment="UV400"></td>
+          <td data-index="1.56" data-treatment="UV420"></td>
+          <td data-index="1.56" data-treatment="Photochromic"></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="idx-160">
+          <th>1.60</th>
+          <td data-index="1.60" data-treatment="UV400"></td>
+          <td data-index="1.60" data-treatment="UV420"></td>
+          <td data-index="1.60" data-treatment="Photochromic"></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="idx-167">
+          <th>1.67</th>
+          <td data-index="1.67" data-treatment="UV400"></td>
+          <td data-index="1.67" data-treatment="UV420"></td>
+          <td data-index="1.67" data-treatment="Photochromic"></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="idx-174">
+          <th>1.74</th>
+          <td>-</td>
+          <td data-index="1.74" data-treatment="UV420"></td>
+          <td data-index="1.74" data-treatment="Photochromic"></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 
 
-</div>
-</div>
+  <h4>Rayfilter Premium</h4>
+  <h5>Made in Taiwan, mid-range value for money</h5>
+
+  <div class="table-wrapper">
+    <table id="rayfilterpremium">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>UV400</th>
+          <th>UV420</th>
+          <th>Photochromic</th>
+          <th class="mask-polar-sun">Polar</th>
+          <th class="mask-polar-sun">Sunglasses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="idx-156">
+          <th>1.56</th>
+          <td>-</td>
+          <td data-index="1.56" data-treatment="UV420"></td>
+          <td data-index="1.56" data-treatment="Photochromic"></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="idx-160">
+          <th>1.60</th>
+          <td data-index="1.60" data-treatment="UV400"></td>
+          <td data-index="1.60" data-treatment="UV420"></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="idx-167">
+          <th>1.67</th>
+          <td data-index="1.67" data-treatment="UV400"></td>
+          <td data-index="1.67" data-treatment="UV420"></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr class="idx-174">
+          <th>1.74</th>
+          <td>-</td>
+          <td data-index="1.74" data-treatment="UV420"></td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>
 
+</div>
 <div style="height:200px"></div>
-
-<div id="lightboxOverlay" onclick="closeLightbox()">
-  <img id="lightboxImg" src="">
-</div>
 
 
 
 <script>
-// Open lightbox with the clicked image
+/* ========= BRAND CONFIG ========= */
+const BRANDS = {
+  brandA: {
+    base: 250,
+    indexAdd: { "1.56":0, "1.60":150, "1.67":300, "1.74":500 },
+    treatmentAdd: { UV400:0, UV420:80, Photochromic:300, Polarized:200, Sunglasses:150 }
+  },
+  rayfilterpremium: {
+    base: 280,
+    indexAdd: { "1.56":0, "1.60":120, "1.67":250, "1.74":450 },
+    treatmentAdd: { UV400:0, UV420:90, Photochromic:320, Polarized:210, Sunglasses:160 }
+  }
+
+};
+
+/* ========= FILL PRICES ========= */
+Object.entries(BRANDS).forEach(([id, cfg]) => {
+  document.querySelectorAll(`#${id} td[data-index]`).forEach(td => {
+    const idx = td.dataset.index;
+    const treatment = td.dataset.treatment;
+    const idxAdd = cfg.indexAdd[idx] ?? 0;
+    const treatAdd = cfg.treatmentAdd[treatment] ?? 0;
+    td.textContent = Math.round(cfg.base + idxAdd + treatAdd);
+  });
+});
+</script>
+
+
+<script>
+
+/* ========= MASK FUNCTION (reusable) ========= */
+function toggleMask(cls){
+  document.querySelectorAll('.' + cls).forEach(el=>{
+    el.classList.toggle('masked');
+  });
+}
+
+/* ========= Lightbox helpers ========= */
 function openLightbox(src) {
   const overlay = document.getElementById('lightboxOverlay');
   const img = document.getElementById('lightboxImg');
   img.src = src;
   overlay.style.display = 'flex';
 }
-
-// Close lightbox
 function closeLightbox() {
   document.getElementById('lightboxOverlay').style.display = 'none';
+  document.getElementById('lightboxImg').src = '';
 }
-</script>
 
-
-<script>
-const searchInput = document.getElementById("searchInput");
-const sections = document.querySelectorAll(".sectionlens");
-
-searchInput.addEventListener("input", () => {
-  const terms = searchInput.value
-    .toLowerCase()
-    .split(/\s+/)
-    .filter(Boolean);
-
-  sections.forEach(section => {
-    const text = section.textContent.toLowerCase();
-
-    const match = terms.every(term => text.includes(term));
-    section.style.display = match ? "block" : "none";
+/* ========= Search (for .sectionlens elements) ========= */
+(function() {
+  const searchInput = document.getElementById("searchInput");
+  if (!searchInput) return;
+  const sections = document.querySelectorAll(".sectionlens");
+  searchInput.addEventListener("input", () => {
+    const terms = searchInput.value.toLowerCase().split(/\s+/).filter(Boolean);
+    sections.forEach(section => {
+      const text = section.textContent.toLowerCase();
+      const match = terms.every(term => text.includes(term));
+      section.style.display = match ? "block" : "none";
+    });
   });
-});
-</script>
+})();
 
-
-
-
-
-
-<script>
-// Public holidays (Selangor + KL 2025–2026)
+/* ========= Public holidays + delivery estimate ========= */
 const PUBLIC_HOLIDAYS = new Set([
   "2025-01-01","2025-01-29","2025-01-30","2025-02-01","2025-02-03",
   "2025-02-11","2025-03-18","2025-03-31","2025-04-01","2025-05-01",
@@ -598,187 +551,95 @@ const PUBLIC_HOLIDAYS = new Set([
   "2026-06-17","2026-08-25","2026-08-31","2026-09-16","2026-11-08",
   "2026-11-09","2026-12-11","2026-12-25"
 ]);
-
 const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-
-function getOrdinal(n) {
-  let s=["th","st","nd","rd"], v=n%100;
-  return n + (s[(v-20)%10]||s[v]||s[0]);
-}
-
+function getOrdinal(n) { let s=["th","st","nd","rd"], v=n%100; return n + (s[(v-20)%10]||s[v]||s[0]); }
 function addWorkingDays(date, days) {
   let result = new Date(date);
   while (days > 0) {
     result.setDate(result.getDate() + 1);
     let day = result.getDay();
     let dateStr = result.toISOString().split('T')[0];
-    if (day !== 0 && day !== 6 && !PUBLIC_HOLIDAYS.has(dateStr)) {
-      days--;
-    }
+    if (day !== 0 && day !== 6 && !PUBLIC_HOLIDAYS.has(dateStr)) days--;
   }
   return result;
 }
-
 function formatDateWithDay(d) {
-  const months = ["January","February","March","April","May","June",
-                  "July","August","September","October","November","December"];
+  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   return `${getOrdinal(d.getDate())} ${months[d.getMonth()]} ${DAYS[d.getDay()]}`;
 }
-
 function calculateWorkingDays() {
   let today = new Date();
   let threeDays = addWorkingDays(today, 3);
   let sevenDays = addWorkingDays(today, 7);
-
-  // Express option: 3 working days → 2 working days
-  let expressThree = addWorkingDays(today, 2);
-
   document.getElementById('dateOutput').innerHTML = `
     Today is ${formatDateWithDay(today)}.<br>
     3 Days Completion Estimate : ${formatDateWithDay(threeDays)}.<br>
     7 Days Completion Estimate : ${formatDateWithDay(sevenDays)}.
   `;
 }
-
-// Auto-calculate on page load
 calculateWorkingDays();
-</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
+/* ========= Greeting & WhatsApp ========= */
 document.getElementById("greetBtn").onclick = () => {
   const name = document.getElementById("name").value.trim();
-  document.getElementById("msg").value =
-    `Greetings ${name} from Kiara Optometry.`;
+  document.getElementById("msg").value = `Greetings ${name} from Kiara Optometry.`;
 };
-
 document.getElementById("sendBtn").onclick = () => {
   const phone = document.getElementById("phone").value.replace(/\D/g,'');
   const text = encodeURIComponent(document.getElementById("msg").value);
   if (!phone || !text) return;
   window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
 };
-</script>
 
-<script>
+/* ========= Index recommendation ========= */
 document.getElementById("recommendBtn").onclick = () => {
   const sph = parseFloat(document.getElementById("sph").value) || 0;
   const cyl = parseFloat(document.getElementById("cyl").value) || 0;
   const total = Math.abs(sph) + Math.abs(cyl);
-
-  // Lens index mapping with min/max thresholds (diopters, exclude 1.50)
   const lensMap = [
     {min: 0.00, max: 4.00, index: "1.56"},
     {min: 4.00, max: 6.00, index: "1.61"},
     {min: 6.00, max: 8.00, index: "1.67"},
     {min: 8.00, max: Infinity, index: "1.74"}
   ];
-
-  // Find recommended index
   let rec = lensMap.find(item => total > item.min && total <= item.max) || lensMap[0];
-  let index = rec.index;
-
-  // Determine thin/thick side
-  let midpoint = (rec.min + rec.max) / 2;
+  let midpoint = (rec.min + (rec.max === Infinity ? rec.min + 4 : rec.max)) / 2;
   let thicknessDesc = total <= midpoint ? "thinner side" : "thicker side";
-
   document.getElementById("indexResult").textContent =
-    `${index} ; RX is on ${thicknessDesc} of this index. RX range ${rec.min.toFixed(2)} to ${rec.max === Infinity ? '∞' : rec.max.toFixed(2)}.`;
+    `${rec.index} ; RX is on ${thicknessDesc} of this index. RX range ${rec.min.toFixed(2)} to ${rec.max === Infinity ? '∞' : rec.max.toFixed(2)}.`;
 };
-</script>
 
-
-
-
-<script>
-function getNumber(id) {
-  let val = parseFloat(document.getElementById(id).value);
-  return isNaN(val) ? 0 : val;
-}
-</script>
-
-
-
-
-<script>
-function formatRM(amount) {
-  return 'RM ' + Math.round(amount).toLocaleString();
-}
+/* ========= Discounts & R-Code ========= */
+function formatRM(amount) { return 'RM ' + Math.round(amount).toLocaleString(); }
 
 function calculateStandardDiscount() {
   let p1 = parseFloat(document.getElementById('priceInput').value) || 0;
   let p2 = parseFloat(document.getElementById('input2').value) || 0;
   let p3 = parseFloat(document.getElementById('input3').value) || 0;
-
   let price = p1 + p2 + p3;
-
-  if (price <= 0) {
-    document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>';
-    return;
-  }
-
-let discount = 0;
-if (price <= 249) discount = 0;
-else if (price <= 299) discount = 10;
-else if (price <= 699) discount = 15;
-else discount = 20;
-
-
+  if (price <= 0) { document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>'; return; }
+  let discount = 0;
+  if (price <= 249) discount = 0;
+  else if (price <= 299) discount = 10;
+  else if (price <= 699) discount = 15;
+  else discount = 20;
   let netPrice = price * (1 - discount / 100);
-
-document.getElementById('output').innerHTML = `<br>
-  Original Price : ${formatRM(price)}<br>
-  Net Price : ${formatRM(netPrice)}<br>
-  ${discount > 0 ? `Description : ${discount}% off until March 2026!<br>` : ``}
-`;
-
+  document.getElementById('output').innerHTML = `<br>
+    Original Price : ${formatRM(price)}<br>
+    Net Price : ${formatRM(netPrice)}<br>
+    ${discount > 0 ? `Description : ${discount}% off until March 2026!<br>` : ``}
+  `;
 }
 
 function calculateNoExamDiscount() {
   let p1 = parseFloat(document.getElementById('priceInput').value) || 0;
   let p2 = parseFloat(document.getElementById('input2').value) || 0;
   let p3 = parseFloat(document.getElementById('input3').value) || 0;
-
   let price = p1 + p2 + p3;
-
-  if (price <= 0) {
-    document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>';
-    return;
-  }
-
+  if (price <= 0) { document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>'; return; }
   let discount = 30;
   let netPrice = price * (1 - discount / 100);
   if (netPrice < 200) netPrice = 200;
-
   document.getElementById('output').innerHTML = `<br>
     Original Price : ${formatRM(price)}<br>
     No-Eye-Exam Net Price : ${formatRM(netPrice)}<br>
@@ -786,56 +647,25 @@ function calculateNoExamDiscount() {
 }
 
 function applyRCode() {
-  // Sum all 3 inputs
   let p1 = parseFloat(document.getElementById('priceInput').value) || 0;
   let p2 = parseFloat(document.getElementById('input2').value) || 0;
   let p3 = parseFloat(document.getElementById('input3').value) || 0;
   let price = p1 + p2 + p3;
-
-  if (price <= 0) {
-    document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>';
-    return;
-  }
-
-  // Base discount logic
+  if (price <= 0) { document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>'; return; }
   let discount = 0;
   if (price <= 249) discount = 0;
   else if (price <= 299) discount = 10;
   else if (price <= 699) discount = 15;
   else discount = 20;
-
-  // Extra 5% R-Code
-  discount += 5;
-
+  discount += 5; // R-Code extra
   let netPrice = price * (1 - discount / 100);
-
   document.getElementById('output').innerHTML = `<br>
     Original Price : ${formatRM(price)}<br>
     Net Price : ${formatRM(netPrice)}<br>
-${discount > 0 ? `Description : ${discount}% off (<span style="color:red; font-weight:bold;">R-Code!</span>)<br>` : ``}
+    ${discount > 0 ? `Description : ${discount}% off (<span style="color:red; font-weight:bold;">R-Code!</span>)<br>` : ``}
   `;
 }
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
