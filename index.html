@@ -975,13 +975,15 @@ ${discount > 0 ? `Description : ${discount}% off (<span style="color:red; font-w
 
 
 <script>
-const data = JSON.parse(localStorage.getItem('summaryData') || '{}');
-
-Object.keys(data).forEach(id => {
-  const span = document.getElementById(id);
-  if (span) span.textContent = data[id];
+document.addEventListener('DOMContentLoaded', () => {
+  const data = JSON.parse(localStorage.getItem('summaryData') || '{}');
+  Object.keys(data).forEach(id => {
+    const span = document.getElementById(id);
+    if (span) span.textContent = data[id];
+  });
 });
 </script>
+
 
 
 
