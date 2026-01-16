@@ -394,7 +394,7 @@ button:active{transform:translateY(1px);}
 <div class="section">
   <button class="small" id="rotateBtn">Rotate 90°</button>
 
-  <div style="width:100%; height:600px; display:flex; justify-content:center">
+  <div style="width:100%; height:620px; display:flex; justify-content:center">
     <svg style="margin-top:280px" id="ruler" width="600" height="60">
       <!-- Center red 0 line -->
       <line x1="300" y1="0" x2="300" y2="30" style="stroke:red; stroke-width:2"/>
@@ -405,8 +405,8 @@ button:active{transform:translateY(1px);}
         const SVG_NS = "http://www.w3.org/2000/svg";
         const svg = document.getElementById('ruler');
         const center = 300;                 // shifted center
-        const right50 = 563.5;              // adjusted proportionally
-        const pxPerMm = (right50 - center) / 50  * (100/100.5);  // stretched to 100mm
+const right55 = 300 + (527.5 - 264) * (55/50); // extend proportionally to 55mm
+const pxPerMm = (right55 - center) / 55 * (100/100.5); // scale to 100mm
 
         function makeLine(x, y2){
           const l = document.createElementNS(SVG_NS, 'line');
@@ -426,17 +426,21 @@ button:active{transform:translateY(1px);}
           svg.appendChild(t);
         }
 
-        for (let mm = 1; mm <= 50; mm++){
-          const xL = Number((center - mm * pxPerMm).toFixed(2));
-          const xR = Number((center + mm * pxPerMm).toFixed(2));
-          const yLen = (mm === 50) ? 30 : (mm % 10 === 0 ? 25 : (mm % 5 === 0 ? 20 : 10));
+const maxMM = 55; // extend to 55mm
 
-          makeLine(xL, yLen);
-          if(mm % 5 === 0) makeLabel(xL, mm, mm === 50 ? 'start' : 'middle');
+for (let mm = 1; mm <= maxMM; mm++){
+  const xL = Number((center - mm * pxPerMm).toFixed(2));
+  const xR = Number((center + mm * pxPerMm).toFixed(2));
+  const yLen = (mm === maxMM) ? 30 : (mm % 10 === 0 ? 25 : (mm % 5 === 0 ? 20 : 10));
 
-          makeLine(xR, yLen);
-          if(mm % 5 === 0) makeLabel(xR, mm, mm === 50 ? 'end' : 'middle');
-        }
+  // left tick + label
+  makeLine(xL, yLen);
+  if(mm % 5 === 0) makeLabel(xL, mm, 'middle'); // all middle
+
+  // right tick + label
+  makeLine(xR, yLen);
+  if(mm % 5 === 0) makeLabel(xR, mm, 'middle'); // all middle
+}
       })();
       ]]></script>
   
@@ -1175,5 +1179,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
-
-
