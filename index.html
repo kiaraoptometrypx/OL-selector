@@ -32,6 +32,13 @@ html,body{
   font-size:11px;
   margin:0;
 }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+
+}
 
 .wrap{width:90%; max-width:600px; margin:0 auto;}
 .section{
@@ -160,6 +167,8 @@ button:active{transform:translateY(1px);}
 <h2>Kiara Optometry Lens Selector</h2>
 <div style="height:20px"></div>
 
+
+
     <div class="section">
 <div>
 <h3>Wearer's Details</h3>
@@ -177,6 +186,143 @@ button:active{transform:translateY(1px);}
         <button class="normal" id="sendBtn">Send WhatsApp</button>
       </div>
     </div>
+
+<div class="section">
+<table>
+
+<tr><th colspan="4" >Summary for <span id="customerName_summary"></span>
+<span id="todayDate"></span>
+</th></tr>
+<tr style="border:none; height:10px;">
+  <td style="border:none; height:1px; padding:0;"></td>
+  <td style="border:none; height:1px; padding:0;"></td>
+  <td style="border:none; height:1px; padding:0;"></td>
+  <td style="border:none; height:1px; padding:0;"></td>
+</tr>
+
+
+
+<tr><th colspan="4">Far & Near Rx</th></tr>
+<tr><td>----</td></tr>
+
+<tr>
+  <td class="red">Current Rx</td>
+  <td colspan="3" class="red">
+
+    R: <span id="od_origCombined" style="margin-right: 100px;">OD -</span>
+    L: <span id="os_origCombined">OS -</span>
+  </td>
+</tr>
+<tr>
+  <td class="red">Current Near +<span id="mirrorNearAdd"></span> </td>
+  <td style="text-align:middle" class="red" colspan="3">
+  
+    R: <span id="od_nearCombined" style="margin-right: 100px;">0.00 / 0.00 x 0</span>
+    L: <span id="os_nearCombined">0.00 / 0.00 x 0</span>
+  </td>
+</tr>
+
+<tr>
+  <td class="red">Current CL Rx</td>
+  <td colspan="3" class="red">
+
+R : <span id="CL_od_origCombined" style="margin-right: 100px;">OD -</span>
+L : <span id="CL_os_origCombined">OS -</span>
+  </td>
+</tr>
+<tr><td>----</td></tr>
+
+<tr class="mask2">
+  <td class="yellow">Vector Rx</td>
+  <td class="yellow" colspan="3">
+    R : <span id="od_vcCombined" style="margin-right: 100px;">-</span>
+    L : <span id="os_vcCombined">-</span>
+  </td>
+</tr>
+<tr class="mask2">
+  <td class="yellow">Vector Near +<span id="mirrorNearAddVector"></span>
+</td>
+  <td style="text-align:middle" class="yellow" colspan="3">
+    R: <span id="od_vcNearCombined_mirror" style="margin-right: 100px;">0.00 / 0.00 x 0</span>
+    L: <span id="os_vcNearCombined_mirror">0.00 / 0.00 x 0</span>
+  </td>
+</tr>
+
+<tr class="mask2">
+  <td class="yellow">Vector CL Rx</td>
+  <td class="yellow" colspan="3">
+    R : <span id="CL_od_vcCombined" style="margin-right: 100px;">-</span>
+    L : <span id="CL_os_vcCombined">-</span>
+  </td>
+</tr>
+<tr><td>----</td></tr>
+
+<tr class="mask1">
+  <td class="blue">Manual Rx</td>
+  <td class="blue" colspan="3">
+    R : <span id="od_finalCombined" style="margin-right: 100px;">OD -</span>
+    L : <span id="os_finalCombined">OS -</span>
+  </td>
+</tr>
+<tr class="mirror1 mask1">
+  <td class="blue">Vectorized RE Dom</td>
+  <td class="blue" colspan="3">
+    R: <span id="od_vectorDisplay_mirror" style="margin-right: 80px;">- / - × -</span>
+    L: <span id="os_vectorDisplay_mirror">- / - × -</span>
+  </td>
+</tr>
+
+<tr class="mirror2 mask1">
+  <td class="blue">Vectorized LE Dom</td>
+  <td class="blue" colspan="3">
+    R: <span id="ODcrossedSpan_mirror" style="margin-right: 80px;">- / - × -</span>
+    L: <span id="OScrossedSpan_mirror">- / - × -</span>
+  </td>
+</tr>
+
+<tr class="mask1">
+  <td class="blue">Manual Near +<span id="mirrorNearAddFinal"></span>
+</td>
+  <td style="text-align:middle" class="blue" colspan="3">
+    R: <span id="od_finalNearCombined_mirror" style="margin-right: 100px;">0.00 / 0.00 × 0</span>
+    L: <span id="os_finalNearCombined_mirror">0.00 / 0.00 × 0</span>
+  </td>
+</tr>
+
+<tr class="mask1">
+  <td class="blue">Manual CL Rx</td>
+  <td class="blue" colspan="3">
+    R : <span id="CL_od_finalCombined" style="margin-right: 100px;">OD -</span>
+    L : <span id="CL_os_finalCombined">OS -</span>
+  </td>
+</tr>
+
+
+<tr style="border:none; height:10px;">
+  <td style="border:none; height:1px; padding:0;"></td>
+  <td style="border:none; height:1px; padding:0;"></td>
+  <td style="border:none; height:1px; padding:0;"></td>
+  <td style="border:none; height:1px; padding:0;"></td>
+</tr>
+
+
+<tr class="mask4"><th colspan="4">New Fitting Details</th></tr>
+
+<tr class="mask4"><td>Right</td>
+
+<td colspan="3">
+
+PD : <span class="mirror" data-mirror="od_PD">-</span> mm  <span style="margin-left:15%; margin-right:15%"> ; </span> NOC : <span class="mirror" data-mirror="od_NOC">-</span> mm 
+</td></tr>
+<tr class="mask4"><td>Left</td>
+
+<td colspan="3">
+
+PD : <span class="mirror" data-mirror="os_PD">-</span> mm  <span style="margin-left:15%; margin-right:15%"> ; </span> NOC : <span class="mirror" data-mirror="os_NOC">-</span> mm 
+</td></tr>
+</table>
+</div>
+
 
 <div class="section">
   <div class="prescription-row">
