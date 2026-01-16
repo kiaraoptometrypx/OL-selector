@@ -394,71 +394,54 @@ button:active{transform:translateY(1px);}
 <div style="height:600px; display:flex; justify-content:center">
 
 <svg style="margin-top:300px" id="ruler" width="600" height="60">
-<!-- CENTER -->
-<line x1="264" y1="0" x2="264" y2="30" stroke="red" stroke-width="4" style="stroke:red; stroke-width:3"/>
-<text x="264" y="55" text-anchor="middle">0</text>
+<line x1="264" y1="0" x2="264" y2="30" style="stroke:red; stroke-width:2"/>
+<text x="264" y="45" text-anchor="middle">0</text>
 
-<!-- LEFT SIDE (every 5mm) -->
-<line x1="237.65" y1="0" x2="237.65" y2="20"/>
-<text x="237.65" y="55" text-anchor="middle">5</text>
+<script type="application/ecmascript"><![CDATA[
+(function(){
+  const SVG_NS = "http://www.w3.org/2000/svg";
+  const svg = document.getElementById('ruler');
+  const center = 264;                 // your center X (preserved)
+  const right50 = 527.5;              // your existing right-50 X (preserved)
+  const pxPerMm = (right50 - center) / 50; // derived from your scale (≈5.27)
 
-<line x1="211.3" y1="0" x2="211.3" y2="25"/>
-<text x="211.3" y="55" text-anchor="middle">10</text>
+  function makeLine(x, y2){
+    const l = document.createElementNS(SVG_NS, 'line');
+    l.setAttribute('x1', x);
+    l.setAttribute('y1', 0);
+    l.setAttribute('x2', x);
+    l.setAttribute('y2', y2);
+    svg.appendChild(l);
+  }
 
-<line x1="184.95" y1="0" x2="184.95" y2="20"/>
-<text x="184.95" y="55" text-anchor="middle">15</text>
+  function makeLabel(x, mm, anchor){
+    const t = document.createElementNS(SVG_NS, 'text');
+    t.setAttribute('x', x);
+    t.setAttribute('y', 40);
+    t.setAttribute('text-anchor', anchor);
+    t.textContent = mm;
+    svg.appendChild(t);
+  }
 
-<line x1="158.6" y1="0" x2="158.6" y2="25"/>
-<text x="158.6" y="55" text-anchor="middle">20</text>
+  for (let mm = 1; mm <= 50; mm++){
+    const xL = Number((center - mm * pxPerMm).toFixed(2));
+    const xR = Number((center + mm * pxPerMm).toFixed(2));
 
-<line x1="132.25" y1="0" x2="132.25" y2="20"/>
-<text x="132.25" y="55" text-anchor="middle">25</text>
+    // tick length rules (matches your existing pattern)
+    const yLen = (mm === 50) ? 30 : (mm % 10 === 0 ? 25 : (mm % 5 === 0 ? 20 : 10));
 
-<line x1="105.9" y1="0" x2="105.9" y2="25"/>
-<text x="105.9" y="55" text-anchor="middle">30</text>
+    // left tick and optional label
+    makeLine(xL, yLen);
+    if (mm % 5 === 0) makeLabel(xL, mm, mm === 50 ? 'start' : 'middle');
 
-<line x1="79.55" y1="0" x2="79.55" y2="20"/>
-<text x="79.55" y="55" text-anchor="middle">35</text>
+    // right tick and optional label
+    makeLine(xR, yLen);
+    if (mm % 5 === 0) makeLabel(xR, mm, mm === 50 ? 'end' : 'middle');
+  }
+})();
+]]></script>
 
-<line x1="53.2" y1="0" x2="53.2" y2="25"/>
-<text x="53.2" y="55" text-anchor="middle">40</text>
 
-<line x1="26.85" y1="0" x2="26.85" y2="20"/>
-<text x="26.85" y="55" text-anchor="middle">45</text>
-
-<line x1="0.5" y1="0" x2="0.5" y2="30"/>
-<text x="0.5" y="55" text-anchor="start">50</text>
-
-<!-- RIGHT SIDE (every 5mm) -->
-<line x1="290.35" y1="0" x2="290.35" y2="20"/>
-<text x="290.35" y="55" text-anchor="middle">5</text>
-
-<line x1="316.7" y1="0" x2="316.7" y2="25"/>
-<text x="316.7" y="55" text-anchor="middle">10</text>
-
-<line x1="343.05" y1="0" x2="343.05" y2="20"/>
-<text x="343.05" y="55" text-anchor="middle">15</text>
-
-<line x1="369.4" y1="0" x2="369.4" y2="25"/>
-<text x="369.4" y="55" text-anchor="middle">20</text>
-
-<line x1="395.75" y1="0" x2="395.75" y2="20"/>
-<text x="395.75" y="55" text-anchor="middle">25</text>
-
-<line x1="422.1" y1="0" x2="422.1" y2="25"/>
-<text x="422.1" y="55" text-anchor="middle">30</text>
-
-<line x1="448.45" y1="0" x2="448.45" y2="20"/>
-<text x="448.45" y="55" text-anchor="middle">35</text>
-
-<line x1="474.8" y1="0" x2="474.8" y2="25"/>
-<text x="474.8" y="55" text-anchor="middle">40</text>
-
-<line x1="501.15" y1="0" x2="501.15" y2="20"/>
-<text x="501.15" y="55" text-anchor="middle">45</text>
-
-<line x1="527.5" y1="0" x2="527.5" y2="30"/>
-<text x="527.5" y="55" text-anchor="end">50</text>
 </svg>
 
 
