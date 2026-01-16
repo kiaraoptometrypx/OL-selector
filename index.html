@@ -101,6 +101,9 @@ cursor: pointer;
   display: block;
 }
 
+table tr:first-child th:first-child {
+  width: 20%;
+}
 
 label{font-weight:600; margin-top:8px; display:block;}
 input, textarea{
@@ -188,6 +191,8 @@ button:active{transform:translateY(1px);}
     </div>
 
 <div class="section">
+<h3>From Hypervision</h3>
+
 <table>
 
 <tr>
@@ -202,8 +207,7 @@ button:active{transform:translateY(1px);}
 </tr>
 
 <tr><th colspan="4">Far & Near Rx</th></tr>
-<tr><td colspan="4">----</td></tr>
-
+<tr><td colspan="4" style="border-top: 1px dotted grey"></td></tr>
 <tr>
   <td class="red">Current Rx</td>
   <td colspan="3" class="red">
@@ -214,7 +218,7 @@ button:active{transform:translateY(1px);}
 
 <tr>
   <td class="red">Current Near +<span id="mirrorNearAdd"></span></td>
-  <td colspan="3" class="red" style="text-align:center;">
+  <td colspan="3" class="red" >
     R: <span id="od_nearCombined" style="margin-right:100px;">0.00 / 0.00 x 0</span>
     L: <span id="os_nearCombined">0.00 / 0.00 x 0</span>
   </td>
@@ -228,7 +232,7 @@ button:active{transform:translateY(1px);}
   </td>
 </tr>
 
-<tr><td colspan="4">----</td></tr>
+<tr><td colspan="4" style="border-top: 1px dotted grey"></td></tr>
 
 <tr class="mask2">
   <td class="yellow">Vector Rx</td>
@@ -240,7 +244,7 @@ button:active{transform:translateY(1px);}
 
 <tr class="mask2">
   <td class="yellow">Vector Near +<span id="mirrorNearAddVector"></span></td>
-  <td colspan="3" class="yellow" style="text-align:center;">
+  <td colspan="3" class="yellow" >
     R: <span id="od_vcNearCombined_mirror" style="margin-right:100px;">0.00 / 0.00 x 0</span>
     L: <span id="os_vcNearCombined_mirror">0.00 / 0.00 x 0</span>
   </td>
@@ -254,7 +258,7 @@ button:active{transform:translateY(1px);}
   </td>
 </tr>
 
-<tr><td colspan="4">----</td></tr>
+<tr><td colspan="4" style="border-top: 1px dotted grey"></td></tr>
 
 <tr class="mask1">
   <td class="blue">Manual Rx</td>
@@ -282,7 +286,7 @@ button:active{transform:translateY(1px);}
 
 <tr class="mask1">
   <td class="blue">Manual Near +<span id="mirrorNearAddFinal"></span></td>
-  <td colspan="3" class="blue" style="text-align:center;">
+  <td colspan="3" class="blue" >
     R: <span id="od_finalNearCombined_mirror" style="margin-right:100px;">0.00 / 0.00 × 0</span>
     L: <span id="os_finalNearCombined_mirror">0.00 / 0.00 × 0</span>
   </td>
@@ -320,17 +324,20 @@ button:active{transform:translateY(1px);}
 
 
 <div class="section">
+
   <div class="prescription-row">
     <h3>What Index Is Suitable?</h3>
-    <label>Sphere</label>
-    <input id="sph" type="text" step="0.25"> 
 
-    <label>Cylinder</label>
+    <label for="sph">Sphere</label>    <input id="sph" type="text" step="0.25">
+  
+    <label for="cyl">Cylinder</label>
     <input id="cyl" type="text" step="0.25">
-  </div><br>
-<div>
-  <button class="normal" id="recommendBtn">Recommended Index</button>
+
+
+
+  <button style="margin-top:2%" class="normal" id="recommendBtn">Recommended Index</button>
   <span style="margin-left:1%; font-weight:bold;" id="indexResult"></span>
+
 </div>
 </div>
 
@@ -346,35 +353,31 @@ button:active{transform:translateY(1px);}
 1.67 : RM 530 – 650 to 1,450 – 3,550<br>
 1.74 : RM 750 – 880 to 2,100 – 4,850<br>
 ----------
-</div>
+</div><br>
 
 
 
 
-<label>Calculator</label>
+<span><b>Calculator</b></span>
 <input style="margin-bottom:1%" id="priceInput" type="number" placeholder="Price 1 e.g. Frame">
 <input style="margin-bottom:1%" id="input2" type="number" placeholder="Price 2 e.g. Lens">
 <input style="margin-bottom:1%" id="input3" type="number" placeholder="Price 3 e.g. Lens Extra">
 
 <button class="normal" onclick="calculateStandardDiscount()">Discount</button>
-<button class="normal" onclick="calculateNoExamDiscount()">No Eye Exam Price</button>
+<button style="display:none" class="normal" onclick="calculateNoExamDiscount()">No Eye Exam Price</button>
 
 <button class="normal" style="background-color:maroon" id="rCodeBtn" onclick="applyRCode()">R-Code</button>
 
 
-<div id="output" style="font-weight:bold;"></div>
-</div>
+<div id="output" style="font-weight:bold; margin-top:2%"><i>Price : Awaiting..</i></div><br>
 
-<div class="section">
+<div id="dateOutput" style="font-weight:bold;"></div><br>
+
 <label>Search Lenses</label>
-<input type="text" id="searchInput" placeholder="Search images by name or tag">
-</div>
-
-<div class="section">
-<div id="dateOutput" style="font-weight:bold;"></div>
-
+<input type="text" id="searchInput" placeholder="Search images by name or tag"><br><br>
 
 </div>
+
 
 
   </div>
@@ -891,7 +894,7 @@ function calculateStandardDiscount() {
   let price = p1 + p2 + p3;
 
   if (price <= 0) {
-    document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>';
+    document.getElementById('output').innerHTML = '<em>Please enter price.</em>';
     return;
   }
 
@@ -904,7 +907,7 @@ else discount = 20;
 
   let netPrice = price * (1 - discount / 100);
 
-document.getElementById('output').innerHTML = `<br>
+document.getElementById('output').innerHTML = `
   Original Price : ${formatRM(price)}<br>
   Net Price : ${formatRM(netPrice)}<br>
   ${discount > 0 ? `Description : ${discount}% off until March 2026!<br>` : ``}
@@ -942,7 +945,7 @@ function applyRCode() {
   let price = p1 + p2 + p3;
 
   if (price <= 0) {
-    document.getElementById('output').innerHTML = '<br><em>Please enter price.</em>';
+    document.getElementById('output').innerHTML = '<em>Please enter price.</em>';
     return;
   }
 
@@ -958,7 +961,7 @@ function applyRCode() {
 
   let netPrice = price * (1 - discount / 100);
 
-  document.getElementById('output').innerHTML = `<br>
+  document.getElementById('output').innerHTML = `
     Original Price : ${formatRM(price)}<br>
     Net Price : ${formatRM(netPrice)}<br>
 ${discount > 0 ? `Description : ${discount}% off (<span style="color:red; font-weight:bold;">R-Code!</span>)<br>` : ``}
