@@ -391,51 +391,74 @@ button:active{transform:translateY(1px);}
 </div>
 <div class="section">
 <button class="small" id="rotateBtn">Rotate 90°</button>
-<div style="height:350px">
+<div style="height:600px; display:flex; justify-content:center">
 
-<svg style="margin-top:150px" id="ruler" width="600" height="60">
-  <line x1="264" y1="0" x2="264" y2="30" stroke="black" stroke-width="2"/>
-  <text x="264" y="55" text-anchor="middle">0</text>
+<svg style="margin-top:300px" id="ruler" width="600" height="60">
+<!-- CENTER -->
+<line x1="264" y1="0" x2="264" y2="30" stroke="red" stroke-width="4" style="stroke:red; stroke-width:3"/>
+<text x="264" y="55" text-anchor="middle">0</text>
 
-<!-- Ticks and labels -->
-<!-- Scale: 1mm = 6.333px -->
-<!-- Range: -55mm to +55mm -->
-<!-- Long tick = 10mm, Medium = 5mm, Short = 1mm -->
+<!-- LEFT SIDE (every 5mm) -->
+<line x1="237.65" y1="0" x2="237.65" y2="20"/>
+<text x="237.65" y="55" text-anchor="middle">5</text>
 
-<!-- LEFT SIDE -->
-    <line x1="211.25" y1="0" x2="211.25" y2="25"/>
-    <text x="211.25" y="55" text-anchor="middle">10</text>
+<line x1="211.3" y1="0" x2="211.3" y2="25"/>
+<text x="211.3" y="55" text-anchor="middle">10</text>
 
-    <line x1="158.5" y1="0" x2="158.5" y2="25"/>
-    <text x="158.5" y="55" text-anchor="middle">20</text>
+<line x1="184.95" y1="0" x2="184.95" y2="20"/>
+<text x="184.95" y="55" text-anchor="middle">15</text>
 
-    <line x1="105.75" y1="0" x2="105.75" y2="25"/>
-    <text x="105.75" y="55" text-anchor="middle">30</text>
+<line x1="158.6" y1="0" x2="158.6" y2="25"/>
+<text x="158.6" y="55" text-anchor="middle">20</text>
 
-    <line x1="53" y1="0" x2="53" y2="25"/>
-    <text x="53" y="55" text-anchor="middle">40</text>
+<line x1="132.25" y1="0" x2="132.25" y2="20"/>
+<text x="132.25" y="55" text-anchor="middle">25</text>
 
-    <line x1="0.25" y1="0" x2="0.25" y2="30"/>
-    <text x="0.25" y="55" text-anchor="start">50</text>
-  </g>
+<line x1="105.9" y1="0" x2="105.9" y2="25"/>
+<text x="105.9" y="55" text-anchor="middle">30</text>
 
-<!-- RIGHT SIDE -->
-  <g stroke="black">
-    <line x1="316.75" y1="0" x2="316.75" y2="25"/>
-    <text x="316.75" y="55" text-anchor="middle">10</text>
+<line x1="79.55" y1="0" x2="79.55" y2="20"/>
+<text x="79.55" y="55" text-anchor="middle">35</text>
 
-    <line x1="369.5" y1="0" x2="369.5" y2="25"/>
-    <text x="369.5" y="55" text-anchor="middle">20</text>
+<line x1="53.2" y1="0" x2="53.2" y2="25"/>
+<text x="53.2" y="55" text-anchor="middle">40</text>
 
-    <line x1="422.25" y1="0" x2="422.25" y2="25"/>
-    <text x="422.25" y="55" text-anchor="middle">30</text>
+<line x1="26.85" y1="0" x2="26.85" y2="20"/>
+<text x="26.85" y="55" text-anchor="middle">45</text>
 
-    <line x1="475" y1="0" x2="475" y2="25"/>
-    <text x="475" y="55" text-anchor="middle">40</text>
+<line x1="0.5" y1="0" x2="0.5" y2="30"/>
+<text x="0.5" y="55" text-anchor="start">50</text>
 
-    <line x1="527.75" y1="0" x2="527.75" y2="30"/>
-    <text x="527.75" y="55" text-anchor="end">50</text>
-  </g>
+<!-- RIGHT SIDE (every 5mm) -->
+<line x1="290.35" y1="0" x2="290.35" y2="20"/>
+<text x="290.35" y="55" text-anchor="middle">5</text>
+
+<line x1="316.7" y1="0" x2="316.7" y2="25"/>
+<text x="316.7" y="55" text-anchor="middle">10</text>
+
+<line x1="343.05" y1="0" x2="343.05" y2="20"/>
+<text x="343.05" y="55" text-anchor="middle">15</text>
+
+<line x1="369.4" y1="0" x2="369.4" y2="25"/>
+<text x="369.4" y="55" text-anchor="middle">20</text>
+
+<line x1="395.75" y1="0" x2="395.75" y2="20"/>
+<text x="395.75" y="55" text-anchor="middle">25</text>
+
+<line x1="422.1" y1="0" x2="422.1" y2="25"/>
+<text x="422.1" y="55" text-anchor="middle">30</text>
+
+<line x1="448.45" y1="0" x2="448.45" y2="20"/>
+<text x="448.45" y="55" text-anchor="middle">35</text>
+
+<line x1="474.8" y1="0" x2="474.8" y2="25"/>
+<text x="474.8" y="55" text-anchor="middle">40</text>
+
+<line x1="501.15" y1="0" x2="501.15" y2="20"/>
+<text x="501.15" y="55" text-anchor="middle">45</text>
+
+<line x1="527.5" y1="0" x2="527.5" y2="30"/>
+<text x="527.5" y="55" text-anchor="end">50</text>
 </svg>
 
 
@@ -466,8 +489,6 @@ button:active{transform:translateY(1px);}
 
 
 
-
-
 </div>
 </div>
 <div class="section">
@@ -475,10 +496,10 @@ button:active{transform:translateY(1px);}
 <h3>
 Diameter Check!<br>Important for Plus Powers! Reading glasses! Decentration leads to headaches!</h3>
   <!-- Buttons -->
-  <button class="small" onclick="setCircleSize(312, this)">60 mm</button>
-  <button class="small" onclick="setCircleSize(338, this)">65 mm</button>
-  <button class="small" onclick="setCircleSize(364, this)">70 mm</button>
-  <button class="small" onclick="setCircleSize(390, this)">75 mm</button>
+  <button class="circleBtn small" onclick="setCircleSize(312, this)">60 mm</button>
+  <button class="circleBtn small" onclick="setCircleSize(338, this)">65 mm</button>
+  <button class="circleBtn small" onclick="setCircleSize(364, this)">70 mm</button>
+  <button class="circleBtn small" onclick="setCircleSize(390, this)">75 mm</button>
 </div>
 
 <!-- Circle container -->
@@ -499,6 +520,8 @@ Diameter Check!<br>Important for Plus Powers! Reading glasses! Decentration lead
 let selectedButton = null;
 
 function setCircleSize(size, btn) {
+  if (!btn.classList.contains('circleBtn')) return;
+
   const padding = 20;
   const innerSize = size - padding * 2;
 
@@ -511,8 +534,8 @@ function setCircleSize(size, btn) {
 
   const circle = svg.querySelector('circle');
   const lines = svg.querySelectorAll('line');
-
   const center = innerSize / 2;
+
   circle.setAttribute('cx', center);
   circle.setAttribute('cy', center);
   circle.setAttribute('r', center);
@@ -527,17 +550,14 @@ function setCircleSize(size, btn) {
   lines[1].setAttribute('x2', innerSize);
   lines[1].setAttribute('y2', center);
 
-  // Highlight selected button
   if (selectedButton) selectedButton.style.backgroundColor = '';
   btn.style.backgroundColor = 'grey';
   selectedButton = btn;
-
 }
 
-// Initialize first button as selected
 document.addEventListener('DOMContentLoaded', () => {
-  const firstButton = document.querySelector('button');
-  setCircleSize(338, firstButton);
+  const firstButton = document.querySelector('.circleBtn');
+  if (firstButton) setCircleSize(312, firstButton);
 });
 </script>
 
