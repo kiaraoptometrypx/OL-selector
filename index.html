@@ -50,7 +50,7 @@ html,body{
   }
 
 
-.wrap{width:90%; max-width:600px; margin:0 auto;}
+.wrap{width:90%; max-width:700px; margin:0 auto;}
 .section{
   background:var(--pale);
   border:1px solid var(--line);
@@ -389,58 +389,57 @@ button:active{transform:translateY(1px);}
 <input type="text" id="searchInput" placeholder="Search images by name or tag"><br><br>
 
 </div>
+
+
 <div class="section">
-<button class="small" id="rotateBtn">Rotate 90°</button>
-<div style="height:600px; display:flex; justify-content:center">
+  <button class="small" id="rotateBtn">Rotate 90°</button>
 
-<svg style="margin-top:300px" id="ruler" width="600" height="60">
-<line x1="264" y1="0" x2="264" y2="30" style="stroke:red; stroke-width:2"/>
-<text x="264" y="45" text-anchor="middle">0</text>
+  <div style="width:100%; height:600px; display:flex; justify-content:center">
+    <svg style="margin-top:280px" id="ruler" width="600" height="60">
+      <!-- Center red 0 line -->
+      <line x1="300" y1="0" x2="300" y2="30" style="stroke:red; stroke-width:2"/>
+      <text x="300" y="40" text-anchor="middle">0</text>
 
-<script type="application/ecmascript"><![CDATA[
-(function(){
-  const SVG_NS = "http://www.w3.org/2000/svg";
-  const svg = document.getElementById('ruler');
-  const center = 264;                 // your center X (preserved)
-  const right50 = 527.5;              // your existing right-50 X (preserved)
-  const pxPerMm = (right50 - center) / 50; // derived from your scale (≈5.27)
+      <script type="application/ecmascript"><![CDATA[
+      (function(){
+        const SVG_NS = "http://www.w3.org/2000/svg";
+        const svg = document.getElementById('ruler');
+        const center = 300;                 // shifted center
+        const right50 = 563.5;              // adjusted proportionally
+        const pxPerMm = (right50 - center) / 50 * (100/99);  // stretched to 100mm
 
-  function makeLine(x, y2){
-    const l = document.createElementNS(SVG_NS, 'line');
-    l.setAttribute('x1', x);
-    l.setAttribute('y1', 0);
-    l.setAttribute('x2', x);
-    l.setAttribute('y2', y2);
-    svg.appendChild(l);
-  }
+        function makeLine(x, y2){
+          const l = document.createElementNS(SVG_NS, 'line');
+          l.setAttribute('x1', x);
+          l.setAttribute('y1', 0);
+          l.setAttribute('x2', x);
+          l.setAttribute('y2', y2);
+          svg.appendChild(l);
+        }
 
-  function makeLabel(x, mm, anchor){
-    const t = document.createElementNS(SVG_NS, 'text');
-    t.setAttribute('x', x);
-    t.setAttribute('y', 40);
-    t.setAttribute('text-anchor', anchor);
-    t.textContent = mm;
-    svg.appendChild(t);
-  }
+        function makeLabel(x, mm, anchor){
+          const t = document.createElementNS(SVG_NS, 'text');
+          t.setAttribute('x', x);
+          t.setAttribute('y', 40);
+          t.setAttribute('text-anchor', anchor);
+          t.textContent = mm;
+          svg.appendChild(t);
+        }
 
-  for (let mm = 1; mm <= 50; mm++){
-    const xL = Number((center - mm * pxPerMm).toFixed(2));
-    const xR = Number((center + mm * pxPerMm).toFixed(2));
+        for (let mm = 1; mm <= 50; mm++){
+          const xL = Number((center - mm * pxPerMm).toFixed(2));
+          const xR = Number((center + mm * pxPerMm).toFixed(2));
+          const yLen = (mm === 50) ? 30 : (mm % 10 === 0 ? 25 : (mm % 5 === 0 ? 20 : 10));
 
-    // tick length rules (matches your existing pattern)
-    const yLen = (mm === 50) ? 30 : (mm % 10 === 0 ? 25 : (mm % 5 === 0 ? 20 : 10));
+          makeLine(xL, yLen);
+          if(mm % 5 === 0) makeLabel(xL, mm, mm === 50 ? 'start' : 'middle');
 
-    // left tick and optional label
-    makeLine(xL, yLen);
-    if (mm % 5 === 0) makeLabel(xL, mm, mm === 50 ? 'start' : 'middle');
-
-    // right tick and optional label
-    makeLine(xR, yLen);
-    if (mm % 5 === 0) makeLabel(xR, mm, mm === 50 ? 'end' : 'middle');
-  }
-})();
-]]></script>
-
+          makeLine(xR, yLen);
+          if(mm % 5 === 0) makeLabel(xR, mm, mm === 50 ? 'end' : 'middle');
+        }
+      })();
+      ]]></script>
+  
 
 </svg>
 
