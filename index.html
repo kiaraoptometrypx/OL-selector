@@ -406,7 +406,7 @@ button:active{transform:translateY(1px);}
         const svg = document.getElementById('ruler');
         const center = 300;                 // shifted center
         const right50 = 563.5;              // adjusted proportionally
-        const pxPerMm = (right50 - center) / 50 ;  // stretched to 100mm
+        const pxPerMm = (right50 - center) / 50  * (100/100.5);  // stretched to 100mm
 
         function makeLine(x, y2){
           const l = document.createElementNS(SVG_NS, 'line');
@@ -1175,4 +1175,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
