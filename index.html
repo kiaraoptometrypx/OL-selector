@@ -972,12 +972,17 @@ ${discount > 0 ? `Description : ${discount}% off (<span style="color:red; font-w
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const data = JSON.parse(localStorage.getItem('summaryData') || '{}');
+
+  // debug: make sure data exists
+  console.log('Loaded summaryData:', data);
+
   Object.keys(data).forEach(id => {
     const span = document.getElementById(id);
     if (span) span.textContent = data[id];
   });
 });
 </script>
+
 
 
 
