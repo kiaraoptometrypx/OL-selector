@@ -24,7 +24,9 @@
   white-space:nowrap;
   clip:rect(0 0 0 0);
 }
-
+.hidden {
+  display: none;
+}
 html,body{
   background:var(--off);
   color:var(--green);
@@ -392,6 +394,13 @@ button:active{transform:translateY(1px);}
 
 
 <div class="section">
+<button class="normal"onclick="toggleRuler()">Toggle Ruler</button>
+<button class="normal"onclick="toggleDiameter()">Toggle Diameter</button>
+
+</div>
+
+<div class="Ruler hidden section">
+	<h2>Ruler for PD, Frame height & so on.</h2>
   <button class="small" id="rotateBtn">Rotate 90°</button>
 
   <div style="width:100%; height:620px; display:flex; justify-content:center">
@@ -474,13 +483,14 @@ for (let mm = 1; mm <= maxMM; mm++){
 
 
 
+</div>
+</div>
 
-</div>
-</div>
-<div class="section">
+
+<div class="Diameter hidden section">
 <div>
-<h3>
-Diameter Check!<br>Important for Plus Powers! Reading glasses! Decentration leads to headaches!</h3>
+<h2>
+Diameter Check!<br>Important for Plus Powers & Reading glasses! Wrong diameter = Dizzy!</h2>
   <!-- Buttons -->
   <button class="circleBtn small" onclick="setCircleSize(312, this)">60 mm</button>
   <button class="circleBtn small" onclick="setCircleSize(338, this)">65 mm</button>
@@ -1160,9 +1170,23 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 
+<script>
+function toggleRuler() {
+  document.querySelectorAll('.Ruler').forEach(el => {
+    el.classList.toggle('hidden');
+  });
+}
+</script>
 
 
 
+<script>
+function toggleDiameter() {
+  document.querySelectorAll('.Diameter').forEach(el => {
+    el.classList.toggle('hidden');
+  });
+}
+</script>
 
 
 
