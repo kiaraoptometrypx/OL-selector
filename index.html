@@ -151,7 +151,7 @@ button.small{
   padding:6px 6px;
   border-radius:7px;
   font-size:11px;
-  width:70px;
+  width:100px;
   cursor:pointer;
   margin:0 20px 0 0;
 }
@@ -217,7 +217,7 @@ button:active{transform:translateY(1px);}
       </div>
     </div>
 
-<div class="section">
+<div class="section" style="display:none">
 <h3>From Hypervision</h3>
 
 <table>
@@ -339,20 +339,16 @@ button:active{transform:translateY(1px);}
 
 <div class="section">
 
-  <div class="prescription-row">
     <h3>What Index Is Suitable?</h3>
 
-    <label for="sph">Sphere</label>    <input id="sph" type="text" step="0.25">
-  
-    <label for="cyl">Cylinder</label>
-    <input id="cyl" type="text" step="0.25">
+    <span style="margin-right:20px">Sphere / Cylinder </span>    <input style="width:75px" id="sph" type="text" step="0.25">  /   <input style="width:75px" id="cyl" type="text" step="0.25"><br>
+
 
 
 
   <button style="margin-top:2%" class="normal" id="recommendBtn">Recommended Index</button>
   <span style="margin-left:1%; font-weight:bold;" id="indexResult"></span>
 
-</div>
 </div>
 
 
@@ -394,8 +390,34 @@ button:active{transform:translateY(1px);}
 
 
 <div class="section">
-<button class="normal"onclick="toggleRuler()">Toggle Ruler</button>
+<button style="display:none" class="normal"onclick="toggleRuler()">Toggle Ruler</button>
 <button class="normal"onclick="toggleDiameter()">Toggle Diameter</button>
+
+
+<div class="Diameter hidden section">
+<div>
+<h2>
+Diameter Check!<br>Important for Plus Powers & Reading glasses! Wrong diameter = Dizzy!</h2>
+  <!-- Buttons -->
+  <button class="circleBtn small" onclick="setCircleSize(312, this)">60 mm stock</button>
+  <button class="circleBtn small" onclick="setCircleSize(338, this)">65 mm stock</button>
+  <button class="circleBtn small" onclick="setCircleSize(364, this)">70 mm RX</button>
+  <button class="circleBtn small" onclick="setCircleSize(390, this)">75 mm RX</button>
+</div>
+
+<!-- Circle container -->
+<div style="margin-top:2%; padding:2%; display:flex; justify-content:center; align-items:center;">
+<div id="circleContainer" style="display:flex; justify-content:center; align-items:center; border:none; width:312px; height:312px; margin-top:10px;">
+  <svg id="circleSVG" width="100%" height="100%" viewBox="0 0 300 300" style="display:block;">
+    <circle cx="169" cy="169" r="169" stroke="black" stroke-width="1" fill="none" />
+    <line x1="190" y1="0" x2="169" y2="312" stroke="black" stroke-width="1" />
+    <line x1="0" y1="169" x2="312" y2="169" stroke="black" stroke-width="1" />
+  </svg>
+
+
+</div>
+</div>
+
 
 </div>
 
@@ -487,36 +509,13 @@ for (let mm = 1; mm <= maxMM; mm++){
 </div>
 
 
-<div class="Diameter hidden section">
-<div>
-<h2>
-Diameter Check!<br>Important for Plus Powers & Reading glasses! Wrong diameter = Dizzy!</h2>
-  <!-- Buttons -->
-  <button class="circleBtn small" onclick="setCircleSize(312, this)">60 mm</button>
-  <button class="circleBtn small" onclick="setCircleSize(338, this)">65 mm</button>
-  <button class="circleBtn small" onclick="setCircleSize(364, this)">70 mm</button>
-  <button class="circleBtn small" onclick="setCircleSize(390, this)">75 mm</button>
-</div>
-
-<!-- Circle container -->
-<div style="margin-top:2%; padding:2%; display:flex; justify-content:center; align-items:center;">
-<div id="circleContainer" style="display:flex; justify-content:center; align-items:center; border:none; width:312px; height:312px; margin-top:10px;">
-  <svg id="circleSVG" width="100%" height="100%" viewBox="0 0 300 300" style="display:block;">
-    <circle cx="169" cy="169" r="169" stroke="black" stroke-width="1" fill="none" />
-    <line x1="190" y1="0" x2="169" y2="312" stroke="black" stroke-width="1" />
-    <line x1="0" y1="169" x2="312" y2="169" stroke="black" stroke-width="1" />
-  </svg>
-
-
-</div>
-</div>
-
-
 <script>
 let selectedButton = null;
 
 function setCircleSize(size, btn) {
   if (!btn.classList.contains('circleBtn')) return;
+
+  const containerPadding = 60; // 👈 increase this to make container bigger
 
   const padding = 20;
   const innerSize = size - padding * 2;
@@ -567,6 +566,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="wrap">
 <div class="lens-container">
+
+<div class="sectionlens"><h6>Single Vision 1, Standard Stock </h6>
+
+
+  <img src="https://raw.githubusercontent.com/kiaraoptometrypx/OL-selector/main/Lens_Catalogue/photochromic.jpg" alt="Photochromic" data-tags="basic" onclick="openLightbox(this.src)">
+</div>
+
+
+
 
 <div class="sectionlens"><h6>Single Vision 1, Standard Stock </h6>
 
@@ -1203,4 +1211,3 @@ function toggleDiameter() {
 
 </body>
 </html>
-
