@@ -180,6 +180,8 @@ button:active{transform:translateY(1px);}
   font-size:11px;
 }
 
+.vert { stroke: red; }
+.hori { stroke: none; }
 
 
 
@@ -337,11 +339,148 @@ button:active{transform:translateY(1px);}
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
 <div class="section">
 
+<button class="normal" style="background-color:#191919" onclick="toggleByClass('toggleTarget1')">Weekend Promo</button>
+
+<div class="toggleTarget1" style="display:none;">
+
+<div class="section" >
+<h3>Next-Gen Eye Exam Experience </h3>
+<span><b>Eliminates blur by measuring it, then calculating your best prescription without the blur.<br>Key in your prescription below to see your discount value!</b></span>
+<br><br>
+
+<span>Right Eye RX</span>
+<input style="width:15%" type="text" id="PFLOdSphere" placeholder="Sphere"> / 
+<input style="width:15%" type="text" id="PFLOdCyl" placeholder="Cyl">
+
+<span style="margin-left:50px"></span>
+
+<span>Left Eye RX</span>
+<input style="width:15%" type="text" id="PFLOsSphere" placeholder="Sphere"> / 
+<input style="width:15%" type="text" id="PFLOsCyl" placeholder="Cyl">
+
+<script>
+// Round to nearest 0.25
+function roundToQuarter(value) {
+    return Math.round(value * 4) / 4;
+}
+
+// Apply rounding on blur for all RX inputs
+['PFLOdSphere','PFLOdCyl','PFLOsSphere','PFLOsCyl'].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener('blur', () => {
+        let val = parseFloat(el.value);
+        if (!isNaN(val)) {
+            el.value = roundToQuarter(val).toFixed(2); // snap and format
+        } else {
+            el.value = ''; // clear if not a number
+        }
+    });
+});
+</script>
+
+<br><br>
+
+<span>Chosen Lens Price (RM)</span>
+<input style="width:35%" type="text" step="0" id="PFLLensPrice" value="" placeholder="Enter Lens Price">
+
+<br><br>
+
+<button class="normal" onclick="calculatePromo()">Discount</button>
+<button class="normal" style="background-color:maroon" id="PFLRCodeBtn" onclick="toggleRCode()">R-Code</button>
+<br><br>
+<b><div class="result" id="PFLResult"></div></b>
+
+
+
+<script>
+let rCodeApplied = false; // temporary R-code flag
+
+function getPromoValue(sphere, cyl) {
+    if (cyl < -4.00) return 380;
+    if (sphere > 2.00 || sphere < -4.00) return 380;
+    return 250;
+}
+
+// R-code button click
+function toggleRCode() {
+    rCodeApplied = true;  // apply +200 just for this calculation
+    calculatePromo();
+}
+
+function calculatePromo() {
+    const odSphere = parseFloat(PFLOdSphere.value) || 0;
+    const odCyl = parseFloat(PFLOdCyl.value) || 0;
+    const osSphere = parseFloat(PFLOsSphere.value) || 0;
+    const osCyl = parseFloat(PFLOsCyl.value) || 0;
+    const lensPrice = parseFloat(PFLLensPrice.value) || 0;
+
+    let promoValue = Math.max(
+        getPromoValue(odSphere, odCyl),
+        getPromoValue(osSphere, osCyl)
+    );
+
+    if (rCodeApplied) promoValue += 200;
+
+    let topUp = Math.max(0, lensPrice - promoValue);
+    let discount = 0;
+
+    // Apply discount rules
+    if (topUp >= 300 && topUp <= 500) {
+        discount = 0.10; // 10%
+    } else if (topUp > 500) {
+        discount = 0.15; // 15%
+    }
+
+    const discountedTopUp = topUp * (1 - discount);
+
+    PFLResult.innerText =
+        `Promo Value: RM ${promoValue}\n` +
+        `Top-up Required: RM ${topUp.toFixed(2)}\n` +
+        (discount > 0 ? `Further Discount! ${discount*100}% → RM ${discountedTopUp.toFixed(2)}` : '');
+
+    // Reset R-code after calculation
+    rCodeApplied = false;
+}
+</script>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="section">
+<button class="normal" style="background-color:#191919" onclick="toggleByClass('toggleTarget')">Normal Price</button>
+
+<div class="toggleTarget" style="display:none;">
+<div class="section">
     <h3>What Index Is Suitable?</h3>
 
-    <span style="margin-right:20px">Sphere / Cylinder </span>    <input style="width:75px" id="sph" type="text" step="0.25">  /   <input style="width:75px" id="cyl" type="text" step="0.25"><br>
+    <span style="margin-right:20px">Sphere / Cylinder </span>    <input style="width:15%" id="sph" type="text" step="0.25">  /   <input style="width:15%" id="cyl" type="text" step="0.25"><br>
 
 
 
@@ -358,10 +497,10 @@ button:active{transform:translateY(1px);}
 <h3>Lens Price</h3>
 <div>
 <b>Index : Low - Median - High</b><br>
-1.56 : RM 250 – 480 to 700 – 2,600<br>
-1.61 : RM 380 – 550 to 900 – 3,150<br>
-1.67 : RM 530 – 650 to 1,450 – 3,550<br>
-1.74 : RM 750 – 880 to 2,100 – 4,850<br>
+1.56 : RM 250 – 480 – 2,600<br>
+1.61 : RM 380 – 550 – 3,150<br>
+1.67 : RM 530 – 650 – 3,550<br>
+1.74 : RM 750 – 880 – 4,850<br>
 ----------
 </div><br>
 
@@ -387,6 +526,9 @@ button:active{transform:translateY(1px);}
 <input type="text" id="searchInput" placeholder="Search images by name or tag"><br><br>
 
 </div>
+</div>
+</div>
+
 
 
 <div class="section">
@@ -394,10 +536,12 @@ button:active{transform:translateY(1px);}
 <button class="normal"onclick="toggleDiameter()">Toggle Diameter</button>
 
 
-<div class="Diameter hidden section">
+
+
+<div class="Diameter hidden section" style="border:none">
 <div>
-<h2>
-Diameter Check!<br>Important for Plus Powers & Reading glasses! Wrong diameter = Dizzy!</h2>
+<h3>
+Diameter Check!<br>Important for Plus Powers & Reading glasses! Wrong diameter = Dizzy!<br>Center PD along the red line; Dashed lines must be bigger than frame's shape. </h3>
   <!-- Buttons -->
   <button class="circleBtn small" onclick="setCircleSize(312, this)">60 mm stock</button>
   <button class="circleBtn small" onclick="setCircleSize(338, this)">65 mm stock</button>
@@ -405,13 +549,16 @@ Diameter Check!<br>Important for Plus Powers & Reading glasses! Wrong diameter =
   <button class="circleBtn small" onclick="setCircleSize(390, this)">75 mm RX</button>
 </div>
 
+
+
 <!-- Circle container -->
-<div style="margin-top:2%; padding:2%; display:flex; justify-content:center; align-items:center;">
-<div id="circleContainer" style="display:flex; justify-content:center; align-items:center; border:none; width:312px; height:312px; margin-top:10px;">
+<div style="margin-top:2%; padding:5%; display:flex; justify-content:center; align-items:center;">
+<div id="circleContainer" style="display:flex; justify-content:center; align-items:center; border:none; width:32px; height:312px; margin-top:10px;">
   <svg id="circleSVG" width="100%" height="100%" viewBox="0 0 300 300" style="display:block;">
-    <circle cx="169" cy="169" r="169" stroke="black" stroke-width="1" fill="none" />
-    <line x1="190" y1="0" x2="169" y2="312" stroke="black" stroke-width="1" />
-    <line x1="0" y1="169" x2="312" y2="169" stroke="black" stroke-width="1" />
+    <circle cx="169" cy="169" r="169" stroke="red" stroke-width="1" fill="none"   stroke-dasharray="10 2"
+/>
+    <line class="vert" x1="190" y1="0" x2="169" y2="312" stroke-width="1" />
+    <line class="hori" x1="0" y1="169" x2="312" y2="169" stroke-width="1" />
   </svg>
 
 
@@ -546,7 +693,7 @@ function setCircleSize(size, btn) {
   lines[1].setAttribute('y2', center);
 
   if (selectedButton) selectedButton.style.backgroundColor = '';
-  btn.style.backgroundColor = 'grey';
+  btn.style.backgroundColor = 'red';
   selectedButton = btn;
 }
 
@@ -558,9 +705,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-</div>
 
   </div>
+</div>
 
 
 
@@ -1197,6 +1344,13 @@ function toggleDiameter() {
 </script>
 
 
+<script>
+function toggleByClass(className) {
+    document.querySelectorAll('.' + className).forEach(el => {
+        el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+    });
+}
+</script>
 
 
 
@@ -1211,3 +1365,4 @@ function toggleDiameter() {
 
 </body>
 </html>
+
