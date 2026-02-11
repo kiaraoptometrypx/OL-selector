@@ -140,7 +140,7 @@ button.normal{
   padding:6px 14px;
   border-radius:7px;
   font-size:11px;
-  width:150px;
+  width:25%;
   cursor:pointer;
   margin:0 20px 0 0;
 }
@@ -151,18 +151,18 @@ button.small{
   padding:6px 6px;
   border-radius:7px;
   font-size:11px;
-  width:100px;
+  width:20%;
   cursor:pointer;
   margin:0 20px 0 0;
 }
 h2{
   text-align: center;
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 15px;
   color: var(--green);
 }
 h6{
-  font-size:5px;
+  font-size:11px;
   margin: 5px;
 }
 
@@ -177,7 +177,7 @@ button:active{transform:translateY(1px);}
 }
 /* force all except headings to 11px */
 .section *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6){
-  font-size:11px;
+  font-size:15px;
 }
 
 .vert { stroke: red; }
@@ -361,13 +361,12 @@ button:active{transform:translateY(1px);}
 <span><b>Eliminates blur by measuring it, then calculating your best prescription without the blur.<br>Key in your prescription below to see your discount value!</b></span>
 <br><br>
 
-<span>Right Eye RX</span>
+<span>1. Right Eye RX</span>
 <input style="width:15%" type="text" id="PFLOdSphere" placeholder="Sphere"> / 
 <input style="width:15%" type="text" id="PFLOdCyl" placeholder="Cyl">
 
-<span style="margin-left:50px"></span>
-
-<span>Left Eye RX</span>
+<br><br>
+<span>2. Left Eye RX</span>
 <input style="width:15%" type="text" id="PFLOsSphere" placeholder="Sphere"> / 
 <input style="width:15%" type="text" id="PFLOsCyl" placeholder="Cyl">
 
@@ -393,7 +392,7 @@ function roundToQuarter(value) {
 
 <br><br>
 
-<span>Chosen Lens Price (RM)</span>
+<span>3. Chosen Lens Price (RM)</span>
 <input style="width:35%" type="text" step="0" id="PFLLensPrice" value="" placeholder="Enter Lens Price">
 
 <br><br>
@@ -401,8 +400,7 @@ function roundToQuarter(value) {
 <button class="normal" onclick="calculatePromo()">Discount</button>
 <button class="normal" style="background-color:maroon" id="PFLRCodeBtn" onclick="toggleRCode()">R-Code</button>
 <br><br>
-<b><div class="result" id="PFLResult"></div></b>
-
+<b><i><div class="result" id="PFLResult">Price : Awaiting...</div></b></i>
 
 
 <script>
@@ -447,7 +445,7 @@ function calculatePromo() {
     const discountedTopUp = topUp * (1 - discount);
 
     PFLResult.innerText =
-        `Promo Value: RM ${promoValue}\n` +
+        `Discount Value: RM ${promoValue}\n` +
         `Top-up Required: RM ${topUp.toFixed(2)}\n` +
         (discount > 0 ? `Further Discount! ${discount*100}% → RM ${discountedTopUp.toFixed(2)}` : '');
 
@@ -1365,4 +1363,3 @@ function toggleByClass(className) {
 
 </body>
 </html>
-
