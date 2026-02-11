@@ -358,15 +358,15 @@ button:active{transform:translateY(1px);}
 
 <div class="section" >
 <h3>Next-Gen Eye Exam Experience </h3>
-<span><b>Eliminates blur by measuring it, then calculating your best prescription without the blur.<br>Key in your prescription below to see your discount value!</b></span>
+<span><b>- Eliminates blur by measuring it, then calculating your best prescription without the blur.<br>- Key in your prescription below to see your discount value!</b></span>
 <br><br>
 
-<span>1. Right Eye RX</span>
+<span>1. Right Eye RX : </span>
 <input style="width:15%" type="text" id="PFLOdSphere" placeholder="Sphere"> / 
 <input style="width:15%" type="text" id="PFLOdCyl" placeholder="Cyl">
 
 <br><br>
-<span>2. Left Eye RX</span>
+<span>2. Left Eye RX : </span>
 <input style="width:15%" type="text" id="PFLOsSphere" placeholder="Sphere"> / 
 <input style="width:15%" type="text" id="PFLOsCyl" placeholder="Cyl">
 
@@ -401,55 +401,90 @@ function roundToQuarter(value) {
 <button class="normal" style="background-color:maroon" id="PFLRCodeBtn" onclick="toggleRCode()">R-Code</button>
 <br><br>
 <b><i><div class="result" id="PFLResult">Price : Awaiting...</div></b></i>
+<br><br>
 
 
 <script>
-let rCodeApplied = false; // temporary R-code flag
+let rCodeApplied = false; // R-code flag
 
+// Calculate base promo value based on combined power
 function getPromoValue(sphere, cyl) {
-    if (cyl < -4.00) return 380;
-    if (sphere > 2.00 || sphere < -4.00) return 380;
+    const combinedPower = sphere + 0.5 * cyl;
+    if (combinedPower > 2.00 || combinedPower < -4.00) {
+        return 380;
+    }
     return 250;
 }
 
-// R-code button click
+// Toggle R-code (+200) and recalc
 function toggleRCode() {
-    rCodeApplied = true;  // apply +200 just for this calculation
+    rCodeApplied = true;
     calculatePromo();
 }
 
+// Main calculation function
 function calculatePromo() {
+    // Read prescription and lens price
     const odSphere = parseFloat(PFLOdSphere.value) || 0;
     const odCyl = parseFloat(PFLOdCyl.value) || 0;
     const osSphere = parseFloat(PFLOsSphere.value) || 0;
     const osCyl = parseFloat(PFLOsCyl.value) || 0;
     const lensPrice = parseFloat(PFLLensPrice.value) || 0;
 
-    let promoValue = Math.max(
+    // Base promo value without R-code
+    const basePromoValue = Math.max(
         getPromoValue(odSphere, odCyl),
         getPromoValue(osSphere, osCyl)
     );
 
+    // Promo value after R-code
+    let promoValue = basePromoValue;
     if (rCodeApplied) promoValue += 200;
 
+    // Calculate top-up
     let topUp = Math.max(0, lensPrice - promoValue);
+
+    // Determine additional discount
     let discount = 0;
-
-    // Apply discount rules
     if (topUp >= 300 && topUp <= 500) {
-        discount = 0.10; // 10%
+        discount = 0.10;
     } else if (topUp > 500) {
-        discount = 0.15; // 15%
+        discount = 0.15;
     }
-
     const discountedTopUp = topUp * (1 - discount);
 
-    PFLResult.innerText =
-        `Discount Value: RM ${promoValue}\n` +
-        `Top-up Required: RM ${topUp.toFixed(2)}\n` +
-        (discount > 0 ? `Further Discount! ${discount*100}% → RM ${discountedTopUp.toFixed(2)}` : '');
+// Determine lens info based on base promo and R-code
+let lensInfo = '';
 
-    // Reset R-code after calculation
+if (rCodeApplied) {
+    // Special lens for R-code
+    if (basePromoValue === 250) {
+        lensInfo = 'Free Asahi Japan 1.56 UV420 Blue Light Filter';
+    } else if (basePromoValue === 380) {
+        lensInfo = 'Free Asahi Japan 1.60 UV420 Blue Light Filter';
+    }
+} else {
+    // Normal lens
+    if (basePromoValue === 250) {
+        lensInfo = 'Free Rayfilter 1.56 UV400';
+    } else if (basePromoValue === 380) {
+        lensInfo = 'Free Rayfilter 1.60 UV400';
+    }
+}
+
+// Display results with proper spacing and dark red for R-code
+PFLResult.innerHTML =
+    `<span style="color: ${rCodeApplied ? 'darkred' : ''}">
+        Discount Value: RM ${promoValue} (${lensInfo})
+    </span><br><br>` +
+    `Top-up Required: RM ${topUp.toFixed(2)}<br><br>` +
+    (discount > 0 ? `Further Discount! ${discount*100}% → RM ${discountedTopUp.toFixed(2)}<br><br>` : '');
+
+
+
+
+
+    // Reset R-code flag
     rCodeApplied = false;
 }
 </script>
